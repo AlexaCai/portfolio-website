@@ -1,0 +1,632 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+Colors used
+Text Color (Black): #000000;
+Primary Color (Cream white): #ffffff;
+Secondary Color (Gold): #e9d07d;
+ */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /* ----------------------All pages*/
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+header {
+    /* ----------------------All pages*/
+    background-color: #e9d09d;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5
+}
+
+.page-header {
+    /* ----------------------All pages*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header-logo {
+    /* ----------------------All pages*/
+    width: 50%;
+    height: auto;
+}
+
+.page-header__item {
+    /* ----------------------All pages*/
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 200px;
+    flex: 0 1 200px;
+    margin: 5px;
+}
+
+.page-header__item:last-child {
+    /* ----------------------All pages*/
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav.container a {
+    /* ----------------------All pages*/
+    font: 'Lato', sans-serif;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+nav.topBotomBordersOut a:before {
+    /* ----------------------All pages*/
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+nav.topBotomBordersOut a:after {
+    /* ----------------------All pages*/
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+nav.topBotomBordersOut a:before {
+    /* ----------------------All pages*/
+    top: 0px;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+nav.topBotomBordersOut a:after {
+    /* ----------------------All pages*/
+    bottom: 0px;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+nav.topBotomBordersOut a:hover:before,
+nav.topBotomBordersOut a:hover:after {
+    /* ----------------------All pages*/
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.navigation-list {
+    /* ----------------------All pages*/
+    /*********************** Why this command? If I remove it, nothing changes? */
+    list-style-type: none;
+}
+
+.navigation-list li {
+    /* ----------------------All pages*/
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigation-list__item--active {
+    /* ----------------------All pages*/
+    text-decoration: none;
+}
+
+main {
+    /* ----------------------All pages*/
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: center;
+}
+
+table {
+    /* ----------------------About me page*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.profile {
+    /* ----------------------Home page*/
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.profile-portrait {
+    /* ----------------------Home page*/
+    float: left;
+    width: 250px;
+    margin-right: 60px;
+    border-radius: 50%;
+}
+
+/* start grid fallback */
+.grid__item {
+    /* ----------------------Work page*/
+    display: inline-block;
+    width: 33%;
+}
+
+/* end grid fallback */
+
+@supports (display: grid) {
+
+    /* ----------------------Work page*/
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px
+    }
+
+    .grid__item {
+        /* ----------------------Work page*/
+        background-color: #aaaaaa;
+        padding: 25px;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .grid__item:nth-child(1) {
+        /* ----------------------Work page*/
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        -ms-grid-column-span: 2;
+        grid-column-end: 3;
+        -ms-grid-row: 1;
+        grid-row-start: 1;
+        -ms-grid-row-span: 1;
+        grid-row-end: 2;
+    }
+
+    .grid__item:nth-child(4) {
+        -ms-grid-column: 0;
+        grid-column-start: 0;
+        -ms-grid-column-span: 0;
+        grid-column-end: 0;
+        -ms-grid-row: 0;
+        grid-row-start: 0;
+        -ms-grid-row-span: 0;
+        grid-row-end: 0;
+    }
+
+    .grid__item:nth-child(3) {
+        /* ----------------------Work page*/
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        -ms-grid-column-span: 0;
+        grid-column-end: 1;
+        -ms-grid-row: 2;
+        grid-row-start: 2;
+        -ms-grid-row-span: 2;
+        grid-row-end: 4;
+    }
+
+    .grid__item:nth-child(6) {
+        /* ----------------------Work page*/
+        -ms-grid-column: 2;
+        grid-column-start: 2;
+        -ms-grid-column-span: 2;
+        grid-column-end: 4;
+        -ms-grid-row: 3;
+        grid-row-start: 3;
+        -ms-grid-row-span: 0;
+        grid-row-end: 3;
+    }
+}
+
+footer {
+    /* ----------------------Work page*/
+    background-color: #e9d09d;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.35;
+    margin: 75px 0px 0px 0px;
+}
+
+.page-footer {
+    /* ----------------------All pages*/
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    /* ----------------------All pages*/
+    font-weight: 600;
+    font-size: 26px;
+
+}
+
+a {
+    /* ----------------------All pages*/
+    /* Normal color of the links when no action on them has been done */
+    /* Var is related to the :Root variable command at the beginning of this file */
+    /*********************** I dont see any change when applying the color: var (--primary-color). Normally, my link should be white, considering the :root commands at the beginning of this file. Why this color doesnt appear on my nav links now? */
+    color: #000000;
+}
+
+a:visited {
+    /* ----------------------All pages*/
+    /* color of the visited link */
+    color: #7217bd
+}
+
+a:hover {
+    /* ----------------------All pages*/
+    /* No underlining and links change to blue when hovering over */
+    color: #1b3dff;
+    text-decoration: none;
+}
+
+a:focus {
+    /* ----------------------All pages*/
+    /* No underlining and links change to blue when hovering over */
+    color: #1b3dff;
+    text-decoration: none;
+}
+
+a:active {
+    /* ----------------------All pages*/
+    /* color of the selected link */
+    color: #f70909;
+}
+
+button {
+    /* ----------------------All pages*/
+    /* overwrites browser defaults and resets the border */
+    border: 3px solid #000000;
+    /* takes the already specified font in the body */
+    font-family: 'Lato', sans-serif;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #e9d09d;
+    color: #000000;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+
+}
+
+button:hover {
+    /* ----------------------All pages*/
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+button:focus {
+    /* ----------------------All pages*/
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.button__secondary {
+    /* ----------------------All pages*/
+    background-color: #696969;
+    color: #e9d09d;
+    border: 1px solid #000000;
+    border-color: #000000;
+    font-size: 12px;
+}
+
+@media all and (max-width: 500px) {
+
+    /* ----------------------All pages*/
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid__item:nth-child(1) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .grid__item:nth-child(3) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .grid__item:nth-child(6) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 750px) {
+
+    /* ----------------------All pages*/
+    .grid {
+        -ms-grid-columns: 1fr 10px 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid__item:nth-child(1) {
+        grid-column: 0 / 0;
+        -ms-grid-row: 1;
+        grid-row: 1 / 1;
+    }
+
+    .grid__item:nth-child(3) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .grid__item:nth-child(4) {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1 / 3;
+        grid-row: auto / auto;
+    }
+
+    .grid__item:nth-child(6) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.button {
+    /* ----------------------All pages*/
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: 'Lato', sans-serif;
+    /* style button */
+    background-color: #e9d09d;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid #000000;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+button {
+    /* ----------------------All pages*/
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: 'Lato', sans-serif;
+    /* style button */
+    background-color: #e9d09d;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid #000000;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+button:hover {
+    /* ----------------------All pages*/
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.6;
+}
+
+button:focus {
+    /* ----------------------All pages*/
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.6;
+}
+
+.button:hover {
+    /* ----------------------All pages*/
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.6;
+}
+
+.button:focus {
+    /* ----------------------All pages*/
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.6;
+}
+
+@-webkit-keyframes color-change {
+
+    /* ----------------------About me page*/
+    0% {
+        fill: #fcffad;
+    }
+
+    50% {
+        fill: #edc655;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+@keyframes color-change {
+
+    /* ----------------------About me page*/
+    0% {
+        fill: #fcffad;
+    }
+
+    50% {
+        fill: #edc655;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+.sun {
+    /* ----------------------About me page*/
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-name: color-change;
+    animation-name: color-change;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud-move {
+
+    /* ----------------------About me page*/
+    from {
+        -webkit-transform: translate(0, 50px);
+        transform: translate(0, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
+    }
+}
+
+@keyframes cloud-move {
+
+    /* ----------------------About me page*/
+    from {
+        -webkit-transform: translate(0, 50px);
+        transform: translate(0, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    /* ----------------------About me page*/
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+    -webkit-animation-name: cloud-move;
+    animation-name: cloud-move;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+
+    /* ----------------------About me page*/
+    from {
+        -webkit-transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        -webkit-transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+
+    /* ----------------------About me page*/
+    from {
+        -webkit-transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        -webkit-transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    /* ----------------------About me page*/
+    -webkit-animation-duration: 34s;
+    animation-duration: 34s;
+    -webkit-animation-name: cloud-move-reverse;
+    animation-name: cloud-move-reverse;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}

@@ -1,0 +1,476 @@
+/*
+Colors used
+Text Color (Black): #000000;
+Primary Color (Cream white): #ffffff;
+Secondary Color (Gold): #e9d07d;
+ */
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #e9d09d;
+    --third-color: #000000;
+    --fourth-color: #696969;
+    --grid-projects-template-color: #aaaaaa;
+    --visited-anchor-color: #7217bd;
+    --hover-focus-anchor-color: #1b3dff;
+    --active-anchor-color: #f70909;
+    --font-family: 'Lato', sans-serif;
+    --header-font-weight: 600;
+    --header-font-size: 20px;
+    --header-line-height: 1.5;
+    --body-font-weight: 400;
+    --body-font-size: 16px;
+    --body-line-height: 1.35;
+    --cursor-style: pointer;    
+    /* Downer variables for animation - sun and clouds  */
+    --animation-sun-light-color: #fcffad;
+    --animation-sun-medium-light-color: #edc655;
+    --animation-sun-dark-color: #f76414;
+    --count: infinite;
+    --direction: alternate;
+    --function: linear;
+  }
+  
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* ----------------------All pages*/
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+}
+
+header {
+    /* ----------------------All pages*/
+    background-color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-weight: var(--header-font-weight);
+    font-size: var(--header-font-size);
+    line-height: var(--header-line-height)
+}
+
+.page-header {
+    /* ----------------------All pages*/
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header-logo {
+    /* ----------------------All pages*/
+    width: 50%;
+    height: auto;
+}
+
+.page-header__item {
+    /* ----------------------All pages*/
+    flex: 0 1 200px;
+    margin: 5px;
+}
+
+.page-header__item:last-child {
+    /* ----------------------All pages*/
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav.container a {
+    /* ----------------------All pages*/
+    font: var(--font-family);
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: var(--cursor-style);
+}
+
+nav.topBotomBordersOut a:before,
+nav.topBotomBordersOut a:after {
+    /* ----------------------All pages*/
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+nav.topBotomBordersOut a:before {
+    /* ----------------------All pages*/
+    top: 0px;
+    transform: translateY(10px);
+}
+
+nav.topBotomBordersOut a:after {
+    /* ----------------------All pages*/
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+nav.topBotomBordersOut a:hover:before,
+nav.topBotomBordersOut a:hover:after {
+    /* ----------------------All pages*/
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.navigation-list {
+    /* ----------------------All pages*/
+    /*********************** Why this command? If I remove it, nothing changes? */
+    list-style-type: none;
+}
+
+.navigation-list li {
+    /* ----------------------All pages*/
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigation-list__item--active {
+    /* ----------------------All pages*/
+    text-decoration: none;
+}
+
+main {
+    /* ----------------------All pages*/
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    text-align: center;
+}
+
+table {
+    /* ----------------------About me page*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.profile {
+    /* ----------------------Home page*/
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.profile-portrait {
+    /* ----------------------Home page*/
+    float: left;
+    width: 250px;
+    margin-right: 60px;
+    border-radius: 50%;
+}
+
+/* start grid fallback */
+.grid__item {
+    /* ----------------------Work page*/
+    display: inline-block;
+    width: 33%;
+}
+
+/* end grid fallback */
+
+@supports (display: grid) {
+
+    /* ----------------------Work page*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px
+    }
+
+    .grid__item {
+        /* ----------------------Work page*/
+        background-color: var(--grid-projects-template-color);
+        padding: 25px;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .grid__item:nth-child(1) {
+        /* ----------------------Work page*/
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .grid__item:nth-child(4) {
+        grid-column-start: 0;
+        grid-column-end: 0;
+        grid-row-start: 0;
+        grid-row-end: 0;
+    }
+
+    .grid__item:nth-child(3) {
+        /* ----------------------Work page*/
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .grid__item:nth-child(6) {
+        /* ----------------------Work page*/
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+}
+
+footer {
+    /* ----------------------Work page*/
+    background-color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    margin: 75px 0px 0px 0px;
+}
+
+.page-footer {
+    /* ----------------------All pages*/
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    /* ----------------------All pages*/
+    font-weight: 600;
+    font-size: 26px;
+
+}
+
+a {
+    /* ----------------------All pages*/
+    /* Normal color of the links when no action on them has been done */
+    /* Var is related to the :Root variable command at the beginning of this file */
+    /*********************** I dont see any change when applying the color: var (--primary-color). Normally, my link should be white, considering the :root commands at the beginning of this file. Why this color doesnt appear on my nav links now? */
+    color: var(--third-color);
+}
+
+a:visited {
+    /* ----------------------All pages*/
+    /* color of the visited link */
+    color: var(--visited-anchor-color)
+}
+
+a:hover,
+a:focus {
+    /* ----------------------All pages*/
+    /* No underlining and links change to blue when hovering over */
+    color: var(--hover-focus-anchor-color);
+    text-decoration: none;
+}
+
+a:active {
+    /* ----------------------All pages*/
+    /* color of the selected link */
+    color: var(--active-anchor-color);
+}
+
+button {
+    /* ----------------------All pages*/
+    /* overwrites browser defaults and resets the border */
+    border: 3px solid var(--third-color);
+    /* takes the already specified font in the body */
+    font-family: var(--font-family);
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+
+}
+
+button:hover,
+button:focus {
+    /* ----------------------All pages*/
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: var(--cursor-style);
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.button__secondary {
+    /* ----------------------All pages*/
+    background-color: var(--fourth-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--third-color);
+    border-color: var(--third-color);
+    font-size: 12px;
+}
+
+@media all and (max-width: 500px) {
+
+    /* ----------------------All pages*/
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid__item:nth-child(1) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .grid__item:nth-child(3) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .grid__item:nth-child(6) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 750px) {
+
+    /* ----------------------All pages*/
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid__item:nth-child(1) {
+        grid-column: 0 / 0;
+        grid-row: 1 / 1;
+    }
+
+    .grid__item:nth-child(3) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .grid__item:nth-child(4) {
+        grid-column: 1 / 3;
+        grid-row: auto / auto;
+    }
+
+    .grid__item:nth-child(6) {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.button,
+button {
+    /* ----------------------All pages*/
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: var(--font-family);
+    /* style button */
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid var(--third-color);
+    transition: opacity 0.5s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* ----------------------All pages*/
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: var(--cursor-style);
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.6;
+}
+
+@keyframes color-change {
+
+    /* ----------------------About me page*/
+    0% {
+        fill: var(--animation-sun-light-color);
+    }
+
+    50% {
+        fill: var(--animation-sun-medium-light-color);
+    }
+
+    100% {
+        fill: var(--animation-sun-dark-color);
+    }
+}
+
+.sun {
+    /* ----------------------About me page*/
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: var(--count);
+    animation-direction: var(--direction);
+    animation-timing-function: var(--function);
+}
+
+@keyframes cloud-move {
+
+    /* ----------------------About me page*/
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    /* ----------------------About me page*/
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: var(--count);
+    animation-direction: var(--direction);
+    animation-timing-function: var(--function);
+}
+
+@keyframes cloud-move-reverse {
+
+    /* ----------------------About me page*/
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    /* ----------------------About me page*/
+    animation-duration: 34s;
+    animation-name: cloud-move-reverse;
+    animation-iteration-count: var(--count);
+    animation-direction: var(--direction);
+    animation-timing-function: var(--function);
+}

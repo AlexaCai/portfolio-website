@@ -166,6 +166,7 @@ table {
     float: left;
     width: 250px;
     margin-right: 60px;
+    margin-bottom: 100px;
     border-radius: 50%;
 }
 
@@ -284,15 +285,12 @@ a:active {
 
 button {
     /* ----------------------All pages*/
-    /* overwrites browser defaults and resets the border */
     border: 3px solid var(--third-color);
-    /* takes the already specified font in the body */
     font-family: var(--font-family);
-    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
     background-color: var(--secondary-color);
     color: var(--third-color);
     text-decoration: none;
-    /*adds spacing to the button (this will be discussed more in-depth later) */
+    font-size: 14px;
     padding: 10px;
     border-radius: 3px;
 
@@ -309,11 +307,14 @@ button:focus {
 
 .button__secondary {
     /* ----------------------All pages*/
-    background-color: var(--fourth-color);
-    color: var(--secondary-color);
     border: 1px solid var(--third-color);
-    border-color: var(--third-color);
+    font-family: var(--font-family);
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+    text-decoration: none;
     font-size: 12px;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 @media all and (max-width: 500px) {

@@ -165,8 +165,8 @@ table {
     /* ----------------------Home page*/
     float: left;
     width: 250px;
-    margin-right: 60px;
     margin-bottom: 100px;
+    margin-top: 20px;
     border-radius: 50%;
 }
 

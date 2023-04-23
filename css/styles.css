@@ -9,7 +9,7 @@ Secondary Color (Gold): #e9d07d;
     --primary-color: #ffffff;
     --secondary-color: #e9d09d;
     --third-color: #000000;
-    --fourth-color: #999999;
+    --fourth-color: #e2e2e2;
     --grid-projects-template-color: #aaaaaa;
     --visited-anchor-color: #7217bd;
     --hover-focus-anchor-color: #1b3dff;
@@ -50,7 +50,10 @@ header {
     font-family: var(--font-family);
     font-weight: var(--header-font-weight);
     font-size: var(--header-font-size);
-    line-height: var(--header-line-height)
+    line-height: var(--header-line-height);
+    border-bottom-style:double;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--third-color);
 }
 
 .page-header {
@@ -152,8 +155,24 @@ table {
     /* ----------------------About me page*/
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    table-layout: fixed ;
 }
 
+thead tr td {
+    /* ----------------------About me page*/
+    padding: 10px 30px 10px 30px;
+    background-color: #000000;
+    color: #ffffff;
+    width: 25%;
+}
+
+tbody tr td {
+    /* ----------------------About me page*/
+    padding: 10px 30px 10px 30px;
+    background-color: #f3f3f3;
+    width: 25%;
+}
 
 .profile {
     /* ----------------------Home page*/
@@ -193,6 +212,9 @@ table {
     .grid__item {
         /* ----------------------Work page*/
         background-color: var(--grid-projects-template-color);
+        border-style: solid;
+        border-width: 1px;
+        border-color: var(--third-color);
         padding: 25px;
         width: auto;
         min-height: auto;
@@ -243,6 +265,7 @@ table {
     /* ----------------------Contact page*/
     display: block;
     text-align: center;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -284,7 +307,10 @@ footer {
     font-weight: var(--body-font-weight);
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
-    margin: 75px 0px 0px 0px;
+    margin: 70px 0px 0px 0px;
+    border-top-style: double;
+    border-top-width: 2px;
+    border-top-color: var(--third-color)
 }
 
 .page-footer {

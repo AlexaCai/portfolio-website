@@ -21,7 +21,7 @@ Secondary Color (Gold): #e9d07d;
     --body-font-weight: 400;
     --body-font-size: 16px;
     --body-line-height: 1.35;
-    --cursor-style: pointer;    
+    --cursor-style: pointer;
     /* Downer variables for animation - sun and clouds  */
     --animation-sun-light-color: #fcffad;
     --animation-sun-medium-light-color: #edc655;
@@ -29,8 +29,8 @@ Secondary Color (Gold): #e9d07d;
     --count: infinite;
     --direction: alternate;
     --function: linear;
-  }
-  
+}
+
 * {
     box-sizing: border-box;
 }

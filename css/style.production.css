@@ -33,7 +33,7 @@ header {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
-    border-bottom-style:double;
+    border-bottom-style: double;
     border-bottom-width: 2px;
     border-bottom-color: #000000;
 }
@@ -162,10 +162,13 @@ main {
 
 table {
     /* ----------------------About me page*/
-    margin-left: auto;
-    margin-right: auto;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%;
     text-align: center;
-    table-layout: fixed ;
+    table-layout: fixed;
 }
 
 thead tr td {
@@ -181,6 +184,30 @@ tbody tr td {
     padding: 10px 30px 10px 30px;
     background-color: #f3f3f3;
     width: 25%;
+}
+
+#svg-idea-bulb {
+    /* ----------------------About me page*/
+    height: 200px;
+    position: relative;
+}
+
+.code-process {
+    /* ----------------------About me page*/
+    height: 200px;
+    position: relative;
+}
+
+#website-creation {
+    /* ----------------------About me page*/
+    height: 200px;
+    position: relative;
+}
+
+#website-built  {
+    /* ----------------------About me page*/
+    height: 200px;
+    position: relative;
 }
 
 .profile {
@@ -575,134 +602,4 @@ button:focus {
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
     opacity: 0.6;
-}
-
-@-webkit-keyframes color-change {
-
-    /* ----------------------About me page*/
-    0% {
-        fill: #fcffad;
-    }
-
-    50% {
-        fill: #edc655;
-    }
-
-    100% {
-        fill: #f76414;
-    }
-}
-
-@keyframes color-change {
-
-    /* ----------------------About me page*/
-    0% {
-        fill: #fcffad;
-    }
-
-    50% {
-        fill: #edc655;
-    }
-
-    100% {
-        fill: #f76414;
-    }
-}
-
-.sun {
-    /* ----------------------About me page*/
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -webkit-animation-name: color-change;
-    animation-name: color-change;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-}
-
-@-webkit-keyframes cloud-move {
-
-    /* ----------------------About me page*/
-    from {
-        -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px);
-    }
-
-    to {
-        -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move {
-
-    /* ----------------------About me page*/
-    from {
-        -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px);
-    }
-
-    to {
-        -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    /* ----------------------About me page*/
-    -webkit-animation-duration: 30s;
-    animation-duration: 30s;
-    -webkit-animation-name: cloud-move;
-    animation-name: cloud-move;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-
-    /* ----------------------About me page*/
-    from {
-        -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px);
-    }
-
-    to {
-        -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px);
-    }
-}
-
-@keyframes cloud-move-reverse {
-
-    /* ----------------------About me page*/
-    from {
-        -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px);
-    }
-
-    to {
-        -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    /* ----------------------About me page*/
-    -webkit-animation-duration: 34s;
-    animation-duration: 34s;
-    -webkit-animation-name: cloud-move-reverse;
-    animation-name: cloud-move-reverse;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
 }

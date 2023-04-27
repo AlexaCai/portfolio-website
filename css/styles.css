@@ -51,7 +51,7 @@ header {
     font-weight: var(--header-font-weight);
     font-size: var(--header-font-size);
     line-height: var(--header-line-height);
-    border-bottom-style:double;
+    border-bottom-style: double;
     border-bottom-width: 2px;
     border-bottom-color: var(--third-color);
 }
@@ -154,14 +154,14 @@ main {
 
 table {
     /* ----------------------About me page*/
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     text-align: center;
     table-layout: fixed;
-    position: absolute;
+    z-index: 2;
 }
 
 thead tr td {
@@ -181,26 +181,10 @@ tbody tr td {
 
 #svg-idea-bulb {
     /* ----------------------About me page*/
-    height: 200px;
     position: relative;
-}
-
-.code-process {
-    /* ----------------------About me page*/
-    height: 200px;
-    position: relative;
-}
-
-#website-creation {
-    /* ----------------------About me page*/
-    height: 200px;
-    position: relative;
-}
-
-#website-built  {
-    /* ----------------------About me page*/
-    height: 200px;
-    position: relative;
+    top: -300px;
+    right: 500px;
+    z-index: 1;
 }
 
 .profile {

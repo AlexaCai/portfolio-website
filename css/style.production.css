@@ -170,6 +170,7 @@ table {
     width: 50%;
     text-align: center;
     table-layout: fixed;
+    z-index: 2;
 }
 
 thead tr td {
@@ -189,26 +190,13 @@ tbody tr td {
 
 #svg-idea-bulb {
     /* ----------------------About me page*/
-    height: 200px;
+    /* IMPORTANT reminder: This SVG icone has been put in the same container ''div'' as the table in the 
+    about.html doc. This is necessary for all other futur SVGs added as well for positionning correctly 
+    with the table*/
     position: relative;
-}
-
-.code-process {
-    /* ----------------------About me page*/
-    height: 200px;
-    position: relative;
-}
-
-#website-creation {
-    /* ----------------------About me page*/
-    height: 200px;
-    position: relative;
-}
-
-#website-built  {
-    /* ----------------------About me page*/
-    height: 200px;
-    position: relative;
+    top: -300px;
+    right: 500px;
+    z-index: 1;
 }
 
 .profile {

@@ -173,7 +173,7 @@ table {
     z-index: 2;
 }
 
-thead tr td {
+thead tr {
     /* ----------------------About me page*/
     padding: 10px 30px 10px 30px;
     background-color: #000000;
@@ -591,4 +591,13 @@ button:focus {
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
     opacity: 0.6;
+}
+
+ul {
+        padding: 0;
+}
+
+li {
+    list-style-position: inside;
+    padding-left: 2px; 
 }

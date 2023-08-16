@@ -164,7 +164,7 @@ table {
     z-index: 2;
 }
 
-thead tr td {
+thead tr {
     /* ----------------------About me page*/
     padding: 10px 30px 10px 30px;
     background-color: #000000;
@@ -552,4 +552,14 @@ button:focus,
     animation-iteration-count: var(--count);
     animation-direction: var(--direction);
     animation-timing-function: var(--function);
+}
+
+
+ul {
+    padding: 0;
+}
+
+li {
+list-style-position: inside;
+padding-left: 2px; 
 }

@@ -115,7 +115,6 @@
 
 .projects-header {
     margin-top: 70px;
-    /* Add some top margin for spacing */
 }
 
 .projects-header-central-column {
@@ -126,6 +125,42 @@
 
 .projects-information {
     margin-top: 70px;
-    /* Add some top margin for spacing */
     text-align: center;
+}
+
+.back-to-top {
+    margin-top: 50px;
+}
+
+.back-to-top-link {
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+
+
+
+/* CSS FOR EACH PROJECTS */
+
+.myFlix-title {
+    color: black;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(218, 218, 218)
+}
+
+.myFlix-catch-sentence {
+    color: black;
+    border-top: 2px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(218, 218, 218)
 }

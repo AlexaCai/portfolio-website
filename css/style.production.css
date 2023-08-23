@@ -18,6 +18,12 @@
     margin-left: 50px;
 }
 
+@media (max-width: 900px) {
+    .logo-image {
+        margin-left: 0px;
+    }
+}
+
 .navbar-nav li.nav-item {
     margin-left: auto;
     padding-right: 8px;
@@ -30,7 +36,12 @@
     border: 2px solid black;
     background-color: rgb(92, 91, 91);
     color: white;
-    width: 375px;
+}
+
+@media (min-width: 992px) {
+    #web-dev-services {
+        width: 380px;
+    }
 }
 
 .home-left-text {
@@ -146,6 +157,12 @@
     font-size: 18px;
 }
 
+.back-to-top-footer {
+    color: black;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
 .testimonials-header {
     margin-top: 70px;
 }
@@ -163,6 +180,12 @@
     margin-top: 70px;
     text-align: center;
 }
+
+.footer-header {
+    margin-top: 40px;
+}
+
+
 
 
 

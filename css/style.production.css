@@ -158,6 +158,34 @@
     text-align: center;
 }
 
+@media (max-width: 579px) {
+    .about-information {
+margin-top: 0px;
+    }
+}
+
+@media (min-width: 475px) and (max-width: 579px) {
+    .about-information .col {
+        width: 100%;
+        flex: none;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 474px) {
+    .about-information .col {
+        width: 100%;
+        flex: none;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        text-align: justify;
+    }
+}
+
 .question-column {
     flex: 1;
     padding-left: 180px;
@@ -172,21 +200,15 @@
 
 @media (min-width: 701px) and (max-width: 900px) {
     .question-column {
-        padding-left: 50px;
+        padding-left: 60px;
         font-size: 14px;
     }
 }
 
 @media (min-width: 580px) and (max-width: 700px) {
     .question-column {
-        padding-left: 40px;
+        padding-left: 60px;
         font-size: 14px;
-    }
-}
-
-@media (max-width: 579px) {
-    .question-column {
-
     }
 }
 
@@ -243,18 +265,44 @@
     margin-top: 50px;
 }
 
+.back-to-top-projects {
+    margin-top: 50px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid black;
+}
+
 .back-to-top2 {
     margin-top: 50px;
+}
+
+.back-to-top-testimonials {
+    margin-top: 50px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid black;
 }
 
 .back-to-top3 {
     margin-top: 50px;
 }
 
+.back-to-top-contact {
+    margin-top: 50px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid black;
+}
+
 .back-to-top-link {
     color: black;
     text-decoration: underline;
     font-size: 18px;
+}
+
+@media (max-width: 331px) {
+    .back-to-top-link {
+        color: black;
+        text-decoration: underline;
+        font-size: 15px;
+    }
 }
 
 .back-to-top-footer {
@@ -270,6 +318,9 @@
 .testimonials-information {
     margin-top: 50px;
     text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contact-header {

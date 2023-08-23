@@ -51,13 +51,13 @@
         <!-- Replace my portrait image here -->
         <div class="container text-center">
             <div class="row">
-                <div class="col home-right-image">
-                    <img src="img/profile-icone.jpg" alt="" class="profile-image" width="400">
+                <div class="col-md-6 order-md-1 home-right-image d-flex justify-content-center align-items-center order-sm-2">
+                    <img src="img/profile-icone.jpg" alt="" class="img-fluid profile-image">
                 </div>
-                <div class="col home-left-text">
-                    <h1>It's time.</h1>
-                    <h1>Let's build it.</h1>
-                    <p>(And have fun along the way)</p>
+                <div class="col-md-6 order-md-2 home-left-text flex-md-column order-sm-1">
+                    <h2>It's time.</h2>
+                    <h2>Let's build.</h2>
+                    <h2>Let's create.</h2>
                     <br>
                     <br>
                     <h5 id="web-dev-services">Full-stack web developpement services</h5>
@@ -670,17 +670,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Javascript logic to ensure smooth transition between the page when user click on link in the navbar. -->
+
+    <!-- Javascript logic to ensure smooth transition between the page when user click on links in the navbar or on ''Back to top'' links. -->
     <script>
         // Function to handle smooth scrolling
         function scrollToSection(event, targetSectionId) {
-            event.preventDefault(); // Prevent the default behavior of the link click
-
-            var targetSection = document.querySelector(targetSectionId); // Get the target section
-
+            // Prevent the default behavior of the link click
+            event.preventDefault();
+            // Get the target section
+            var targetSection = document.querySelector(targetSectionId);
             // Calculate the distance between the top of the page and the target section
             var offset = targetSection.getBoundingClientRect().top + window.scrollY;
-
             // Use the scrollIntoView method with options for smooth scrolling
             window.scrollTo({
                 top: offset,
@@ -711,19 +711,16 @@
         contactLink.addEventListener('click', function (event) {
             scrollToSection(event, '#contact-section');
         });
-        // Add click event listener to the "Back to top" link
+        // Add click event listener to each "Back to top" links
         backToTopLink1.addEventListener('click', function (event) {
             scrollToSection(event, '#topsection');
         });
-        // Add click event listener to the "Back to top" link
         backToTopLink2.addEventListener('click', function (event) {
             scrollToSection(event, '#topsection');
         });
-        // Add click event listener to the "Back to top" link
         backToTopLink3.addEventListener('click', function (event) {
             scrollToSection(event, '#topsection');
         });
-        // Add click event listener to the "Back to top" link
         backToTopLink4.addEventListener('click', function (event) {
             scrollToSection(event, '#topsection');
         });
@@ -739,22 +736,18 @@
     <!-- Javascript logic to ensure that when user click on 'Download'' button, user is being download my resume'. -->
     <script>
         document.getElementById("download-button").addEventListener("click", function () {
-            // URL to your resume file
+            // URL to resume file
             var resumeURL = "resume/abc.pdf";
-
             // Create a hidden anchor element
             var anchor = document.createElement("a");
             anchor.style.display = "none";
             anchor.href = resumeURL;
             anchor.target = "_blank";
             anchor.download = "CailhierAlexandre-Resume.pdf";
-
             // Add the anchor to the document
             document.body.appendChild(anchor);
-
             // Trigger a click on the anchor
             anchor.click();
-
             // Clean up after the download
             document.body.removeChild(anchor);
         });

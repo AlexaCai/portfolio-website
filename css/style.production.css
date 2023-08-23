@@ -142,25 +142,70 @@
 
 
 
-/* CSS FOR EACH PROJECTS */
+/* CSS FOR myFlix PROJECT */
 
 .myFlix-title {
     color: black;
     font-size: 18px;
-    border-bottom: 2px solid black;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(218, 218, 218);
+    position: relative; 
+}
+
+.myFlix-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 12.5%;
+    width: 75%; 
+    height: 2px; 
+    background: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
+}
+
+.myFlix-catch-sentence {
+    color: black;
+    padding-top: 70px;
+    padding-bottom: 70px;
     padding-right: 20px;
     padding-left: 20px;
     background-color: rgb(218, 218, 218)
 }
 
-.myFlix-catch-sentence {
-    color: black;
-    border-top: 2px solid black;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color: rgb(218, 218, 218)
+.project-brief {
+margin-top: 40px;
+margin-bottom: 40px;
 }
+
+/* Remove background color from carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+}
+
+/* Adjust position of carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    color: #000; 
+    font-size: 30px;
+}
+
+.carousel-words {
+    padding: 15px;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+}
+
+    .custom-carousel-btn {
+        width: 300px; 
+        background-color: transparent;
+        border: none;
+        color: #fff; 
+        font-size: 30px; 
+        padding: 15px; 
+    }

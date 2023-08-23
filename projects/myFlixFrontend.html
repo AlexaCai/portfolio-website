@@ -61,7 +61,72 @@
             <div class="col text-center">
             </div>
         </div>
+        <div class="row project-brief">
+            <div class="col-1 text-center">
+            </div>
+            <div class="col text-center">
+                <h5>Overview</h5>
+                <p>myFlix was created to serve as a reference in the domain of visual entertainment. Users can create an
+                    account and then log into myFlix to have access to information about different movies. They can
+                    search for movies, filter results based on different criteria and create lists of favorites.</p>
+            </div>
+            <div class="col text-center">
+                <h5>Purpose</h5>
+                <p>Learn and consolidate my skills with frontend React during my full-stack web development training to
+                    develop and showcase a user-friendly, appealing and complete web application (client and server
+                    side) built using JavaScript technologies and the MERN tech stack.</p>
+            </div>
+            <div class="col text-center">
+                <h5>Objective</h5>
+                <p>Develop an easy-to-use and responsive web app for users to access whenever they want to read and save
+                    information about different movies, as well as allowing me to put into practice my skills regarding
+                    the interaction between backend and frontend for a fully functional web app.</p>
+            </div>
+            <div class="col-1 text-center">
+            </div>
+        </div>
+        <h5 class="text-center">See myFlix in action</h5>
+        <p class="text-center">Switch from computer view to mobile view using the commands inside the video box</p>
+        <br>
+        <div class="row project-videos">
+            <div class="col text-center">
+            </div>
+            <div class="col-8 text-center">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                                <iframe
+                                    src="https://www.loom.com/embed/946591b5d3c14156be5561c55f78b834?sid=6703881d-9f9e-42d2-b6af-466ed8f443e2?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                                <iframe
+                                    src="https://www.loom.com/embed/c61949bd26db49d6823850b2f9339fe9?sid=839d390e-1534-40a0-88dd-ad7e379e1822?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="visually-hidden carousel-words">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="visually-hidden carousel-words">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col text-center">
+            </div>
+        </div>
 
+
+        <br><br><br><br><br><br><br><br><br><br><br>
     </main>
     <footer class="page-footer">
         <p>Find me on</p>
@@ -76,9 +141,15 @@
         <a href="#meetapp">Back to top</a>
     </footer>
     <script src="js/tota11y.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
 
 </body>
 

@@ -24,6 +24,30 @@
     }
 }
 
+@media (max-width: 325px) {
+    .logo-image {
+        height: 80%;
+    }
+}
+
+@media (max-width: 325px) {
+    .logo-image {
+        height: 70%;
+    }
+}
+
+@media (max-width: 325px) {
+    .navbar-nav {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 280px) {
+    .navbar-nav {
+        font-size: 12px;
+    }
+}
+
 .navbar-nav li.nav-item {
     margin-left: auto;
     padding-right: 8px;
@@ -244,10 +268,6 @@
         padding-right: 40px;
         font-size: 14px;
     }
-}
-
-@media (max-width: 579px) {
-    .answer-column {}
 }
 
 .projects-header {
@@ -615,6 +635,3 @@
         padding-right: 50px;
     }
 }
-
-
-

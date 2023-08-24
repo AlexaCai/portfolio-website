@@ -5,72 +5,819 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="shortcut icon" href="img/web-dev-favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <title>Home</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="page-header">
-        <a href="index.html"> <img src="img/web-dev-favicon.png" class="page-header__item page-header-logo"
-                alt="Profesional logo of ABC, which consists of a written WebDev text in black, in the center of a white diamond, superimposed on a black square of the same dimensions"></a>
-        <nav class="page-header__item main-navigation container topBotomBordersOut">
-            <!-- Replace my logo here -->
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active topBotomBordersOut">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item topBotomBordersOut">About me</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item topBotomBordersOut">My projects</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item topBotomBordersOut">Contact</a>
-                </li>
-            </ul>
+    <header class="page-header" id="topsection">
+        <nav class="navbar navbar-expand-md navbar-light nav justify-content-end">
+            <div class="logo-container">
+                <img src="img/logo2.png" alt="ac-logo" class="logo-image">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects-section">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials-section">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main class="profile">
         <!-- Replace my portrait image here -->
-        <img src="img/profile-icone.jpg" class="profile-portrait" alt="Alexandre Cailhier profesional picture">
-        <h1 id="topsection">Hello World!</h1>
-        <p>
-            My name is ABC. I am a <span>student web developer</span> from Canada.
-        </p>
-        <p>
-            You will find on my website my past achievements, several professional information about me and my contact
-            details.
-        </p>
-        <p>
-            Do not hesitate to contact me for any questions or ideas of collaboration.
-        </p>
-        <br>
-        <a href="work.html" class="button">See my projects</a>
-        <br>
-        <br>
-        <br>
-        <a href="mailto:#" class="button__secondary">Contact</a>
-        <br>
-    </main>
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <!-- Add social networks images here -->
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/alecai/?locale=en_US" target="_blank"> <img src="img/linkedin-logo.svg" alt="linkedin logo"></a>
-            <a href="https://github.com/AlexaCai" target="_blank"> <img src="img/github-logo.svg" alt="github logo"></a>
+        <div class="container text-center">
+            <div class="row">
+                <div
+                    class="col-md-6 order-md-1 home-right-image d-flex justify-content-center align-items-center order-sm-2 order-2">
+                    <img src="img/profile-icone.jpg" alt="" class="img-fluid profile-image">
+                </div>
+                <div class="col-md-6 order-md-2 home-left-text flex-md-column order-sm-1 order-1">
+                    <h2>It's time.</h2>
+                    <h2>Let's build.</h2>
+                    <h2>Let's create.</h2>
+                    <br>
+                    <br>
+                    <h5 id="web-dev-services">Full-stack web developpement services</h5>
+                    <br>
+                    <br>
+                    <p>Currently:</p>
+                    <ul class="home-list-items">
+                        <li>Accepting <strong>full-time position</strong></li>
+                        <li>Accepting <strong>contract position</strong></li>
+                        <li>Accepting <strong>remote working</strong></li>
+                        <li>Accepting <strong>relocation</strong> in many<br><strong>major cities
+                                internationally</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="home-presentation-text">
+            <p>My name is Alexandre, and I am a passionate <strong>full-stack web developer</strong> located in
+                Montreal, Quebec, Canada. I have 3 years of experience working with data and technologies, and about 1
+                year working on web development projects more specifically.</p>
+        </div>
+        <div class="social-icons-container">
+            <a href="https://github.com/AlexaCai" target="_blank"> <img src="img/github-logo-black.png" alt=""
+                    width="40" height="40"></a>
+            <a href="https://www.linkedin.com/in/alecai/?locale=en_US" target="_blank"> <img
+                    src="img/linkedin-logo-black.png" alt="" width="40" height="40"></a>
+            <a href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2" target="_blank"> <img
+                    src="img/upwork-logo.png" alt="" width="40" height="40"></a>
+            <img src="img/whatsapp.png" alt="" width="40" height="40">
+        </div>
+        <div class="home-buttons">
+            <button type="button" class="btn btn-dark" id="download-button">Download resume</button>
+        </div>
+        <div class="home-buttons">
+            <button type="button" class="btn btn-dark" id="contact-button">Contact me</button>
+        </div>
+        <div class="row about-header">
+            <div class="col">
+            </div>
+            <div class="col-5 about-header-central-column">
+                <h1 id="about-section">About me</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row about-information">
+            <div class="col question-column">
+                <p><strong>So who are you Alex? What’s your background? How did you get into the web development
+                        universe?</strong></p>
+            </div>
+            <div class="col answer-column">
+                <p>Put simply, I am a former graduate professional who worked mostly on projects closely combining urban
+                    planning and data-related decisions, practices and considerations.</p>
+                <p>Having worked on data-driven decision-making projects for municipal investments as a professional
+                    researcher, and having supported different organizations on their technological project deployments
+                    coming from a governmental <a href="https://www.infrastructure.gc.ca/cities-villes/index-eng.html"
+                        target="_blank">Smart Cities Challenge</a>
+                    as a Senior analyst in data and technology policies, I’ve decided in
+                    early 2023 to take a leap into web programming to consolidate my skills on a more technical level.
+                </p>
+                <p>More concretely, my goal was to develop the necessary knowledge to be able to build useful web apps,
+                    websites and mobile apps that could meet the many challenges and organizational needs I observed in
+                    the field over the years.</p>
+            </div>
+        </div>
+
+        <div class="row about-information">
+            <div class="col question-column">
+                <p><strong>From Professional researcher to Senior analyst in data and technology policies to Web
+                        developer? Really?
+                    </strong></p>
+            </div>
+            <div class="col answer-column">
+                <p>Yes, really. This professional path has allowed me to acquire a lot of knowledge and skills in the
+                    field of data and technology, both at a high level and at a more operational level. And the best
+                    part of this profesional journey is that I am currently thrilled about where I am now, and
+                    passionate about my current field and the challenges that await me in web development.
+                </p>
+                <p>I started to enjoy this domain as soon as I learned how to write my first codes. I knew I was on the
+                    right track. I always wanted to learn more and build more projects. And that's still the case today,
+                    especially knowing that I can count on a base of very useful complementary professional experience
+                    that will continue to help me in many of my future web development works.
+                </p>
+            </div>
+        </div>
+        <div class="row about-information">
+            <div class="col question-column">
+                <p><strong>That sounds very interesting, but tell us, how does your previous experience relate/bring
+                        value to your new role as a web developer concretely?
+                    </strong></p>
+            </div>
+            <div class="col answer-column">
+                <p>Glad you asked! My past experiences working on projects combining data and technologies have allowed
+                    me to develop several skills and knowledge that could be useful in different web development
+                    projects, depending on the objectives and stakeholders involved.
+                </p>
+                <div class="accordion" id="accordionPastWorkingSkills">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="text-dark">Useful skills and knowledge from past work
+                                        experiences</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionPastWorkingSkills">
+                            <div class="card-body text-left">
+                                <li>Geospatial/non-geospatial data analysis and processing</li>
+                                <li>Creating, editing and managing geospatial data workflows using <a
+                                        href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/geoprocessing/modelbuilder/what-is-modelbuilder-.htm"
+                                        target="_blank">ModelBuilder</a>
+                                    (visual programming approach within <a
+                                        href="https://www.esri.com/en-us/arcgis/about-arcgis/overview"
+                                        target="_blank">ArcGIS</a>)</li>
+                                <li>Professional maps creation illustrating various types of information</li>
+                                <li>Data gathering across different open sources</li>
+                                <li>Excel and formulas/logics creation to automate calculations and analysis
+                                </li>
+                                <li>Complex topics simplification and presentation to non-experts</li>
+                                <li>Project management experience, from early steps of project definition to final
+                                    recommendations
+                                </li>
+                                <li>Knowledge of workflow/team management softwares/applications such as Asana or Jira
+                                </li>
+                                <li>Multidisciplinary group facilitation to identify needs, structure objectives and
+                                    establish clear vision</li>
+                                <li>Experience with working in unclear project settings and many unknowns due project
+                                    complexity/innovative character</li>
+                                <li>Knowledge (non-legal) of certain laws related to data such as the <a
+                                        href="https://www.quebec.ca/gouvernement/ministeres-et-organismes/institutions-democratique-acces-information-laicite/acces-documents-protection-renseignements-personnels/pl64-modernisation-de-la-protection-des-renseignements-personnels"
+                                        target="_blank">Act 25 (French only)</a> from Quebec governement
+                                    (Act modernizing legislative provisions in the protection of personal information),
+                                    the <a href="https://laws-lois.justice.gc.ca/eng/acts/p-8.6/"
+                                        target="_blank">Personal Information Protection and Electronic Documents Act</a>
+                                    from Canada governement
+                                    and the <a href="https://gdpr-info.eu/" target="_blank">General Data Protection
+                                        Regulation (GDPR)</a> from the European Union</li>
+                                <li>Experience working in partnerships with organizations aiming at deploying
+                                    technological products (online forms, online portals, mobile apps)</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row about-information">
+            <div class="col question-column">
+                <p><strong>And now as a web developer, what are your current skills? What technologies can you work
+                        with?
+                    </strong></p>
+            </div>
+            <div class="col answer-column">
+                <p>Over training and project development, I came to work with a wide variety of language and tools, both
+                    for front-end and back-end. I also developed, over my training and during my past working
+                    experiences, different techniques and used different softwares and tools very useful. Here’s the
+                    breakdown of my skills per categories:
+                </p>
+                <div class="accordion" id="accordionFrontend">
+                    <div class="card">
+                        <div class="card-header" id="headingZero">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                                    <span class="text-dark">Frontend</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseZero" class="collapse show" aria-labelledby="headingZero"
+                            data-parent="#accordionFrontend">
+                            <div class="card-body text-left">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+                                <li>React</li>
+                                <li>React native</li>
+                                <li>React Bootstrap</li>
+                                <li>Recharts</li>
+                                <li>Angular</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- Additional accordion items with similar structure... -->
+                    </div>
+                </div>
+                <div class="accordion" id="accordionBackend">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <span class="text-dark">Backend</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionBackend">
+                            <div class="card-body text-left">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                                <li>Python</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionSoftwaresPlatformsTools">
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    <span class="text-dark">Softwares, plateforms & tools</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionSoftwaresPlatformsTools">
+                            <div class="card-body text-left">
+                                <li>Heroku</li>
+                                <li>Netlify</li>
+                                <li>Amazon web service (AWS)</li>
+                                <li>Jest (for code testing puroposes)</li>
+                                <li>Puppeter (for code testing puroposes)</li>
+                                <li>Cucumber (for code testing puroposes)</li>
+                                <li>Git</li>
+                                <li>Github</li>
+                                <li>ArcGIS</li>
+                                <li>Asana</li>
+                                <li>Jira</li>
+                                <li>Miro</li>
+                                <li>Confluence</li>
+                                <li>Slack</li>
+                                <li>MOffice</li>
+                                <li>GSuite</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionTechniquesMethodologies">
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    <span class="text-dark">Techniques & methodologies</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionTechniquesMethodologies">
+                            <div class="card-body text-left">
+                                <li>Test-drvient developpment (TDD)</li>
+                                <li>Test cases writting</li>
+                                <li>Behavior-driven development (BDD)</li>
+                                <li>Test scenarios writting (Gherkin syntax)</li>
+                                <li>Unit testing and integreation testings</li>
+                                <li>Acceptance testing and end-to-end testings</li>
+                                <li>Agile (user stories, sprint, retrospective, etc.)</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row about-information">
+            <div class="col question-column">
+                <p><strong>That being said, what are your current aims and goals? What opportunities are you looking
+                        for?
+                    </strong></p>
+            </div>
+            <div class="col answer-column">
+                <p>I have three goals currently on which I work on in a very flexible and adaptable way.
+                </p>
+                <div class="accordion" id="accordionGoal1">
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    <span class="text-dark">Find a full-time web developer job in a company</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                            data-parent="#accordionGoal1">
+                            <div class="card-body text-left">
+                                <p>For this, I am willing to relocate to a wide range of major cities internationally. I
+                                    am also willing to work remotely, as I’ve been doing this for years now, and this
+                                    working environment really fits me. I am also open to contracts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionGoal2">
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    <span class="text-dark">Continue to improve my coding skills while developing more
+                                        projects</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionGoal2">
+                            <div class="card-body text-left">
+                                <p> I want to consolidate my knowledge of technologies I already know (Javascript,
+                                    React, MongoDB, etc.) because there is always something to learn. At the same time,
+                                    I
+                                    also want to learn about other technologies with which I am less familiar, and
+                                    develop different products with them to fully understand how they work, whether for
+                                    websites, web apps or mobile apps.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionGoal3">
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                    <span class="text-dark">Accept proposals for projects to be developed on a freelance
+                                        basis</span>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                            data-parent="#accordionGoal3">
+                            <div class="card-body text-left">
+                                <p> Considering my new skills and the projects I would be able to do, and the fact that
+                                    I am already established on <a href="https://www.upwork.com"
+                                        target="_blank">Upwork</a> (freelance platform - <a
+                                        href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2"
+                                        target="_blank">see my profile here</a>), I would also like to offer web
+                                    development services as a freelancer. I am open to any proposal. A discussion about
+                                    the project to be carried out will allow me to determine if I am the right candidate
+                                    to complete
+                                    the work, which I will communicate with complete transparency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row about-information">
+            <div class="col question-column">
+                <p><strong>What are your interests in this field? What makes you want to do this every day?
+                    </strong></p>
+            </div>
+            <div class="col answer-column">
+                <p>I’d say the thing I like the most about web development is the fact that the learning possibilities
+                    are endless. I am an avid learner, as my previous studies in business, anthropology, archeology,
+                    languages, urban planning and project management proves it.
+                </p>
+                <p>I realized very early in my journey to become a web developer that almost all of the time, the only
+                    limits on what you can possibly create for a digital product are (1) your own creativity and (2)
+                    your skills to operationate your ideas. Both of these two aspects need continuous stimulation and
+                    training, and that's why I am continuously aiming at improving my coding skills day after day. I am
+                    also aiming at enhancing my knowledge on complementary topics such as UX design, UI design and
+                    digital marketing both by strong personal interest and professional value.
+                </p>
+                <p>More technically speaking, I have a particular interest in building frontend components, responsive
+                    design and appealing visuals. I particularly enjoy working with React, React Native and React
+                    Bootstrap, as well as with manipulating databases in MongoDB or PostgreSQL. That being said, all
+                    technologies and tools truly remain of interest to me.
+                </p>
+            </div>
+        </div>
+        <div class="row about-information">
+            <div class="col question-column">
+                <p><strong>On a last note, since you’re not just a web programmer but also a person and a potential
+                        colleague, team member or partner, tell us: who’s Alex outside his technical mind? What do you
+                        like to do during your free time?
+                    </strong></p>
+            </div>
+            <div class="col answer-column">
+                <p>When I’m not on my computer, I’m probably outside exploring the city, spending a bit too much on
+                    delicious street food cooked on the spot by almost always the most lovely people there are. The
+                    chicken rice with vegetables and a bit (read a lot) of spicy sauce are for me irresistible. I also
+                    deeply enjoy visiting archeological sites, since my Indiana Jones inner child calls me every time I
+                    see one.
+                </p>
+                <p>I love the world and discover about different cultures. I did volunteering / lived with host families
+                    in western Canada, Hawaii and
+                    Madagascar for one to few months. I’m also into learning different languages. Lately it has been
+                    Spanish and back in college, it was Chinese mandarin for which I’ve learned for 2 years.
+                </p>
+                <p>Finally, when I want to move, ice hockey, basketball and volleyball are my things, and I never say no
+                    to a cinema night, half of the reason being because I just want the popcorn.
+                </p>
+            </div>
+        </div>
+
+        <div class="row back-to-top1">
+            <div class="col">
+            </div>
+            <div class="col-6 d-flex justify-content-center back-to-top-projects">
+                <a href="#topsection" class="back-to-top-link">Back to top</a>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row projects-header">
+            <div class="col">
+            </div>
+            <div class="col-md-5 col-sm-10 section-header-central-column-projects text-center">
+                <h1 id="projects-section">Projects</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+
+        <div class="row projects-information">
+            <div class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="card h-100" style="width: 22rem;">
+                    <img src="img/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="card h-100" style="width: 22rem;">
+                    <img src="img/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="card h-100" style="width: 22rem;">
+                    <img src="img/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="card h-100" style="width: 22rem;">
+                    <img src="img/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="card h-100" style="width: 22rem;">
+                    <a href="projects/myFlixFrontend.html" target="_blank"> <img src="img/logo.png" class="card-img-top"
+                            alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="projects/myFlixFrontend.html" target="_blank">myFlix web app
+                                (frontend)</a></h5>
+                        <p class="card-text">A responsive single-page movie web app with routing and several interface
+                            views for a polished user experience (based on my previously built server-side code)</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Main technologies: Javascript, React, Recharts, Bootstrap</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://github.com/AlexaCai/myFlix-client" target="_blank" class="card-link">See on
+                            Github</a>
+                        <a href="https://myflix-movies-advisor.netlify.app/login" target="_blank" class="card-link">See
+                            on live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="card h-100" style="width: 22rem;">
+                    <img src="img/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row back-to-top2">
+            <div class="col">
+            </div>
+            <div class="col-6 d-flex justify-content-center back-to-top-testimonials">
+                <a href="#topsection" class="back-to-top-link">Back to top</a>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+
+        <div class="row testimonials-header">
+            <div class="col">
+            </div>
+            <div class="col-md-5 col-sm-10 section-header-central-column-testimmonials text-center">
+                <h1 id="testimonials-section">Testimonials</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row testimonials-information" style="text-align: justify">
+            <div class="col-md-4 col-sm-6">
+                <p><i>Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+                        Test</i></p>
+                <br>
+                <p>-Test</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <p><i>Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+                        Test</i></p>
+                <br>
+                <p>-Test</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <p><i>Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+                        Test</i></p>
+                <br>
+                <p>-Test</p>
+            </div>
+        </div>
+
+        <div class="row back-to-top3">
+            <div class="col">
+            </div>
+            <div class="col-6 d-flex justify-content-center back-to-top-contact">
+                <a href="#topsection" class="back-to-top-link">Back to top</a>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+
+        <div class="row contact-header">
+            <div class="col">
+            </div>
+            <div class="col-md-5 col-sm-10 section-header-central-column-contact text-center">
+                <h1 id="contact-section">Contact</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+
+
+        <div class="row testimonials-information" style="text-align: center">
+            <div class="col">
+            </div>
+            <div class="col-9">
+                <p>If you want to hear more about my expertise or my projects, you can message me through LinkedIn,
+                    by
+                    email or via my portfolio website. I am always looking forward to connect with anyone sharing my
+                    passion for data, technology and the web, whether for a formal discussion or a more informal
+                    one.
+                </p>
+                <br>
+                <div class="social-icons-container">
+                    <a href="https://github.com/AlexaCai" target="_blank"> <img src="img/github-logo-black.png" alt=""
+                            width="40" height="40"></a>
+                    <a href="https://www.linkedin.com/in/alecai/?locale=en_US" target="_blank"> <img
+                            src="img/linkedin-logo-black.png" alt="" width="40" height="40"></a>
+                    <a href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2" target="_blank"> <img
+                            src="img/upwork-logo.png" alt="" width="40" height="40"></a>
+                    <img src="img/whatsapp.png" alt="" width="40" height="40">
+                </div>
+                <div class="home-buttons">
+                    <button type="button" class="btn btn-dark" id="download-button-footer">Download resume</button>
+                </div>
+                <div class="home-buttons">
+                    <button type="button" class="btn btn-dark" id="contact-button-footer">Contact me</button>
+                </div>
+                <br>
+                <p>Email: <a href="mailto:acailhier@gmail.com">acailhier@gmail.com</a></p>
+                <p>Montreal, Quebec, Canada</p>
+            </div>
+            <div class="col">
+            </div>
         </div>
         <br>
-        <a href="#topsection">Back to top</a>
+
+        <div class="row back-to-top4">
+            <div class="col">
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <a href="#topsection" class="back-to-top-link">Back to top</a>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <br>
+        <br>
+
+    </main>
+
+    <footer>
     </footer>
+
     <script src="js/tota11y.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Javascript logic to ensure smooth transition between the page when user click on links in the navbar or on ''Back to top'' links. -->
+    <script>
+        // Function to handle smooth scrolling
+        function scrollToSection(event, targetSectionId) {
+            // Prevent the default behavior of the link click
+            event.preventDefault();
+            // Get the target section
+            var targetSection = document.querySelector(targetSectionId);
+            // Calculate the distance between the top of the page and the target section
+            var offset = targetSection.getBoundingClientRect().top + window.scrollY;
+            // Use the scrollIntoView method with options for smooth scrolling
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+        }
+
+        // Select the navigation links
+        var aboutLink = document.querySelector('.nav-link[href="#about-section"]');
+        var projectsLink = document.querySelector('.nav-link[href="#projects-section"]');
+        var testimonialsLink = document.querySelector('.nav-link[href="#testimonials-section"]');
+        var contactLink = document.querySelector('.nav-link[href="#contact-section"]');
+        var backToTopLink1 = document.querySelector('.back-to-top1 a'); // Select the "Back to top" link
+        var backToTopLink2 = document.querySelector('.back-to-top2 a'); // Select the "Back to top" link
+        var backToTopLink3 = document.querySelector('.back-to-top3 a'); // Select the "Back to top" link
+        var backToTopLink4 = document.querySelector('.back-to-top4 a'); // Select the "Back to top" link
+
+        // Add click event listeners to the navigation links
+        aboutLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#about-section');
+        });
+        projectsLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#projects-section');
+        });
+        testimonialsLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#testimonials-section');
+        });
+        contactLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#contact-section');
+        });
+        // Add click event listener to each "Back to top" links
+        backToTopLink1.addEventListener('click', function (event) {
+            scrollToSection(event, '#topsection');
+        });
+        backToTopLink2.addEventListener('click', function (event) {
+            scrollToSection(event, '#topsection');
+        });
+        backToTopLink3.addEventListener('click', function (event) {
+            scrollToSection(event, '#topsection');
+        });
+        backToTopLink4.addEventListener('click', function (event) {
+            scrollToSection(event, '#topsection');
+        });
+    </script>
+
+    <!-- Javascript logic to ensure that when user click on ''Contact me'' button, user is being redirected to email service'. -->
+    <script>
+        document.getElementById("contact-button").addEventListener("click", function () {
+            window.open("mailto:acailhier@gmail.com", "_blank");
+        });
+
+        document.getElementById("contact-button-footer").addEventListener("click", function () {
+            window.open("mailto:acailhier@gmail.com", "_blank");
+        });
+    </script>
+
+    <!-- Javascript logic to ensure that when user click on 'Download'' button, user is being download my resume'. -->
+    <script>
+        document.getElementById("download-button").addEventListener("click", function () {
+            // URL to resume file
+            var resumeURL = "resume/abc.pdf";
+            // Create a hidden anchor element
+            var anchor = document.createElement("a");
+            anchor.style.display = "none";
+            anchor.href = resumeURL;
+            anchor.target = "_blank";
+            anchor.download = "CailhierAlexandre-Resume.pdf";
+            // Add the anchor to the document
+            document.body.appendChild(anchor);
+            // Trigger a click on the anchor
+            anchor.click();
+            // Clean up after the download
+            document.body.removeChild(anchor);
+        });
+
+        document.getElementById("download-button-footer").addEventListener("click", function () {
+            // URL to resume file
+            var resumeURL = "resume/abc.pdf";
+            // Create a hidden anchor element
+            var anchor = document.createElement("a");
+            anchor.style.display = "none";
+            anchor.href = resumeURL;
+            anchor.target = "_blank";
+            anchor.download = "CailhierAlexandre-Resume.pdf";
+            // Add the anchor to the document
+            document.body.appendChild(anchor);
+            // Trigger a click on the anchor
+            anchor.click();
+            // Clean up after the download
+            document.body.removeChild(anchor);
+        });
+    </script>
+
 </body>
 
 </html>

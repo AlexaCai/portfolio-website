@@ -99,6 +99,12 @@
     height: auto;
 }
 
+@media (max-width: 400px) {
+    .project-title {
+        font-size: 24px;
+    }
+}
+
 .home-presentation-text {
     margin-top: 5vw;
     margin-left: 12vw;
@@ -160,7 +166,7 @@
 
 @media (max-width: 579px) {
     .about-information {
-margin-top: 0px;
+        margin-top: 0px;
     }
 }
 
@@ -241,9 +247,7 @@ margin-top: 0px;
 }
 
 @media (max-width: 579px) {
-    .answer-column {
-
-    }
+    .answer-column {}
 }
 
 .projects-header {
@@ -379,7 +383,7 @@ margin-top: 0px;
     margin-left: 200px;
 }
 
-.project-brief > div {
+.project-brief>div {
     padding-bottom: 20px;
 }
 
@@ -553,10 +557,21 @@ margin-top: 0px;
 }
 
 .carousel-words {
-    padding: 15px;
     width: 300px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+}
+
+@media (max-width: 340px) {
+    .video-left-word {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 340px) {
+    .video-right-word {
+        margin-right: 10px;
+    }
 }
 
 .custom-carousel-btn {
@@ -567,3 +582,39 @@ margin-top: 0px;
     font-size: 30px;
     padding: 15px;
 }
+
+@media (min-width: 721px) {
+    .work-summary {
+        text-align: left;
+    }
+}
+
+@media (max-width: 720px) {
+    .work-summary {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 340px) {
+    .work-summary {
+        text-align: justify;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .development-information {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .retrospective-information {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+

@@ -639,3 +639,20 @@
         padding-right: 50px;
     }
 }
+
+
+
+
+
+
+/* CSS FOR To-Do-List PROJECT */
+
+.tech-summary-to-do-list-app {
+ text-align: center;
+}
+
+@media (max-width: 450px) {
+    .tech-summary-to-do-list-app {
+        text-align: justify;
+    }
+}

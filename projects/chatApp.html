@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.production.css">
-    <title>Meet app</title>
+    <title>Chat app</title>
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 
@@ -47,7 +47,7 @@
             <div class="col text-center">
             </div>
             <div class="col-8 text-center myFlix-title">
-                <h1 class="project-title">Meet app</h1>
+                <h1 class="project-title">Chat app</h1>
             </div>
             <div class="col text-center">
             </div>
@@ -56,7 +56,7 @@
             <div class="col text-center">
             </div>
             <div class="col-8 text-center myFlix-catch-sentence">
-                <h5>A serverless and progressive web application to locate coding events all around the world</h5>
+                <h5>A React Native mobile Chat app allowing users to talk and share medias</h5>
             </div>
             <div class="col text-center">
             </div>
@@ -64,51 +64,55 @@
         <div class="row project-brief">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <h5 style="text-align: center">Overview</h5>
-                <p style="text-align: justify">Meet app was created to serve as a resource for people to find different
-                    events. Users can search for different types of coding events based on targeted cities. They can
-                    also specify how many events they want to display on their screen. All event information is
-                    presented visually with a dynamic scatter plot and pie chart, and in a list below the visuals.
+                <p style="text-align: justify">Chat app was created to allow people to talk and exchange on a mobile
+                    app. Users can send messages like other very common chat apps (WhatsApp, Messenger, etc.). They can
+                    also send images, location and audios. Users can also customize their application by selecting the
+                    color background they want to use for the chat UI.
                 </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <h5 style="text-align: center">Purpose</h5>
-                <p style="text-align: justify">Learn and consolidate my skills with the creation of serverless and
-                    progressive web application (PWA) during my full-stack web development training to develop and
-                    showcase a user-friendly, appealing and easy-to-use web application, as well as working on data
-                    visualization techniques using a specific React library.</p>
+                <p style="text-align: justify"> Learn and consolidate my skills with the creation of React Native app
+                    during my full-stack web development training to develop a user-friendly, appealing and easy-to-use
+                    chatting mobile application, as well as working with Firestore (a NoSQL cloud-based database service
+                    offered by Google) to handle the chat app data.</p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <h5 style="text-align: center">Objective</h5>
-                <p style="text-align: justify"> Build a serverless, progressive web application (PWA) with React using
-                    Google OAuth / AWS Lambda for users authentication and Google Calendar API to fetch different
-                    events. The objective was also to develop this application under the Test Driven Development (TDD)
-                    and Behavior Driven Development (BDD) techniques. </p>
+                <p style="text-align: justify"> Build a chat app for mobile devices using React Native and Google
+                    Firebase features to implement a database, storage space and anonymous authentication process.
+                    Coding the app to ensure users can send images, location and audios on top of messages, access their
+                    messages when offline and allow them customize their experience.</p>
             </div>
             <div class="col-lg-8 col-md-12 col-sm-12 order-sm-6">
                 <h5 style="text-align: center">Tech summary</h5>
-                <p style="text-align: justify">Meet app is a progressive web app with the ability to work offline. Users
-                    can also access the app on their browser, or can download it on their desktop or mobile phone (just
-                    like regular apps). Meet app has a serverless backend handled and hosted on AWS Lambda. To use the
-                    app, users are required to enter their Google credentials since a OAuth2 authentication flow using
-                    Google OAuth has been implemented. Meet app design is also responsive to be optimal on any device
-                    types and the UI has a polished visual for the best user experience possible.
+                <p style="text-align: justify">Chat app is built with React Native. The application Expo Go and Android
+                    Studio have been used for the development. The chat interface have
+                    been created using the Gifted Chat library. All chat messages are stored in a Google Firestore
+                    Database and locally on users’ devices. Images and audios sent on Chat app are also stored in a
+                    Google Cloud Storage created on Firebase, and the app authenticates users anonymously via
+                    Firebase Authentication. The app also allows users to consult their messages offline by using
+                    client-side storage (AsyncStorage pack. from React Native).
                 </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-sm-6 text-center">
                 <h5 style="text-align: center">Tools used</h5>
                 <ul style="list-style: none; padding-left: 0; text-align: center">
-                    <li>React</li>
-                    <li>JavaScript, HTML & CSS</li>
-                    <li>AWS Lambda</li>
-                    <li>Google OAuth & Google API console</li>
-                    <li>Jest, Cucumber & Puppeteer</li>
-                    <li>Atatus</li>
-                    <li>Recharts</li>
+                    <li>React Native</li>
+                    <li>JavaScript</li>
+                    <li>Google Firestore database</li>
+                    <li>Google Firebase Cloud Storage</li>
+                    <li>Google Firebase Authentication</li>
+                    <li>Expo & Expo go</li>
+                    <li>Android Studio</li>
                 </ul>
             </div>
         </div>
-        <h5 class="text-center">See Meet app in action</h5>
-        <p class="text-center">Switch from computer view to mobile view inside the video box <br> <strong><span style="background-color: rgb(243, 190, 190)">Note: occasional screen interferences when the app scrolls fast through events in mobile view is due to the video recording, not the app itself.</span></strong></p>
+        <h5 class="text-center" id="app-in-action">See Chat app in action</h5>
+        <p class="text-center"><strong><span style="background-color: rgb(243, 190, 190)">Note: occasional screen
+                    slowness and delays are due to
+                    the video recording, not the app
+                    itself.</span></strong></p>
         <br>
         <div class="row project-videos">
             <div class="col text-center">
@@ -119,28 +123,12 @@
                         <div class="carousel-item active">
                             <div style="position: relative; padding-bottom: 56.25%; height: 0;">
                                 <iframe
-                                    src="https://www.loom.com/embed/298663132b8448cba2d2d90780a5e31e?sid=88a3904a-5aa7-49d6-aeda-86e6c64a2b31?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
-                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
-                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                                <iframe
-                                    src="https://www.loom.com/embed/f468c926e9f8430fbceee1d4a42e9740?sid=2536b260-e9c3-4362-ba20-57c7f1d6979e?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                                    src="https://www.loom.com/embed/abc?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
                                     frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
                                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev">
-                        <span class="visually-hidden carousel-words video-left-word">Back</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next">
-                        <span class="visually-hidden carousel-words video-right-word">Next</span>
-                    </button>
                 </div>
             </div>
             <div class="col text-center">
@@ -167,24 +155,23 @@
                     <tbody class="work-summary">
                         <tr>
                             <th scope="row">1</th>
-                            <td>Created all the structure / pages constituting Meet app using Create-React-App (CRA)
+                            <td>Set up up the development environment
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Wrote the user stories for the app’s each required feature, as well as the Gherkin-based
-                                scenarios, to structure and facilitate the app development process</td>
+                            <td>Created all the structure / files constituting Chat app using <i>npx create-expo-app
+                                    chat-app --template</i> at first, then building on this further</td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td>Implemented the authentication / authorization process for Meet app using Google OAuth and
-                                serverless functions hosted on AWS Lambda
+                            <td>Implemented navigation logic between screens / UIs
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
-                            <td>Wrote all unit, integration, acceptance and end-to-end tests under the Test-Driven
-                                Development (TDD) and the Behavior-Driven Development (BDD) techniques
+                            <td>Created the app layout / styling / different UI interaction points (input bars, buttons,
+                                alerts, etc.) so that users can interact easily with the app
                             </td>
                         </tr>
                         <tr>
@@ -195,56 +182,70 @@
                         </tr>
                         <tr>
                             <th scope="row">7</th>
-                            <td>Implemented different UI interaction points (input bars, buttons and alerts) so that
-                                users can interact easily with the app to adjust the content displayed and be informed
-                                dynamically when needed
+                            <td>Set up a Firestore database (NoSQL) to save / store the messages sent on Google Cloud
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">8</th>
-                            <td>Set up an APM tool for Meet app using Atatus
+                            <td>Implemented codes so that each message sent is being saved automatically in the
+                                Firestore database, and rendered in real-time in users chat UI
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">9</th>
-                            <td>Configured the app to make it a progressive web app (PWA)
+                            <td>Implemented the authentication process for Chat app using Google Firebase Authentication
+                                feature
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">10</th>
-                            <td>Implemented different visualization elements to display data other than simply by text
-                                (scatter plot and pie chart)</td>
+                            <td>Implemented client-side storage in Chat app to allow users to read their messages even
+                                when offline
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">11</th>
-                            <td>Designed the website with visuals and colors for a modern and pleasant style
+                            <td>Added additional features in the app to allow users to (1) send images from their phone
+                                image library, (2) take pictures with their phone camera and send it, (3) share their
+                                location and (4) send audio vocals
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">12</th>
-                            <td>Implemented responsiveness so that Meet app is easily usable on any type of devices
+                            <td>Set up a Google Cloud Storage space on Firebase to store images and audios sent via chat
+                                app
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">13</th>
-                            <td>Managed all interactions on Github (commits, pull requests, merging branches, etc.)
+                            <td>Adjusted some app elements to make them more accessible for users with screen readers
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">14</th>
-                            <td>Deployed the website on a hosting platform (Github Pages)
+                            <td>Ensured final code revision, refactoring and last testing
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">15</th>
+                            <td>Managed all interactions on Github (commits, pull requests, merging branches, etc.)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Deployed the website on a hosting platform (Github Pages)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
                             <td>Wrote the project description and technicalities in the README document prepared for
                                 anyone interested
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">16</th>
-                            <td>Built the complete Meet app project case study to highlight the project's key
-                                information, development process and final results to showcase the work a in more
+                            <th scope="row">18</th>
+                            <td>Built the complete Chat app project case study to highlight the project's key
+                                information, development process and final results to showcase the work in a more
                                 accessible way for both developers and non-developers (current page)
                             </td>
                         </tr>
@@ -266,11 +267,11 @@
             <div class="col text-center">
             </div>
             <div class="col-sm-8 col-12 development-information text-center">
-                <h3>Meet app development process</h3>
+                <h3>Chat app development process</h3>
                 <br>
                 <p style="text-align: justify">As for any projects, having a clear workflow is important to build a
                     product in a logical and methodological way, whether in a team or in a solo project. The following
-                    summarize how Meet app has been built, as well as the challenges faced and the solutions
+                    summarize how Chat app has been built, as well as the challenges faced and the solutions
                     found along the way.
                 </p>
             </div>
@@ -281,7 +282,7 @@
             <div class="col text-center">
             </div>
             <div class="col-8 text-center">
-                <embed src="./presentations/meetApp_Development_Process.pdf" type="application/pdf" width="100%"
+                <embed src="./presentations/ChatApp_Development_Process.pdf" type="application/pdf" width="100%"
                     height="500px" />
             </div>
             <div class="col text-center">
@@ -301,17 +302,20 @@
             <div class="col-sm-8 col-12 retrospective-information text-center">
                 <h3>Retrospective</h3>
                 <br>
-                <p style="text-align: justify">The original objective of this project was to build a serverless,
-                    progressive web application (PWA) with React using Google OAuth / AWS Lambda for users
-                    authentication and Google Calendar API to fetch different events, all of it under the Test Driven
-                    development (TDD) and Behavior Driven Development (BDD) techniques, which align with the final
-                    result.
+                <p style="text-align: justify">The original objective of this project was to create a mobile app
+                    allowing people to exchange messages, send images and audios and share location like other very
+                    common chat apps (WhatsApp, Messenger, etc.), which align with the final result.
                 </p>
-                <p style="text-align: justify">Being in my first steps with many topics covered in this project (OAuth,
-                    serverless functions, AWS Lambda, TDD, BDD, PWA and visualization libraries), the most challenging
-                    thing for me was to understand the working logic of all these new tools / concepts, especially
-                    regarding authentication flow with Google OAuth and AWS Lambda. I add to do a lot of extra reading,
-                    cross researches and real-life case study to better understand how it works.
+                <p style="text-align: justify">Being in my first steps with React Native and mobile app development, I
+                    had to do some in-depth research and learn more about some new things such as Expo Go, Android
+                    Studio and Firebase. However, these tools/platforms have very often rich and complete official
+                    documentation, which was very helpful.
+                </p>
+                <p style="text-align: justify">
+                    I also already had a good base working with React (which presents similarities with React Native),
+                    which still allowed me, despite the new tools, technologies and topics emerging from this project,
+                    to navigate into the development process with a good and solid understanding of some of its key
+                    features.
                 </p>
             </div>
             <div class="col text-center">
@@ -322,27 +326,16 @@
             </div>
             <div class="col-sm-8 col-12 retrospective-information text-center"
                 style="padding: 30px; border: solid black 2px">
-                <p style="margin-bottom: 0px; text-align: justify"><strong>While complex at first, I still enjoyed
-                        learning more about OAuth process and serverless functions, as we can see those types of logic
-                        being used in the real world by many other applications.</strong></p>
-                        <br>
-                <p style="margin-bottom: 0px; text-align: justify"><strong>I also enjoyed a lot learning about the
-                        different testing techniques (TDD and BDD) since they put forward a specific and practical
-                        development process that has many advantages, while ensuring that the codes written for an app
-                        different features always work along the way, step by step (and therefore allows me to quickly
-                        spot and correct any anomalies along the way as well).</strong></p>
-                        <br>
-                <p style="margin-bottom: 0px; text-align: justify"><strong>As for the PWA precisely, it was very
-                        interesting to learn how an app can be converted to be installable on a desktop or a mobile
-                        phone, as well as working offline. These two characteristics can greatly enhance
-                        user-experience, making PWAs very interesting in web development.</strong></p>
-                        <br>
-                <p style="margin-bottom: 0px; text-align: justify"><strong>Finally, regarding the visualization tools
-                        I’ve used at the end of this project, they are only a fraction of what is possible to represent
-                        visually with Recharts. The use of visuals from this library in this project therefore allowed
-                        me to understand quite well the functioning Recharts and opened the door to the possible use
-                        (for other projects for example) of other different forms of visual representations that could
-                        be extremely useful in many different contexts.
+                <p style="margin-bottom: 0px; text-align: justify"><strong>One of the things I liked the most in this
+                        project was learning more about the very useful features of Firebase, and being able to create a
+                        modern app behaving very similarly to other very popular chat apps. I really enjoyed learning
+                        more about React Native, because it is a technology that, when mastered well, opens up a lot of
+                        possibilities for mobile projects.
+                    </strong></p>
+                <br>
+                <p style="margin-bottom: 0px; text-align: justify"><strong>Coding this project with a clear workflow
+                        also helped me to acquire a good understanding of the many new things encountered along the way
+                        regarding React Native, both in theory and in practice.
                     </strong></p>
             </div>
             <div class="col text-center">
@@ -352,22 +345,10 @@
             <div class="col text-center">
             </div>
             <div class="col-sm-8 col-12 retrospective-information text-center">
-                <p style="text-align: justify">Fortunately, I already had a good base working with React (main
-                    technology used for Meet app), which still allows me, despite all the new tools, technologies and
-                    topics emerging from this project, to navigate into the development process with a good and solid
-                    understanding of some of its key features.
+                <p style="text-align: justify">In the end, my hope with this Chat app is to give a simple, pleasant and
+                    easy-to-use experience to any users who wish to connect, organize activities or share beautiful
+                    moments.
                 </p>
-                <p style="text-align: justify">Fortunately, I already had a good base working with React (main
-                    technology used for Meet app), which still allowed me, despite all the new tools, technologies and
-                    topics emerged from this project, to navigate into the development process with a good and solid
-                    understanding of some of its key features. Coding this project with a clear workflow also helped me
-                    to acquire a good understanding of the many new things encountered along the way both in theory and
-                    in practice.
-                </p>
-                <p style="text-align: justify">In the end, my hope with this web app was that any user using it has a
-                    simple, pleasant and easy-to-use experience to help them in their quest to find the next coding
-                    event they would like to attend, whether the event being on React, jQuery, or Node.js, and whether
-                    the event being in Dubai, Toronto or Tokyo.</p>
             </div>
             <div class="col text-center">
             </div>

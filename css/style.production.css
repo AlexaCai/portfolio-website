@@ -101,7 +101,7 @@
 
 @media (min-width: 992px) {
     #web-dev-services {
-        width: 380px;
+        width: 360px;
     }
 }
 
@@ -326,6 +326,10 @@
         padding-right: 40px;
         font-size: 14px;
     }
+}
+
+.indented-list {
+    margin-left: -22px
 }
 
 .projects-header {

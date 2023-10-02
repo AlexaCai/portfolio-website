@@ -59,14 +59,14 @@
 }
 
 .background-color {
-    background-color: #d3d3d387;
+    background-color: #7d7d7d29;
 }
 
 .image-background {
     position: relative;
-    background-image: url('../img/vertical-cloud3.png');
+    background-image: url('../img/background2.png');
     background-size: 100% auto;
-    animation: mirrorEffect 500s linear infinite alternate;
+    animation: mirrorEffect 1500s linear infinite alternate;
 }
 
 /* Logic for background image animation (automatically going down) */
@@ -80,27 +80,32 @@
     }
 }
 
-@media (min-width: 400px) and (max-width: 750px) {
+@media (min-width: 600px) and (max-width: 750px) {
     .image-background {
-        animation-duration: 800s;
+        animation-duration: 2400s;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 599px) {
+    .image-background {
+        animation-duration: 4000s;
     }
 }
 
 @media (min-width: 250px) and (max-width: 449px) {
     .image-background {
-        animation-duration: 1000s;
+        animation-duration: 5000s;
     }
 }
-
-
 
 #web-dev-services {
     padding: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 2px solid rgb(0, 0, 0);
-    background-color: rgba(255, 253, 253, 0.7);
-    color: rgb(0, 0, 0);
+    background-color: rgba(29, 29, 29, 0.7);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
 }
 
 @media (min-width: 992px) {
@@ -136,6 +141,7 @@
     list-style: none;
     padding: 0;
     margin: 0px;
+    font-weight: 600;
 }
 
 @media (max-width: 767px) {
@@ -240,6 +246,25 @@
     text-align: center;
 }
 
+.about-me-links {
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-me-links a {
+    color: black; 
+    text-decoration: underline; 
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+.about-me-links a {
+    font-size: 13px;
+}
+}
+
 .about-information {
     margin-top: 70px;
     text-align: center;
@@ -332,7 +357,15 @@
     }
 }
 
-.indented-list {
+.accordion-button-background {
+    background-color: rgba(146, 146, 146, 0.2);
+}
+
+.accordion-costum-background {
+    background-color: rgba(227, 227, 227, 0.2);
+}
+
+.accordion-indented-list {
     margin-left: -22px
 }
 
@@ -418,6 +451,10 @@
     background-color: rgba(255, 253, 253, 0.7);
 }
 
+.individual-testimonials-text {
+padding-bottom: 50px;
+}
+
 @media (max-width: 500px) {
     .testimonials-information {
         margin-top: 50px;
@@ -466,6 +503,9 @@
     padding-right: 20px;
     padding-left: 20px;
     background-color: #6aa84fff;
+    border-top: black 2px solid;
+    border-left: black 2px solid;
+    border-right: black 2px solid;
     position: relative;
 }
 
@@ -485,7 +525,10 @@
     padding-bottom: 70px;
     padding-right: 20px;
     padding-left: 20px;
-    background-color: #6aa84fff
+    background-color: #6aa84fff;
+    border-bottom: black 2px solid;
+    border-left: black 2px solid;
+    border-right: black 2px solid;
 }
 
 .project-brief {

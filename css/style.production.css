@@ -168,6 +168,7 @@
 
 .profile-image {
     height: auto;
+    border:rgb(0, 0, 0) 1px solid
 }
 
 @media (max-width: 400px) {

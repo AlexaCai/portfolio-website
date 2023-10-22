@@ -168,7 +168,7 @@
 
 .profile-image {
     height: auto;
-    border:rgb(0, 0, 0) 1px solid
+    border: rgb(0, 0, 0) 1px solid
 }
 
 @media (max-width: 400px) {
@@ -254,16 +254,16 @@
 }
 
 .about-me-links a {
-    color: black; 
-    text-decoration: underline; 
+    color: black;
+    text-decoration: underline;
     font-weight: 600;
     text-align: center;
 }
 
 @media (max-width: 400px) {
-.about-me-links a {
-    font-size: 13px;
-}
+    .about-me-links a {
+        font-size: 13px;
+    }
 }
 
 .about-information {
@@ -453,7 +453,7 @@
 }
 
 .individual-testimonials-text {
-padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 500px) {

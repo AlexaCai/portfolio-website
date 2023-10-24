@@ -59,7 +59,7 @@
 }
 
 .background-color {
-    background-color: #7d7d7d29;
+    background-color: #d3d3d329;
 }
 
 .image-background {
@@ -247,115 +247,46 @@
     text-align: center;
 }
 
+#about-section {
+    background-color: rgba(147, 196, 125, 100);
+}
+
+.about-me-section {
+    margin-top: 60px
+}
+
+.accordions-arrow {
+  width: 20px;
+  height: 20px
+}
+
+@media (max-width: 430px) {
+    .accordions-arrow {
+      display: block; 
+      margin: 0 auto; 
+    }
+  }
+
+@media (max-width: 430px) {
+    .sub-accordions {
+        text-align: center;
+    }
+}
+
 .about-me-links {
     text-align: center;
     font-weight: 600;
-    text-align: center;
-}
-
-.about-me-links a {
-    color: black;
-    text-decoration: underline;
-    font-weight: 600;
-    text-align: center;
 }
 
 @media (max-width: 400px) {
-    .about-me-links a {
+    .about-me-links {
         font-size: 13px;
     }
-}
-
-.about-information {
-    margin-top: 70px;
-    text-align: center;
-}
-
-@media (max-width: 579px) {
-    .about-information {
-        margin-top: 0px;
-    }
-}
-
-@media (min-width: 475px) and (max-width: 579px) {
-    .about-information .col {
-        width: 100%;
-        flex: none;
-        padding-left: 80px;
-        padding-right: 80px;
-        padding-top: 30px;
-        text-align: justify;
-    }
-}
-
-@media (max-width: 474px) {
-    .about-information .col {
-        width: 100%;
-        flex: none;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 30px;
-        text-align: justify;
-    }
-}
-
-.question-column {
-    flex: 1;
-    padding-left: 180px;
-    text-align: left;
 }
 
 .text-container {
     background-color: rgba(255, 253, 253, 0.7);
     padding: 5px;
-}
-
-@media (min-width: 910px) and (max-width: 1200px) {
-    .question-column {
-        padding-left: 100px;
-    }
-}
-
-@media (min-width: 701px) and (max-width: 900px) {
-    .question-column {
-        padding-left: 60px;
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 580px) and (max-width: 700px) {
-    .question-column {
-        padding-left: 60px;
-        font-size: 14px;
-    }
-}
-
-.answer-column {
-    flex: 2;
-    padding-top: 60px;
-    padding-left: 120px;
-    padding-right: 100px;
-    text-align: justify;
-}
-
-@media (min-width: 701px) and (max-width: 900px) {
-    .answer-column {
-        flex: 2;
-        padding-top: 100px;
-        padding-left: 50px;
-        padding-right: 50px;
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 580px) and (max-width: 700px) {
-    .answer-column {
-        flex: 2;
-        padding-top: 50px;
-        padding-left: 50px;
-        padding-right: 40px;
-        font-size: 14px;
-    }
 }
 
 .accordion-button-background {
@@ -364,6 +295,7 @@
 
 .accordion-costum-background {
     background-color: rgba(227, 227, 227, 0.2);
+    font-weight: 400;
 }
 
 .accordion-indented-list {
@@ -372,6 +304,10 @@
 
 .projects-header {
     margin-top: 70px;
+}
+
+#projects-section {
+    background-color: rgba(147, 196, 125, 100);
 }
 
 .section-header-central-column {
@@ -390,31 +326,28 @@
 }
 
 .back-to-top1 {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .back-to-top-projects {
-    margin-top: 50px;
     padding-bottom: 70px;
     border-bottom: 2px solid black;
 }
 
 .back-to-top2 {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .back-to-top-testimonials {
-    margin-top: 50px;
     padding-bottom: 70px;
     border-bottom: 2px solid black;
 }
 
 .back-to-top3 {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .back-to-top-contact {
-    margin-top: 50px;
     padding-bottom: 70px;
     border-bottom: 2px solid black;
 }
@@ -441,6 +374,10 @@
 
 .testimonials-header {
     margin-top: 70px;
+}
+
+#testimonials-section {
+    background-color: rgba(147, 196, 125, 100);
 }
 
 .testimonials-information {
@@ -480,8 +417,12 @@
     margin-top: 70px;
 }
 
+#contact-section {
+    background-color: rgba(147, 196, 125, 100);
+}
+
 .contact-information {
-    margin-top: 70px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -503,7 +444,7 @@
     padding-top: 70px;
     padding-right: 20px;
     padding-left: 20px;
-    background-color: #6aa84fff;
+    background-color: rgba(147, 196, 125, 100);
     border-top: black 2px solid;
     border-left: black 2px solid;
     border-right: black 2px solid;
@@ -526,7 +467,7 @@
     padding-bottom: 70px;
     padding-right: 20px;
     padding-left: 20px;
-    background-color: #6aa84fff;
+    background-color: rgba(147, 196, 125, 100);
     border-bottom: black 2px solid;
     border-left: black 2px solid;
     border-right: black 2px solid;

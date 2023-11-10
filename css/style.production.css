@@ -249,6 +249,19 @@
 
 #about-section {
     background-color: rgba(147, 196, 125, 100);
+    border-radius: 10px
+}
+
+@media (max-width: 330px) {
+    #about-section {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 280px) {
+    #about-section{
+        font-size: 31px;
+    }
 }
 
 .about-me-section {
@@ -308,6 +321,19 @@
 
 #projects-section {
     background-color: rgba(147, 196, 125, 100);
+    border-radius: 10px
+}
+
+@media (max-width: 330px) {
+    #projects-section {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 280px) {
+    #projects-section {
+        font-size: 31px;
+    }
 }
 
 .section-header-central-column {
@@ -378,6 +404,19 @@
 
 #testimonials-section {
     background-color: rgba(147, 196, 125, 100);
+    border-radius: 10px
+}
+
+@media (max-width: 330px) {
+    #testimonials-section {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 280px) {
+    #testimonials-section {
+        font-size: 31px;
+    }
 }
 
 .testimonials-information {
@@ -419,6 +458,19 @@
 
 #contact-section {
     background-color: rgba(147, 196, 125, 100);
+    border-radius: 10px
+}
+
+@media (max-width: 330px) {
+    #contact-section {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 280px) {
+    #contact-section {
+        font-size: 31px;
+    }
 }
 
 .contact-information {

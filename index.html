@@ -14,14 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
     <title>Home</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon-logo.png" type="image/x-icon">
 </head>
 
 <body class="website-background">
-    <header id="topsection">
+    <header id="topsection" class="header-bottom-margin">
         <nav class="navbar navbar-expand-md navbar-light justify-content-end">
             <div class="logo-container">
-                <img src="img/logo3.png" alt="ac-logo" class="logo-image">
+                <img src="img/large-logo.png" alt="ac-logo" class="logo-image">
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -50,9 +50,9 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-xl-8 col-lg-8 intro-section-left-text flex-md-column order-sm-1 order-1">
-                    <h2 class="landing-catch-sentences">It's <span style="font-weight: bold;">time</span><span style="color: green;">.</span></h2>
-                    <h2 class="landing-catch-sentences">Let's <span style="font-weight: bold;">build</span><span style="color: green;">.</span></h2>
-                    <h2 class="landing-catch-sentences">Let's <span style="font-weight: bold;">create</span><span style="color: green;">.</span></h2>
+                    <h2 class="landing-catch-sentences">It's <span style="font-weight: bold; background-color: rgba(147, 196, 125, 0.5)">time.</span></h2>
+                    <h2 class="landing-catch-sentences">Let's <span style="font-weight: bold; background-color: rgba(147, 196, 125, 0.5)">build.</span></h2>
+                    <h2 class="landing-catch-sentences">Let's <span style="font-weight: bold; background-color: rgba(147, 196, 125, 0.5)">create.</span></h2>
                     <h6 id="web-dev-services-small-screen">Full-stack web development services</h6>
                 </div>
                 <div
@@ -66,7 +66,7 @@
             <p class="short-presentation-text">Hi, my name is Alexandre, and I am a passionate <span
                     style="text-decoration: underline">full-stack web developer</span> located in
                 Montreal, Quebec, Canada. I have 3 years of experience working with data and technologies, and about 1
-                year working on web development projects more specifically. <br></p>
+                year working on web development projects more specifically. View my projects down the page and/or contact me for any questions or project proposals.</p>
         </div>
         <br>
         <br>
@@ -90,28 +90,27 @@
             <button type="button" class="btn btn-dark" id="contact-button">Contact me</button>
         </div>
         <br>
-        <div style="text-align: center">
-
+        <div class="text-center intro-section-contact-info">
             <p>Email: <a href="mailto:acailhier@gmail.com"><strong>acailhier@gmail.com</strong></a></p>
             <p>Montreal, Quebec, Canada</p>
         </div>
     </header>
-    <main class="profile">
+    <main>
         <div>
-            <div class="row about-header">
+            <div class="row">
                 <div class="col">
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 about-header-central-column">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 about-section-title-margin-top">
                     <h1 id="about-section">About me</h1>
                 </div>
                 <div class="col">
                 </div>
             </div>
-            <div class="row about-me-section">
+            <div class="row about-me-accordion">
                 <div class="col-1">
                 </div>
                 <div class="col-10">
-                    <div class="about-me-links">
+                    <div class="about-me-accordion-links">
                         <div class="accordion">
                             <div class="card">
                                 <div class="card-header accordion-button-background">
@@ -119,7 +118,7 @@
                                         <button class="btn btn-link about-me-accordion-links" type="button"
                                             data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
-                                            <span class="text-dark">
+                                            <span>
                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                     class="accordions-arrow">
                                                 Training and professional background
@@ -172,7 +171,7 @@
                                         <button class="btn btn-link about-me-accordion-links" type="button"
                                             data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                                             aria-controls="collapseTwo">
-                                            <span class="text-dark">
+                                            <span>
                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                     class="accordions-arrow">
                                                 Transition to web development
@@ -210,7 +209,7 @@
                                         <button class="btn btn-link about-me-accordion-links" type="button"
                                             data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
                                             aria-controls="collapseThree">
-                                            <span class="text-dark">
+                                            <span>
                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                     class="accordions-arrow">
                                                 Transferable skills from past work experiences
@@ -236,7 +235,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseThree-one" aria-expanded="true"
                                                             aria-controls="collapseThree-one">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 Geodata and data processing
@@ -287,7 +286,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseThree-two" aria-expanded="true"
                                                             aria-controls="collapseThree-two">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 Data governance
@@ -368,7 +367,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseThree-three" aria-expanded="true"
                                                             aria-controls="collapseThree-three">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 Project management
@@ -409,7 +408,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseThree-four" aria-expanded="true"
                                                             aria-controls="collapseThree-four">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 Stakeholders relations
@@ -449,7 +448,7 @@
                                         <button class="btn btn-link about-me-accordion-links" type="button"
                                             data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
                                             aria-controls="collapseFour">
-                                            <span class="text-dark">
+                                            <span>
                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                     class="accordions-arrow">
                                                 Web development skills and known
@@ -476,7 +475,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseFour-one" aria-expanded="true"
                                                             aria-controls="collapseFour-one">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 Frontend
@@ -515,7 +514,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseFour-two" aria-expanded="true"
                                                             aria-controls="collapseFour-two">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 Backend
@@ -553,7 +552,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseFour-three" aria-expanded="true"
                                                             aria-controls="collapseFour-three">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 Softwares, platforms and tools
@@ -603,7 +602,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseFour-four" aria-expanded="true"
                                                             aria-controls="collapseFour-four">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 Techniques & methodologies
@@ -640,7 +639,7 @@
                                         <button class="btn btn-link about-me-accordion-links" type="button"
                                             data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                                             aria-controls="collapseFive">
-                                            <span class="text-dark">
+                                            <span>
                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                     class="accordions-arrow">
                                                 Particular interests in web development
@@ -703,7 +702,7 @@
                                         <button class="btn btn-link about-me-accordion-links" type="button"
                                             data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
                                             aria-controls="collapseSix">
-                                            <span class="text-dark">
+                                            <span>
                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                     class="accordions-arrow">
                                                 Current goals
@@ -724,10 +723,10 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseSix-one" aria-expanded="true"
                                                             aria-controls="collapseSix-one">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
-                                                                1 - Land a web developer job
+                                                                1 - Working full-time as a web developer
                                                             </span>
                                                         </button>
                                                     </h2>
@@ -755,7 +754,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseSix-two" aria-expanded="true"
                                                             aria-controls="collapseSix-two">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 2 - Continue to improve my coding
@@ -787,7 +786,7 @@
                                                             type="button" data-toggle="collapse"
                                                             data-target="#collapseSix-three" aria-expanded="true"
                                                             aria-controls="collapseSix-three">
-                                                            <span class="text-dark sub-accordions">
+                                                            <span class="sub-accordions">
                                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                                     class="accordions-arrow">
                                                                 3 - Accept proposals for projects to be developped on
@@ -843,7 +842,7 @@
                                         <button class="btn btn-link about-me-accordion-links" type="button"
                                             data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true"
                                             aria-controls="collapseSeven">
-                                            <span class="text-dark">
+                                            <span>
                                                 <img src="./img/accordion-arrow.png" alt="down-arrow"
                                                     class="accordions-arrow">
                                                 Me on a more personal touch
@@ -899,7 +898,7 @@
             <div class="row back-to-top1">
                 <div class="col">
                 </div>
-                <div class="col-6 d-flex justify-content-center back-to-top-projects">
+                <div class="col-6 d-flex justify-content-center back-to-top-margin">
                     <a href="#topsection" class="back-to-top-link">Back to top</a>
                 </div>
                 <div class="col">
@@ -910,7 +909,7 @@
                 <div class="col">
                 </div>
                 <div
-                    class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 section-header-central-column-projects text-center">
+                    class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 text-center">
                     <h1 id="projects-section">Projects</h1>
                 </div>
                 <div class="col">
@@ -919,44 +918,47 @@
 
             <div class="row projects-information">
                 <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                    class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/chatApp.html" target="_blank"> <img
-                                src="img/project-cards-logo/react-native-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/react-native-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
+                    <div class="project-cards-body-text">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="projects/chatApp.html" target="_blank">Chat mobile app
-                                </a></h5>
+                            <h5 class="card-title"><a href="projects/chatApp.html" target="_blank"><strong>Chat mobile app
+                            </strong></a></h5>
                             <p class="card-text">A React Native mobile Chat app allowing users to talk, take photos, share pictures, location and vocals
                             </p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> React Native, JavaScript,
+                            <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main technologies:</span> React Native, JavaScript,
                                 Google Firebase Suite, Expo, Expo Go, Android Studio</li>
                         </ul>
                         <div class="card-body">
-                            <a href="https://github.com/AlexaCai/chat-app" target="_blank" class="card-link">See on
-                                Github</a>
-                            <a href="projects/chatApp.html#app-in-action" target="_blank" class="card-link">See
-                                live</a>
+                            <a href="https://github.com/AlexaCai/chat-app" target="_blank" class="card-link"><strong>See on
+                                Github</strong></a>
+                            <a href="projects/chatApp.html#app-in-action" target="_blank" class="card-link"><strong>See
+                                live</strong></a>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                    class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/meetApp.html" target="_blank"> <img
-                                src="img/project-cards-logo/pwa-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/pwa-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
+                    <div class="project-cards-body-text">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="projects/meetApp.html" target="_blank">Meet web app
-                                </a></h5>
+                            <h5 class="card-title"><a href="projects/meetApp.html" target="_blank"><strong>Meet web app
+                            </strong></a></h5>
                             <p class="card-text">A serverless and progressive web application to locate coding events
                                 all
                                 around the world</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> React, JavaScript, CSS, AWS
+                            <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main technologies:</span> React, JavaScript, CSS, AWS
                                 Lambda, Google
                                 OAuth, Jest, Cucumber, Puppeteer, Atatus, Recharts
                             </li>
@@ -968,23 +970,25 @@
                                 live</a>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                    class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/myFlixFrontendAngular.html" target="_blank"> <img
-                                src="img/project-cards-logo/angular-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/angular-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
+                    <div class="project-cards-body-text">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="projects/myFlixFrontendAngular.html" target="_blank">myFlix
+                            <h5 class="card-title"><a href="projects/myFlixFrontendAngular.html" target="_blank"><strong>myFlix
                                     web app
-                                    (front. - Angular)</a></h5>
+                                    (front. - Angular)</strong></a></h5>
                             <p class="card-text">A responsive single-page movie web app with routing and several
                                 interface
                                 views for a polished user experience</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> Angular, Angular Material,
+                            <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main technologies:</span> Angular, Angular Material,
                                 TypeScript,
                                 HTML, SCSS, <br> TypeDoc
                             </li>
@@ -998,23 +1002,25 @@
                                 live</a>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                    class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/myFlixFrontendReact.html" target="_blank"> <img
-                                src="img/project-cards-logo/react-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/react-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
+                    <div class="project-cards-body-text">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="projects/myFlixFrontendReact.html" target="_blank">myFlix
+                            <h5 class="card-title"><a href="projects/myFlixFrontendReact.html" target="_blank"><strong>myFlix
                                     web app
-                                    (front. - React)</a></h5>
+                                    (front. - React)</strong></a></h5>
                             <p class="card-text">A responsive single-page movie web app with routing and several
                                 interface
                                 views for a polished user experience</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> React,
+                            <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main technologies:</span> React,
                                 React Bootstrap, Javascript, HTML, CSS
                             </li>
                         </ul>
@@ -1026,22 +1032,24 @@
                                 live</a>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                    class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/myFlixBackend.html" target="_blank"> <img
-                                src="img/project-cards-logo/node-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/node-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
+                    <div class="project-cards-body-text">
                         <div class="card-body">
-                            <h5 class="card-title"> <a href="projects/myFlixBackend.html">myFlix web app (backend)</a>
+                            <h5 class="card-title"> <a href="projects/myFlixBackend.html"><strong>myFlix web app (backend)</strong></a>
                             </h5>
                             <p class="card-text">A well-designed REST API built for a movie web app that interacts with
                                 a
                                 non-relational database</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> Node.js, Express,
+                            <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main technologies:</span> Node.js, Express,
                                 PostgreSQL, MongoDB,
                                 Postman,
                                 Heroku</li>
@@ -1054,20 +1062,22 @@
                                 live</a>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                    class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/pokedex.html" target="_blank"> <img
-                                src="img/project-cards-logo/javascript-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/javascript-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
+                    <div class="project-cards-body-text">
                         <div class="card-body">
-                            <h5 class="card-title"> <a href="projects/pokedex.html">Pokedex web app</a></h5>
+                            <h5 class="card-title"> <a href="projects/pokedex.html"><strong>Pokedex web app</strong></a></h5>
                             <p class="card-text">A Pokedex fetching data from an external API to enable the viewing of
                                 Pokemon data points in detail</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> JavaScript, jQuery,
+                            <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main technologies:</span> JavaScript, jQuery,
                                 Bootstrap, HTML, CSS</li>
                         </ul>
                         <div class="card-body">
@@ -1077,19 +1087,21 @@
                                 live</a>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                    class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/toDoListApp.html" target="_blank"> <img
-                                src="img/project-cards-logo/jQuery-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/jQuery-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
+                    <div class="project-cards-body-text">
                         <div class="card-body">
-                            <h5 class="card-title"> <a href="projects/toDoListApp.html">To-Do-List web app</a></h5>
+                            <h5 class="card-title"> <a href="projects/toDoListApp.html"><strong>To-Do-List web app</strong></a></h5>
                             <p class="card-text">A To-Do-List web app that allows users to note and manage reminders</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> jQuery, HTML, <br> CSS</li>
+                            <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main technologies:</span> jQuery, HTML, <br> CSS</li>
                         </ul>
                         <div class="card-body">
                             <a href="https://github.com/AlexaCai/to-do-list-app" target="_blank" class="card-link">See
@@ -1099,21 +1111,23 @@
                                 class="card-link">See live</a>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                    class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/professionalWebsite.html" target="_blank"> <img
-                                src="img/project-cards-logo/html-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/html-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
+                    <div class="project-cards-body-text">
                         <div class="card-body">
                             <h5 class="card-title"> <a href="projects/professionalWebsite.html"
-                                    target="_blank">Professional website creation</a></h5>
+                                    target="_blank"><strong>Professional website creation</strong></a></h5>
                             <p class="card-text">A clear and modern website to present professional services
                                 (current website)</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> HTML, CSS, JavaScript,
+                            <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main technologies:</span> HTML, CSS, JavaScript,
                                 Bootstrap</li>
                         </ul>
                         <div class="card-body">
@@ -1123,13 +1137,14 @@
                                 Github</a>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
 
             <div class="row back-to-top2">
                 <div class="col">
                 </div>
-                <div class="col-6 d-flex justify-content-center back-to-top-testimonials">
+                <div class="col-6 d-flex justify-content-center back-to-top-margin">
                     <a href="#topsection" class="back-to-top-link">Back to top</a>
                 </div>
                 <div class="col">
@@ -1140,7 +1155,7 @@
                 <div class="col">
                 </div>
                 <div
-                    class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-9 section-header-central-column-testimmonials text-center">
+                    class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-9 text-center">
                     <h1 id="testimonials-section">Testimonials</h1>
                 </div>
                 <div class="col">
@@ -1165,12 +1180,12 @@
                             surely be a pleasant, and will ensure that you get a close attention to the details and the
                             project planning.</i></p>
                     <br>
-                    <p><b>-Jessica Leblanc, Ph.D. candidate<br> Lawyer & project manager at TIESS</b>
+                    <p class="testimonial-text-author"><b>-Jessica Leblanc, Ph.D. candidate<br> Lawyer & project manager at TIESS</b>
                     </p>
                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
                     </div>
                 </div>
-                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 individual-testimonials-text">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
                 </div>
             </div>
             <div class="row testimonial-row-centering" style="text-align: justify">
@@ -1180,7 +1195,7 @@
                     <div class="testimonials-information individual-testimonials-text testimonials-cards-margin">
                         <p><i>I had the pleasure of working with Alexandre during his time at Open North. I know Alex to be a dedicated and passionate individual who works well within a team environment as well as having the ability to complete tasks and make decisions individually. Alex is values-driven and keeps the needs of the clients or beneficiaries at the center of his work. I would recommend hiring or collaborating with Alex without reservation.</i></p>
                         <br>
-                        <p><b>-Merlin Chatwin, Ph. D.<br>Executive director at Open North</b>
+                        <p class="testimonial-text-author"><b>-Merlin Chatwin, Ph. D.<br>Executive director at Open North</b>
                         </p>
                     </div>
                 </div>
@@ -1189,7 +1204,7 @@
                     <div class="testimonials-information individual-testimonials-text testimonials-cards-margin">
                         <p><i>Having worked with Alexandre for over a year on Montréal en commun, the City of Montreal's smart city project, I can attest his diligence and the quality of his work. Alexandre has been able to take the lead in completing deliverables on social utility trusts applied to data. It would be a pleasure to collaborate with him again in the future.</i></p>
                         <br>
-                        <p><b>-Marie Plamondon <br> Program Coordinator at Challenge Works</b>
+                        <p class="testimonial-text-author"><b>-Marie Plamondon <br> Program Coordinator at Challenge Works</b>
                         </p>
                     </div>
                 </div>
@@ -1204,7 +1219,7 @@
                     <div class="testimonials-information individual-testimonials-text testimonials-cards-margin">
                         <p><i>It was a real pleasure working with Alexandre on a project aiming at creating a municipal decision support tool guided by data and a GIS, in collaboration with public sector actors & professionals. He is competent, professional, creative, dependable, curious, hard working and a good listener. He delivers on time and is a great team player.</i></p>
                         <br>
-                        <p><b>-Irène Abi-Zeid, Ph. D.<br>Full Profressor at Université Laval (UL)</b>
+                        <p class="testimonial-text-author"><b>-Irène Abi-Zeid, Ph. D.<br>Full Profressor at Université Laval (UL)</b>
                         </p>
                     </div>
                 </div>
@@ -1214,7 +1229,7 @@
                         <p><i>Working with Alexandre is always a pleasure. We've had several opportunities to work together, and his professionalism shines through every time. Alexandre is human, empathetic and sociable, and a pleasure to work with. His work is always done with care and detail, on time and to a high standard. He goes beyond expectations to meet needs and find solutions to complex problems. I would work with him again without hesitation.
                         </i></p>
                         <br>
-                        <p><b>-Isabelle Rancourt<br>Community Development Consultant at Walling Consulting</b>
+                        <p class="testimonial-text-author"><b>-Isabelle Rancourt<br>Community Development Consultant at Walling Consulting</b>
                         </p>
                     </div>
                 </div>
@@ -1226,7 +1241,7 @@
             <div class="row back-to-top3">
                 <div class="col">
                 </div>
-                <div class="col-6 d-flex justify-content-center back-to-top-contact">
+                <div class="col-6 d-flex justify-content-center back-to-top-margin">
                     <a href="#topsection" class="back-to-top-link">Back to top</a>
                 </div>
                 <div class="col">

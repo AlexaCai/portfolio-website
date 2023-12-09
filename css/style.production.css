@@ -1,75 +1,12 @@
-.page-header {
-    padding-bottom: 70px;
-}
+/* CSS for the main page and projects pages header and navigation bar */
 
-.logo-container {
-    position: absolute;
-    left: 15px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    margin-left: 50px;
-}
-
-@media (max-width: 900px) {
-    .logo-image {
-        margin-left: 0px;
-    }
-}
-
-@media (max-width: 325px) {
-    .logo-image {
-        height: 80%;
-    }
-}
-
-@media (max-width: 325px) {
-    .logo-image {
-        height: 70%;
-    }
-}
-
-@media (max-width: 325px) {
-    .navbar-nav {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 280px) {
-    .navbar-nav {
-        font-size: 12px;
-    }
-}
-
-.navbar {
-    padding: 30px;
-    padding-bottom: 70px;
-}
-
-.navbar-nav li.nav-item {
-    margin-left: auto;
-    padding-right: 8px;
-    font-weight: bold;
-}
-
-.background-color {
-    background-color: #d3d3d329;
-}
-
-.image-background {
+.website-background {
     position: relative;
     background-image: url('../img/background2.png');
     background-size: 100% auto;
     animation: mirrorEffect 1500s linear infinite alternate;
 }
 
-/* Logic for background image animation (automatically going down) */
 @keyframes mirrorEffect {
     0% {
         background-position: top center;
@@ -81,20 +18,93 @@
 }
 
 @media (min-width: 600px) and (max-width: 750px) {
-    .image-background {
+    .website-background {
         animation-duration: 2400s;
     }
 }
 
 @media (min-width: 450px) and (max-width: 599px) {
-    .image-background {
+    .website-background {
         animation-duration: 4000s;
     }
 }
 
 @media (min-width: 250px) and (max-width: 449px) {
-    .image-background {
+    .website-background {
         animation-duration: 5000s;
+    }
+}
+
+.logo-container {
+    position: absolute;
+    left: 15px;
+    height: 50px;
+}
+
+.logo-image {
+    height: 100%;
+    margin-left: 40px;
+}
+
+@media (max-width: 600px) {
+    .logo-image {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 325px) {
+    .logo-image {
+        height: 90%;
+    }
+}
+
+@media (max-width: 300px) {
+    .logo-image {
+        height: 70%;
+        margin-top: 10px;
+    }
+}
+
+.navbar {
+    padding: 30px;
+    padding-bottom: 70px;
+}
+
+@media (max-width: 325px) {
+    .navbar-nav {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 300px) {
+    .navbar-nav {
+        font-size: 13px;
+    }
+}
+
+.navbar-nav li.nav-item {
+    margin-left: auto;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+/* CSS for the main page */
+
+.intro-section-left-text {
+    text-align: left;
+    margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+    .intro-section-left-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .intro-section-left-text {
+        padding-right: 25px;
+        padding-left: 25px;
     }
 }
 
@@ -103,94 +113,52 @@
     font-size: 85px;
   }
 
-  @media (max-width: 1999px) {
+@media (max-width: 1199px) {
     .landing-catch-sentences {
-        font-size: 85px;
+        font-size: 75px;
       }
 }
 
-#web-dev-services-large-screen {
-    padding: 10px;
-    margin-bottom: 80px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    border-radius: 10px;
-    font-size: 25px;
-    width: 500px;
+@media (max-width: 500px) {
+    .landing-catch-sentences {
+        font-size: 65px;
+      }
 }
 
-@media (max-width: 991px) {
-    #web-dev-services-large-screen {
-        display: none;
+@media (max-width: 450px) {
+    .landing-catch-sentences {
+        font-size: 55px;
+      }
+}
+
+@media (max-width: 400px) {
+    .landing-catch-sentences {
+        font-size: 45px;
+      }
+}
+
+@media (max-width: 325px) {
+    .landing-catch-sentences {
+        font-size: 40px;
+      }
+}
+
+@media (max-width: 295px) {
+    .landing-catch-sentences {
+        font-size: 35px;
+      }
+}
+
+@media (max-width: 1500px) {
+    .intro-section-right-image {
+        margin-top: 20px;
     }
 }
 
-#web-dev-services {
-    padding: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    border-radius: 10px;
-}
-
-@media (min-width: 992px) {
-    #web-dev-services {
-        display: none;
+@media (max-width: 1199px) {
+    .intro-section-right-image {
+        margin-top: 40px;
     }
-}
-
-@media (max-width: 991px) {
-    #web-dev-services {
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
-}
-
-.home-left-text {
-    text-align: left;
-    margin-top: 20px;
-}
-
-@media (max-width: 1999px) {
-    .home-left-text {
-        margin-top: 45px;
-    }
-}
-
-@media (max-width: 991px) {
-    .home-left-text {
-        text-align: center;
-        border-left: none;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-}
-
-.home-list-items {
-    text-align: left;
-    list-style: none;
-    padding: 0;
-    margin: 0px;
-    font-weight: 600;
-}
-
-@media (max-width: 767px) {
-    .home-list-items {
-        text-align: center;
-        list-style: none;
-        padding: 0;
-        margin-bottom: 40px;
-    }
-}
-
-.home-right-image {
-    margin-top: 20px;
 }
 
 @media (max-width: 767px) {
@@ -213,14 +181,46 @@
     }
 }
 
-@media (max-width: 400px) {
-    .project-title {
-        font-size: 24px;
+#web-dev-services-large-screen {
+    padding: 15px;
+    margin-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 22px;
+    width: 500px;
+}
+
+@media (max-width: 991px) {
+    #web-dev-services-large-screen {
+        display: none;
+    }
+}
+
+#web-dev-services-small-screen {
+    padding: 15px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+@media (min-width: 992px) {
+    #web-dev-services-small-screen {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    #web-dev-services-small-screen {
+        font-size: 17px;
     }
 }
 
 .home-presentation-text {
-    margin-top: 8vw;
+    margin-top: 10vw;
     margin-left: 12vw;
     margin-right: 12vw;
     margin-bottom: 30px;
@@ -237,6 +237,12 @@
         text-align: center;
         font-size: 16px;
     }
+}
+
+.short-presentation-text {
+    font-family: 'Cardo', sans-serif;
+    font-weight: bold;
+
 }
 
 .social-icons-container {
@@ -263,19 +269,7 @@
     margin-top: 30px;
 }
 
-.body-image-background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: inherit;
-    background-size: inherit;
-    background-repeat: inherit;
-    background-position: inherit;
-    transform: scaleY(-1);
-}
+
 
 .about-header-central-column {
     border-top: 2px solid black;
@@ -843,5 +837,17 @@
 @media (max-width: 450px) {
     .tech-summary-to-do-list-app {
         text-align: justify;
+    }
+}
+
+/* CSS for projects pages */
+
+.background-color {
+    background-color: #d3d3d329;
+}
+
+@media (max-width: 400px) {
+    .project-title {
+        font-size: 24px;
     }
 }

@@ -10,119 +10,157 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.production.css">
     <title>To-Do-List</title>
     <link rel="shortcut icon" href="../img/favicon-logo.png" type="image/x-icon">
 </head>
 
 <body class="background-color">
-    <header class="page-header" id="topsection">
-        <nav class="navbar navbar-expand-md navbar-light justify-content-end">
-            <div class="logo-container">
-                <img src="../img/large-logo.png" alt="ac-logo" class="logo-image">
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Back to home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer-section">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div class="project-landing-view">
+        <header id="topsection">
+            <nav class="navbar navbar-expand-md navbar-light justify-content-end">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../img/large-logo.png" alt="ac-logo" class="logo-image">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Back to home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
+        <main>
+            <div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-title-section">
+                        <h1 class="project-title">To-Do-List web app</h1>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-catch-sentence-section">
+                        <h5 class="project-catch-sentence">A To-Do-List web app that allows users to note and manage reminders</h5>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <main>
-        <div class="row">
-            <div class="col text-center">
-            </div>
-            <div class="col-8 text-center myFlix-title">
-                <h1 class="project-title">To-Do-List web app</h1>
-            </div>
-            <div class="col text-center">
-            </div>
+    <div class="row">
+        <div class="col">
         </div>
-        <div class="row">
-            <div class="col text-center">
-            </div>
-            <div class="col-8 text-center myFlix-catch-sentence">
-                <h5>A To-Do-List web app that allows users to note and manage reminders</h5>
-            </div>
-            <div class="col text-center">
-            </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+            <h1 class="title-section-text text-center">Project brief</h1>
         </div>
+        <div class="col">
+        </div>
+    </div>
         <div class="row project-brief">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Overview</h5>
-                <p style="text-align: justify">The To-Do-List web app has been created to allow in a very simple way users
+                <h5 class="project-brief-subtitles">Overview</h5>
+                <p class="project-brief-text">The To-Do-List web app has been created to allow in a very simple way users
                     to (1) add items to a list, (2) mark items in the list as done, (3) delete items from the list and
-                    (4) change the order of items in the list.</p>
+                    (4) change the order of items in the list.
+                </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Purpose</h5>
-                <p style="text-align: justify">Consolidate my skills on working with jQuery library, considering I might
+                <h5 class="project-brief-subtitles">Purpose</h5>
+                <p class="project-brief-text">Consolidate my skills on working with jQuery library, considering I might
                     eventually create bigger projects using jQuery or maintain / update existing projects / codes that
                     use this library.</p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Objective</h5>
-                <p style="text-align: justify">Build a To-Do-List web app that contains four different features using jQuery
-                    library. Learn how to convert vanilla JavaScript code to jQuery and understand their differences.
+                <h5 class="project-brief-subtitles">Objective</h5>
+                <p class="project-brief-text">Build a To-Do-List web app that contains four different features using jQuery
+                    library. Learn how to convert vanilla JavaScript code to jQuery and understand their differences.</p>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 order-md-6">
+                <h5 class="project-brief-subtitles">Tech summary</h5>
+                <p class="project-brief-text">The To-Do-List web app relies entirely on jQuery and some HTML and
+                    CSS.
                 </p>
             </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 order-sm-6">
-                <h5 style="text-align: center">Tech summary</h5>
-                <p class="tech-summary-to-do-list-app">The To-Do-List web app relies entirely on jQuery and some HTML and
-                    CSS.</p>
-            </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-sm-6 text-center">
-                <h5 style="text-align: center">Tools used</h5>
-                <ul style="list-style: none; padding-left: 0; text-align: center">
-                    <li>jQuery</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
+                <h5 class="project-brief-subtitles">Tools used</h5>
+                <ul class="project-brief-text" style="list-style: none; padding-left: 0; text-align: center">
+                    <li>
+                    <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                            class="tools-used-arrow">
+                        jQuery
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                        HTML
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                        CSS
+                    </li>
                 </ul>
             </div>
         </div>
-        <h5 class="text-center">See the To-Do-List web app in action</h5>
-        <p class="text-center">Switch from computer view to mobile view inside the video box</p>
-        <br>
-        <div class="row project-videos">
-            <div class="col text-center">
+        <div class="row">
+            <div class="col-2 text-center">
             </div>
             <div class="col-8 text-center">
+                <h5 class="project-video">See the To-Do-List web app in action</h5>
+                <p style="font-family: 'Cardo', sans-serif;">*Switch from computer view to mobile view inside the video box</p>
+            </div>
+            <div class="col-2 text-center">
+            </div>
+        </div>
+        <br>
+        <div class="row project-videos">
+            <div class="col">
+            </div>
+            <div class="col-8">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div style="position: relative; padding-bottom: 56.25%; height: 0;">
                                 <iframe
-                                    src="https://www.loom.com/embed/15745e4e88d4427185243f7052f7b3b9?sid=48ae8b99-276c-4a6c-991b-efa133d0b5e9?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
-                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
-                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                                src="https://www.loom.com/embed/15745e4e88d4427185243f7052f7b3b9?sid=48ae8b99-276c-4a6c-991b-efa133d0b5e9?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div style="position: relative; padding-bottom: 56.25%; height: 0;">
                                 <iframe
-                                    src="https://www.loom.com/embed/0eed480932ba4a18ad35ba60053e10e4?sid=9fbf4cc1-c2d9-43ac-8b7c-05aa08a66143?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
-                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
-                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                                src="https://www.loom.com/embed/0eed480932ba4a18ad35ba60053e10e4?sid=9fbf4cc1-c2d9-43ac-8b7c-05aa08a66143?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
                             </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev">
-                        <span class="visually-hidden carousel-words video-left-word">Back</span>
+                    data-bs-slide="prev">
+                    <span class="visually-hidden carousel-words video-left-word">Back</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                         data-bs-slide="next">
@@ -130,28 +168,29 @@
                     </button>
                 </div>
             </div>
-            <div class="col text-center">
+            <div class="col">
             </div>
         </div>
-        <br>
-        <br>
         <div class="row">
-            <div class="col text-center">
-                <h3>My role</h3>
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">My role</h1>
+            </div>
+            <div class="col">
             </div>
         </div>
-        <br>
         <div class="row">
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
-            <div class="col-md-8 col-sm-10 col-10 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10 text-center">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="text-center" colspan="4">Summary of my work</th>
+                            <th scope="col" class="text-center" colspan="4"><h5 class="table-title">Summary of my work</h5></th>
                         </tr>
                     </thead>
-                    <tbody class="work-summary">
+                    <tbody class="work-summary table-text">
                         <tr>
                             <th scope="row">1</th>
                             <td>Created the project structure and set up the development environment at the beginning
@@ -203,7 +242,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
         </div>
         <div class="row" style="margin-top: 50px">
@@ -214,28 +253,36 @@
             <div class="col text-center">
             </div>
         </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col text-center">
+
+        <div class="row">
+            <div class="col">
             </div>
-            <div class="col-sm-8 col-12 development-information text-center">
-                <h3>To-Do-List development process</h3>
-                <br>
-                <p style="text-align: justify">As for any projects, having a clear workflow is important to build a
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Development process</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
+                <p class="development-process-text">As for any projects, having a clear workflow is important to build a
                     product in a logical and methodological way, whether in a team or in a solo project. The following
                     summarize how the To-Do-List web app has been built.
                 </p>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
         <div class="row" style="margin-top: 20px">
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
-            <div class="col-8 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
                 <embed src="./presentations/To-Do-List-App_Development_Process.pdf" type="application/pdf" width="100%"
                     height="500px" />
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
         <div class="row" style="margin-top: 50px">
@@ -295,16 +342,17 @@
         </div>
     </main>
 
-    <footer class="page-footer" style="text-align: center">
+    <footer class="project-landing-view">
         <div class="row footer-header">
             <div class="col">
             </div>
-            <div style="padding-top: 40px">
-                <h5 id="footer-section" style="margin-bottom: 30px">Find me /<br>Contact me on</h5>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Contact me</h1>
             </div>
             <div class="col">
             </div>
         </div>
+
         <div class="social-icons-container">
             <a href="https://github.com/AlexaCai" target="_blank"> <img src="../img/github-logo-black.png" alt=""
                     width="40" height="40"></a>
@@ -320,15 +368,19 @@
             <button type="button" class="btn btn-dark" id="contact-button">Contact me</button>
         </div>
         <br>
-        <div>
+        <div class="footer-section-contact-info">
             <p>Email: <a href="mailto:acailhier@gmail.com">acailhier@gmail.com</a></p>
             <p>Montreal, Quebec, Canada</p>
         </div>
+        <br>
         <div class="row back-to-top">
             <div class="col">
             </div>
             <div class="col d-flex justify-content-center">
                 <a href="#topsection" class="back-to-top-footer">Back to top</a>
+                <br>
+                <br>
+                <br>
             </div>
             <div class="col">
             </div>

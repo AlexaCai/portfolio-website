@@ -10,118 +10,162 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.production.css">
     <title>myFlix (Backend)</title>
     <link rel="shortcut icon" href="../img/favicon-logo.png" type="image/x-icon">
 </head>
 
 <body class="background-color">
-    <header class="page-header" id="topsection">
-        <nav class="navbar navbar-expand-md navbar-light justify-content-end">
-            <div class="logo-container">
-                <img src="../img/large-logo.png" alt="ac-logo" class="logo-image">
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Back to home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer-section">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div class="project-landing-view">
+        <header id="topsection">
+            <nav class="navbar navbar-expand-md navbar-light justify-content-end">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../img/large-logo.png" alt="ac-logo" class="logo-image">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Back to home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
+        <main>
+            <div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-title-section">
+                        <h1 class="project-title">myFlix web app (backend)</h1>
+                        <br>
+                        <p>For details about the frontend side, <a href="myFlixFrontendReact.html" target="_blank" style="color: black; text-decoration: underline;">see this related
+                            project (React)</a> or <a href="myFlixFrontendAngular.html" target="_blank" style="color: black; text-decoration: underline;">this other related
+                            project (Angular)</a></p>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-catch-sentence-section">
+                        <h5 class="project-catch-sentence">A REST API built to power a web app for all movie fans</h5>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <main>
-        <div class="row">
-            <div class="col text-center">
-            </div>
-            <div class="col-8 text-center myFlix-title">
-                <h1 class="project-title">myFlix web app (backend)</h1>
-                <p>For details about the frontend side, <a href="myFlixFrontendReact.html" target="_blank" style="color: black; text-decoration: underline;">see this related
-                        project (React)</a> or <a href="myFlixFrontendAngular.html" target="_blank" style="color: black; text-decoration: underline;">this other related
-                        project (Angular)</a></p>
-            </div>
-            <div class="col text-center">
-            </div>
+    <div class="row">
+        <div class="col">
         </div>
-        <div class="row">
-            <div class="col text-center">
-            </div>
-            <div class="col-8 text-center myFlix-catch-sentence">
-                <h5>A REST API built to power a web app for all movie fans</h5>
-            </div>
-            <div class="col text-center">
-            </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+            <h1 class="title-section-text text-center">Project brief</h1>
         </div>
+        <div class="col">
+        </div>
+    </div>
         <div class="row project-brief">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Overview</h5>
-                <p style="text-align: justify">myFlix was created to serve as a reference in the domain of visual
+                <h5 class="project-brief-subtitles">Overview</h5>
+                <p class="project-brief-text">myFlix was created to serve as a reference in the domain of visual
                     entertainment. Users can create an
                     account and then log into myFlix to have access to information about different movies. They can
-                    search for movies, filter results based on different criteria and create lists of favorites.</p>
+                    search for movies, filter results based on different criteria and create lists of favorites.
+                </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Purpose</h5>
-                <p style="text-align: justify">Learn and consolidate my skills with backend technologies during my
+                <h5 class="project-brief-subtitles">Purpose</h5>
+                <p class="project-brief-text">Learn and consolidate my skills with backend technologies during my
                     full-stack web development training. Develop and showcase a user-friendly, appealing and complete
                     web application (client side and server side) built using JavaScript technologies and the MERN tech
                     stack. This page concerns the backend part.</p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Objective</h5>
-                <p style="text-align: justify">Build an API from scratch to power
+                <h5 class="project-brief-subtitles">Objective</h5>
+                <p class="project-brief-text">Build an API from scratch to power
                     myFlix and ensure easy interactions for users whenever they’re accessing the web app to read and
                     save information about different movies, as well as allowing me to put into practice my learnings
                     regarding different backend aspects for a fully functional server-side API.</p>
             </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 order-sm-6">
-                <h5 style="text-align: center">Tech summary</h5>
-                <p style="text-align: justify">The server-side of myFlix includes the server, business logic and
+            <div class="col-lg-8 col-md-12 col-sm-12 order-md-6">
+                <h5 class="project-brief-subtitles">Tech summary</h5>
+                <p class="project-brief-text">The server-side of myFlix includes the server, business logic and
                     business layers of the web app. It consists of a well-designed REST API and architected database
                     built using JavaScript, Node.js, Express, and MongoDB. The REST API is accessed via commonly used
                     HTTP methods (GET, PUT, POST and DELETE). Similar methods (CRUD) are used to perform operations on
-                    data stored in a non-relational database. </p>
+                    data stored in a non-relational database.
+                </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-sm-6 text-center">
-                <h5 style="text-align: center">Tools used</h5>
-                <ul style="list-style: none; padding-left: 0; text-align: center">
-                    <li>Node.js and Express framework</li>
-                    <li>Node version manager (nvm) and Node package manager (npm)</li>
-                    <li>PostgreSQL and MongoDB</li>
-                    <li>Heroku</li>
-                    <li>Postman</li>
+                <h5 class="project-brief-subtitles">Tools used</h5>
+                <ul class="project-brief-text" style="list-style: none; padding-left: 0; text-align: center">
+                    <li>
+                    <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                            class="tools-used-arrow">
+                        Node.js and Express framework
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                        Node version manager (nvm) and Node package manager (npm)
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                        PostgreSQL and MongoDB
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                        Heroku
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                        Postman
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col text-center">
-                <h3>My role</h3>
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">My role</h1>
+            </div>
+            <div class="col">
             </div>
         </div>
-        <br>
         <div class="row">
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
-            <div class="col-md-8 col-sm-10 col-10 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10 text-center">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="text-center" colspan="4">Summary of my work</th>
+                            <th scope="col" class="text-center" colspan="4"><h5 class="table-title">Summary of my work</h5></th>
                         </tr>
                     </thead>
-                    <tbody class="work-summary">
+                    <tbody class="work-summary table-text">
                         <tr>
                             <th scope="row">1</th>
                             <td>Created the project structure and set up the development environment at the beginning of
@@ -204,7 +248,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
         </div>
         <div class="row" style="margin-top: 50px">
@@ -215,29 +259,38 @@
             <div class="col text-center">
             </div>
         </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col text-center">
+
+        <div class="row">
+            <div class="col">
             </div>
-            <div class="col-sm-8 col-12 development-information text-center">
-                <h3>myFlix backend development process</h3>
-                <br>
-                <p style="text-align: justify">As for any projects, having a clear workflow is important to build a
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Development process</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
+                <p class="development-process-text">As for any projects, having a clear workflow is important to build a
                     product in a logical and methodological way, whether on a team or in a solo project. The following
                     presentation summarizes how the backend part of myFlix has been built, as well as why I
                     took these steps, the challenges I faced and the choices I made along the way. For more details on
-                    how the frontend has been built, <a href="myFlixFrontendReact.html">see this project (React)</a> or <a href="myFlixFrontendAngular.html">this project (Angular)</a>.</p>
+                    how the frontend has been built, <a href="myFlixFrontendReact.html">see this project (React)</a> or <a href="myFlixFrontendAngular.html">this project (Angular)</a>.
+                </p>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
         <div class="row" style="margin-top: 20px">
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
-            <div class="col-8 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
                 <embed src="./presentations/myFlix_Backend_Development_Process.pdf" type="application/pdf" width="100%"
                     height="500px" />
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
         <div class="row" style="margin-top: 50px">
@@ -301,16 +354,17 @@
         </div>
     </main>
 
-    <footer class="page-footer" style="text-align: center">
+    <footer class="project-landing-view">
         <div class="row footer-header">
             <div class="col">
             </div>
-            <div style="padding-top: 40px">
-                <h5 id="footer-section" style="margin-bottom: 30px">Find me /<br>Contact me on</h5>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Contact me</h1>
             </div>
             <div class="col">
             </div>
         </div>
+
         <div class="social-icons-container">
             <a href="https://github.com/AlexaCai" target="_blank"> <img src="../img/github-logo-black.png" alt=""
                     width="40" height="40"></a>
@@ -326,15 +380,19 @@
             <button type="button" class="btn btn-dark" id="contact-button">Contact me</button>
         </div>
         <br>
-        <div>
+        <div class="footer-section-contact-info">
             <p>Email: <a href="mailto:acailhier@gmail.com">acailhier@gmail.com</a></p>
             <p>Montreal, Quebec, Canada</p>
         </div>
+        <br>
         <div class="row back-to-top">
             <div class="col">
             </div>
             <div class="col d-flex justify-content-center">
                 <a href="#topsection" class="back-to-top-footer">Back to top</a>
+                <br>
+                <br>
+                <br>
             </div>
             <div class="col">
             </div>

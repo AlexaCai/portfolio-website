@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.production.css">
     <title>Chat app</title>
     <link rel="shortcut icon" href="../img/favicon-logo.png" type="image/x-icon">
@@ -49,7 +50,7 @@
                 <div class="row">
                     <div class="col text-center">
                     </div>
-                    <div class="col-8 text-center project-page-title">
+                    <div class="col-8 text-center project-page-title-section">
                         <h1 class="project-title">Chat mobile app</h1>
                     </div>
                     <div class="col text-center">
@@ -58,8 +59,8 @@
                 <div class="row">
                     <div class="col text-center">
                     </div>
-                    <div class="col-8 text-center project-page-catch-sentence">
-                        <h5>A React Native mobile Chat app allowing users to talk and share medias</h5>
+                    <div class="col-8 text-center project-page-catch-sentence-section">
+                        <h5 class="project-catch-sentence">A React Native mobile Chat app allowing users to talk and share medias</h5>
                     </div>
                     <div class="col text-center">
                     </div>
@@ -68,63 +69,100 @@
         </main>
     </div>
     <main>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+            <h1 class="title-section-text text-center">Project brief</h1>
+        </div>
+        <div class="col">
+        </div>
+    </div>
         <div class="row project-brief">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Overview</h5>
-                <p style="text-align: justify">Chat app was created to allow people to talk and exchange on a mobile
+                <h5 class="project-brief-subtitles">Overview</h5>
+                <p class="project-brief-text">Chat app was created to allow people to talk and exchange on a mobile
                     app. Users can send messages like other very common chat apps (WhatsApp, Messenger, etc.). They can
                     also send images, location and audios. Users can also customize their application by selecting the
                     color background they want to use for the chat UI.
                 </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Purpose</h5>
-                <p style="text-align: justify"> Learn and consolidate my skills with the creation of a React Native app
+                <h5 class="project-brief-subtitles">Purpose</h5>
+                <p class="project-brief-text"> Learn and consolidate my skills with the creation of a React Native app
                     during my full-stack web development training to develop a user-friendly, appealing and easy-to-use
                     chatting mobile app, as well as working with Firestore (a NoSQL cloud-based database service
                     offered by Google as part of its Firebase platform) to handle the chat app data.</p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Objective</h5>
-                <p style="text-align: justify"> Build a chat app for mobile devices using React Native and Google
+                <h5 class="project-brief-subtitles">Objective</h5>
+                <p class="project-brief-text"> Build a chat app for mobile devices using React Native and Google
                     Firebase features to implement a database, storage space and anonymous authentication process.
                     Coding the app to ensure users can send images, location and audios on top of messages, access their
                     messages when offline and visually customize their experience.</p>
             </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 order-sm-6">
-                <h5 style="text-align: center">Tech summary</h5>
-                <p style="text-align: justify">Chat app is built with React Native. The app Expo Go and Android
-                    Studio have been used for his development. The chat interface have
+            <div class="col-lg-8 col-md-12 col-sm-12 order-md-6">
+                <h5 class="project-brief-subtitles">Tech summary</h5>
+                <p class="project-brief-text">Chat app is built with React Native. The app Expo Go and Android
+                    Studio have been used for the development. The chat interface have
                     been created using the Gifted Chat library. All chat messages are stored in a Google Firestore
                     Database and locally on users’ devices. Images and audios sent on Chat app are also stored in a
                     Google Cloud Storage created on Firebase, and the app authenticates users anonymously via
-                    Firebase Authentication. The app also allows users to consult their messages offline by using
+                    Firebase Authentication. It also allows users to consult their messages offline with
                     client-side storage (AsyncStorage pack. from React Native).
                 </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-sm-6 text-center">
-                <h5 style="text-align: center">Tools used</h5>
-                <ul style="list-style: none; padding-left: 0; text-align: center">
-                    <li>React Native</li>
-                    <li>JavaScript</li>
-                    <li>Expo & Expo go</li>
-                    <li>Android Studio</li>
-                    <li>Google Firestore Database</li>
-                    <li>Google Firebase Cloud Storage</li>
-                    <li>Google Firebase Authentication</li>
+                <h5 class="project-brief-subtitles">Tools used</h5>
+                <ul class="project-brief-text" style="list-style: none; padding-left: 0; text-align: center">
+                    <li>
+                    <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                            class="tools-used-arrow">
+                        React Native
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                    JavaScript
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                    Expo & Expo go</li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                    Android Studio</li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                    Google Firestore Database</li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                    Google Firebase Cloud Storage</li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow"
+                        class="tools-used-arrow">
+                    Google Firebase Authentication</li>
                 </ul>
             </div>
         </div>
-        <h5 class="text-center" id="app-in-action">See Chat app in action</h5>
-        <p class="text-center"><strong><span style="background-color: rgb(243, 190, 190)">Note: occasional screen
-                    slowness and delays are due to
-                    the video recording, not the app
-                    itself.</span></strong></p>
-        <br>
-        <div class="row project-videos">
-            <div class="col text-center">
+        <div class="row">
+            <div class="col-2 text-center">
             </div>
             <div class="col-8 text-center">
+                <h5 class="project-video">See Chat app in action</h5>
+                <p class="text-center video-warning-note">Note: occasional screen
+                            slowness and delays are due to
+                            the video recording, not the app
+                            itself.</p>            
+            </div>
+            <div class="col-2 text-center">
+            </div>
+        </div>
+        <br>
+        <div class="row project-videos">
+            <div class="col">
+            </div>
+            <div class="col-8">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -138,28 +176,29 @@
                     </div>
                 </div>
             </div>
-            <div class="col text-center">
+            <div class="col">
             </div>
         </div>
-        <br>
-        <br>
-        <div class="row project-myrole">
-            <div class="col text-center">
-                <h3>My role</h3>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">My role</h1>
+            </div>
+            <div class="col">
             </div>
         </div>
-        <br>
-        <div class="row project-myrole">
-            <div class="col text-center">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
-            <div class="col-md-8 col-sm-10 col-10 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10 text-center">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="text-center" colspan="4">Summary of my work</th>
+                            <th scope="col" class="text-center" colspan="4"><h5 class="table-title">Summary of my work</h5></th>
                         </tr>
                     </thead>
-                    <tbody class="work-summary">
+                    <tbody class="work-summary table-text">
                         <tr>
                             <th scope="row">1</th>
                             <td>Set up the development environment
@@ -255,7 +294,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
         </div>
         <div class="row" style="margin-top: 50px">

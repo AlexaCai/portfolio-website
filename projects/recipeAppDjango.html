@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.production.css">
+    <title>Recipe web app (Django version)</title>
+    <link rel="shortcut icon" href="../img/favicon-logo.png" type="image/x-icon">
+</head>
+
+<body class="background-color">
+    <div class="project-landing-view">
+        <header id="topsection">
+            <nav class="navbar navbar-expand-md navbar-light justify-content-end">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../img/large-logo.png" alt="ac-logo" class="logo-image">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Back to home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-title-section">
+                        <h1 class="project-title">Recipe web app (Django version)</h1>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-catch-sentence-section">
+                        <h5 class="project-catch-sentence">A complete Django web app to create, search and modify
+                            recipes for all food lovers</h5>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <main>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Project brief</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row project-brief">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5 class="project-brief-subtitles">Overview</h5>
+                <p class="project-brief-text">This Recipe web app was created to serve as a central gateway for
+                    international cuisine lovers. Users can go on the web app and access many recipes from all around
+                    the globe, search recipe by name or via advanced search, and even submit their own recipe. Users can
+                    also create an account for a more complete experience, such as being able to create their own
+                    private recipes, add recipes to their favorite and comment recipes publicly.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5 class="project-brief-subtitles">Purpose</h5>
+                <p class="project-brief-text">Learn and consolidate my skills with Django web framework both on the
+                    backend and frontend, while creating a fully working Recipe web application. More precisely, the
+                    purpose was to improve my abilities in implementing a project structure in the Django way (apps,
+                    urls.py, views.py, etc), while using at the same time my skills with other tools such as JavaScript
+                    and CSS to add life to the web app on the frontend side.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5 class="project-brief-subtitles">Objective</h5>
+                <p class="project-brief-text">Build a Recipe web app using Django and a SQLite database to
+                    provide an easy-to-use interface for all food lovers, supported by simple forms and concise
+                    instructions that any user can follow. Some sub-objectives were to 1) allow both signed and unsigned
+                    users to use the web app, 2) build a personalized Django admin interface adapted to the needs for more
+                    efficient backend work, and 3) develop a clear and aesthetic frontend visual for the best possible
+                    user experience.</p>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 order-md-6">
+                <h5 class="project-brief-subtitles">Tech summary</h5>
+                <p class="project-brief-text">This Recipe web app is built with Django version 4.2.6, Python version 3.8.7
+                    and an SQLite database. The frontend is built with HTML, CSS and JavaScript. The web app is deployed on
+                    Heroku. Even if not part of the final product, QuerySet API, DataFrames (pandas) and plotting
+                    libraries (matplotlib - a comprehensive library for creating static, animated, and interactive
+                    visualizations in Python) have been tried out during development for testing and learning purposes.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-sm-6 text-center">
+                <h5 class="project-brief-subtitles">Tools used</h5>
+                <ul class="project-brief-text" style="list-style: none; padding-left: 0; text-align: center">
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Django
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Python
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        SQLite
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        JavaScript
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        HTML
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        CSS
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Bootstrap
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Pandas & matplotlib
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 text-center">
+            </div>
+            <div class="col-8 text-center">
+                <h5 class="project-video">See the Recipe web app in action</h5>
+                <p style="font-family: 'Cardo', sans-serif;">*Switch from computer view to mobile view inside the video
+                    box</p>
+            </div>
+            <div class="col-2 text-center">
+            </div>
+        </div>
+        <br>
+        <div class="row project-videos">
+            <div class="col">
+            </div>
+            <div class="col-8">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                                <iframe
+                                    src="https://www.loom.com/embed/13525eb7284048b4aec6d37bf58224e0?sid=4005ca4a-d11d-45f8-af5c-b0a8fc7ac65f?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                                <iframe
+                                    src="https://www.loom.com/embed/4ebab4133d91467aad245e205b4583c3?sid=220dba81-64c4-4f8f-825c-8b9121c77750?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="visually-hidden carousel-words video-left-word">Back</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="visually-hidden carousel-words video-right-word">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">My role</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10 text-center">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center" colspan="4">
+                                <h5 class="table-title">Summary of my work</h5>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="work-summary table-text">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px">
+            <div class="col text-center">
+            </div>
+            <div class="col text-center" style="border-bottom: 2px solid black">
+            </div>
+            <div class="col text-center">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Development process</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
+                <p class="development-process-text">As for any projects, having a clear workflow is important to build a
+                    product in a logical and methodological way, whether on a team or in a solo project. The following
+                    presentation summarizes how the Recipe web app has been built, as well as why I
+                    took these steps, the challenges I faced and the choices I made along the way.
+                </p>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
+                <embed src="./presentations/abc_Development_Process.pdf" type="application/pdf"
+                    width="100%" height="500px" />
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px">
+            <div class="col text-center">
+            </div>
+            <div class="col text-center" style="border-bottom: 2px solid black">
+            </div>
+            <div class="col text-center">
+            </div>
+        </div>
+    </main>
+
+    <footer class="project-landing-view">
+        <div class="row footer-header">
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Contact me</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+
+        <div class="social-icons-container">
+            <a href="https://github.com/AlexaCai" target="_blank"> <img src="../img/github-logo-black.png" alt=""
+                    width="40" height="40"></a>
+            <a href="https://www.linkedin.com/in/alecai/?locale=en_US" target="_blank"> <img
+                    src="../img/linkedin-logo-black.png" alt="" width="40" height="40"></a>
+            <a href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2" target="_blank"> <img
+                    src="../img/upwork-black-logo.png" alt="" width="40" height="40"></a>
+        </div>
+        <div class="home-buttons">
+            <button type="button" class="btn btn-dark" id="download-button">Download resume</button>
+        </div>
+        <div class="home-buttons">
+            <button type="button" class="btn btn-dark" id="contact-button">Contact me</button>
+        </div>
+        <br>
+        <div class="footer-section-contact-info">
+            <p>Email: <a href="mailto:acailhier@gmail.com">acailhier@gmail.com</a></p>
+            <p>Montreal, Quebec, Canada</p>
+        </div>
+        <br>
+        <div class="row back-to-top">
+            <div class="col">
+            </div>
+            <div class="col d-flex justify-content-center">
+                <a href="#topsection" class="back-to-top-footer">Back to top</a>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script for videos carousel to work properly -->
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+
+    <!-- Javascript logic for a smooths movement when user click on the ''Back to top'' link. -->
+    <script>
+        function scrollToSection(event, targetSectionId) {
+            // Prevent the default behavior of the link click
+            event.preventDefault();
+            // Get the target section
+            var targetSection = document.querySelector(targetSectionId);
+            // Calculate the distance between the top of the page and the target section
+            var offset = targetSection.getBoundingClientRect().top + window.scrollY;
+            // Use the scrollIntoView method with options for smooth scrolling
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+        }
+
+        // Select the navigation links
+        var backToTopLink = document.querySelector('.back-to-top a');
+        var contactLink = document.querySelector('.nav-link[href="#footer-section"]');
+
+        // Add click event listener to links
+        contactLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#footer-section');
+        });
+        backToTopLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#topsection');
+        });
+    </script>
+
+    <!-- Javascript logic to ensure that when user click on ''Contact me'' button, user is being redirected to email service'. -->
+    <script>
+        document.getElementById("contact-button").addEventListener("click", function () {
+            window.open("mailto:acailhier@gmail.com", "_blank");
+        });
+    </script>
+
+    <!-- Javascript logic to ensure that when user click on 'Download'' button, user is being download my resume'. -->
+    <script>
+        document.getElementById("download-button").addEventListener("click", function () {
+            // URL to resume file
+            var resumeURL = "../resume/Cailhier-Alexandre-Resume.pdf";
+            // Create a hidden anchor element
+            var anchor = document.createElement("a");
+            anchor.style.display = "none";
+            anchor.href = resumeURL;
+            anchor.target = "_blank";
+            anchor.download = "CailhierAlexandre-Resume.pdf";
+            // Add the anchor to the document
+            document.body.appendChild(anchor);
+            // Trigger a click on the anchor
+            anchor.click();
+            // Clean up after the download
+            document.body.removeChild(anchor);
+        });
+    </script>
+
+</body>
+
+</html>

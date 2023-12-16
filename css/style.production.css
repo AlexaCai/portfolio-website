@@ -90,7 +90,7 @@
     margin-left: auto;
     padding-right: 8px;
     font-weight: bold;
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-decoration: underline;
 }
 
@@ -249,7 +249,7 @@
 }
 
 .short-presentation-text {
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 22px;
 
@@ -290,7 +290,7 @@
 }
 
 .intro-section-contact-info {
-    font-family: 'libre baskerville', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
 
@@ -329,9 +329,9 @@
 .about-me-accordion-links {
     text-align: center;
     font-weight: 600;
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media (max-width: 400px) {
@@ -377,7 +377,7 @@
 }
 
 .back-to-top-link {
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: black;
     text-decoration: underline;
     font-size: 18px;
@@ -424,7 +424,7 @@
 }
 
 .project-cards-body-text {
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 17px;
     color: rgba(0, 0, 0, 0.85);
     font-weight: 600;
@@ -466,7 +466,7 @@
     border-radius: 10px;
     text-align: center;
     background-color: rgba(255, 253, 253, 0.85);
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
 
@@ -491,7 +491,7 @@
 }
 
 .testimonial-text-author {
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     display: inline-block;
     padding: 10px;
     background-color: rgba(147, 196, 125, 0.5);
@@ -532,7 +532,7 @@
 .contact-information {
     margin-top: 50px;
     text-align: center;
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
 
@@ -922,7 +922,7 @@
 }
 
 .footer-section-contact-info {
-    font-family: 'libre baskerville', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     text-align: center;
     font-size: 15px;

@@ -661,7 +661,7 @@
 }
 
 .project-brief {
-    font-family: 'cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-right: 200px;
     margin-left: 200px;
 }
@@ -823,13 +823,13 @@
 }
 
 .project-video {
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     text-decoration: underline;
 }
 
 .video-warning-note {
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: rgb(243, 190, 190);
     display: inline-block;
 }
@@ -877,7 +877,7 @@
 }
 
 .table {
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .table-title {
@@ -887,7 +887,7 @@
 }
 
 .work-summary {
-    font-size: 18px;
+    font-size: 17px;
     text-align: left;
 }
 
@@ -912,8 +912,8 @@
 }
 
 .development-process-text {
-    font-family: 'Cardo', sans-serif;
-    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -929,7 +929,7 @@
 }
 
 .back-to-top-footer {
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: black;
     text-decoration: underline;
     font-size: 17px;

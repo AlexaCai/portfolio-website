@@ -101,7 +101,7 @@
 /* CSS for the main page */
 
 .intro-section-left-text {
-    text-align: left;
+    text-align: center;
     margin-top: 45px;
 }
 
@@ -168,32 +168,53 @@
 @media (min-width: 1200px) {
     .intro-section-right-image {
         margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.85);
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .intro-section-right-image {
         margin-top: 40px;
+        background-color: rgba(0, 0, 0, 0.85);
     }
 }
+
+@media (max-width: 991px) {
+    .intro-section-right-image {
+        background-color: rgba(0, 0, 0, 0.85);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 
 @media (max-width: 767px) {
     .home-right-image {
         border-right: none;
         padding-left: 0px;
         padding-right: 0px;
+        background-color: black
     }
 }
 
 .profile-image {
     height: auto;
     border-radius: 10px;
+    max-width: 65%;
+    padding-top: 6px
 }
 
-@media (max-width: 600px) {
+@media (max-width: 991px) {
     .profile-image {
+        max-width: 75%;
         padding: 20px;
         border-radius: 30px;
+    }
+}
+
+@media (max-width: 525px) {
+    .profile-image {
+        max-width: 100%;
     }
 }
 
@@ -261,9 +282,15 @@
 
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
     .short-presentation-text {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .short-presentation-text {
+        font-size: 18px;
     }
 }
 

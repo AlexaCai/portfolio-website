@@ -325,119 +325,120 @@
             <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
+    </main>
 
-        <footer class="project-landing-view">
-            <div class="row footer-header">
-                <div class="col">
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
-                    <h1 class="title-section-text text-center">Contact</h1>
-                </div>
-                <div class="col">
-                </div>
+    <footer class="project-landing-view">
+        <div class="row footer-header">
+            <div class="col">
             </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Contact</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
 
-            <div class="social-icons-container">
-                <a href="https://github.com/AlexaCai" target="_blank"> <img src="../img/github-logo-black.png" alt=""
-                        width="40" height="40"></a>
-                <a href="https://www.linkedin.com/in/alecai/?locale=en_US" target="_blank"> <img
-                        src="../img/linkedin-logo-black.png" alt="" width="40" height="40"></a>
-                <a href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2" target="_blank"> <img
-                        src="../img/upwork-black-logo.png" alt="" width="40" height="40"></a>
+        <div class="social-icons-container">
+            <a href="https://github.com/AlexaCai" target="_blank"> <img src="../img/github-logo-black.png" alt=""
+                    width="40" height="40"></a>
+            <a href="https://www.linkedin.com/in/alecai/?locale=en_US" target="_blank"> <img
+                    src="../img/linkedin-logo-black.png" alt="" width="40" height="40"></a>
+            <a href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2" target="_blank"> <img
+                    src="../img/upwork-black-logo.png" alt="" width="40" height="40"></a>
+        </div>
+        <div class="home-buttons">
+            <button type="button" class="btn btn-dark" id="download-button">Download resume</button>
+        </div>
+        <div class="home-buttons">
+            <button type="button" class="btn btn-dark" id="contact-button">Contact</button>
+        </div>
+        <br>
+        <div class="footer-section-contact-info">
+            <p>Email: <a href="mailto:acailhier@gmail.com">acailhier@gmail.com</a></p>
+            <p>Montreal, Quebec, Canada</p>
+        </div>
+        <br>
+        <div class="row back-to-top">
+            <div class="col">
             </div>
-            <div class="home-buttons">
-                <button type="button" class="btn btn-dark" id="download-button">Download resume</button>
+            <div class="col d-flex justify-content-center">
+                <a href="#topsection" class="back-to-top-footer">Back to top</a>
+                <br>
+                <br>
+                <br>
             </div>
-            <div class="home-buttons">
-                <button type="button" class="btn btn-dark" id="contact-button">Contact</button>
+            <div class="col">
             </div>
-            <br>
-            <div class="footer-section-contact-info">
-                <p>Email: <a href="mailto:acailhier@gmail.com">acailhier@gmail.com</a></p>
-                <p>Montreal, Quebec, Canada</p>
-            </div>
-            <br>
-            <div class="row back-to-top">
-                <div class="col">
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <a href="#topsection" class="back-to-top-footer">Back to top</a>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="col">
-                </div>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
-        <script src="js/tota11y.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/tota11y.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <!-- Script for videos carousel to work properly -->
-        <script>
-            $(document).ready(function () {
-                $('.carousel').carousel();
+    <!-- Script for videos carousel to work properly -->
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+
+    <!-- Javascript logic for a smooths movement when user click on the ''Back to top'' link. -->
+    <script>
+        function scrollToSection(event, targetSectionId) {
+            // Prevent the default behavior of the link click
+            event.preventDefault();
+            // Get the target section
+            var targetSection = document.querySelector(targetSectionId);
+            // Calculate the distance between the top of the page and the target section
+            var offset = targetSection.getBoundingClientRect().top + window.scrollY;
+            // Use the scrollIntoView method with options for smooth scrolling
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
             });
-        </script>
+        }
 
-        <!-- Javascript logic for a smooths movement when user click on the ''Back to top'' link. -->
-        <script>
-            function scrollToSection(event, targetSectionId) {
-                // Prevent the default behavior of the link click
-                event.preventDefault();
-                // Get the target section
-                var targetSection = document.querySelector(targetSectionId);
-                // Calculate the distance between the top of the page and the target section
-                var offset = targetSection.getBoundingClientRect().top + window.scrollY;
-                // Use the scrollIntoView method with options for smooth scrolling
-                window.scrollTo({
-                    top: offset,
-                    behavior: 'smooth'
-                });
-            }
+        // Select the navigation links
+        var backToTopLink = document.querySelector('.back-to-top a');
+        var contactLink = document.querySelector('.nav-link[href="#footer-section"]');
 
-            // Select the navigation links
-            var backToTopLink = document.querySelector('.back-to-top a');
-            var contactLink = document.querySelector('.nav-link[href="#footer-section"]');
+        // Add click event listener to links
+        contactLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#footer-section');
+        });
+        backToTopLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#topsection');
+        });
+    </script>
 
-            // Add click event listener to links
-            contactLink.addEventListener('click', function (event) {
-                scrollToSection(event, '#footer-section');
-            });
-            backToTopLink.addEventListener('click', function (event) {
-                scrollToSection(event, '#topsection');
-            });
-        </script>
+    <!-- Javascript logic to ensure that when user click on ''Contact me'' button, user is being redirected to email service'. -->
+    <script>
+        document.getElementById("contact-button").addEventListener("click", function () {
+            window.open("mailto:acailhier@gmail.com", "_blank");
+        });
+    </script>
 
-        <!-- Javascript logic to ensure that when user click on ''Contact me'' button, user is being redirected to email service'. -->
-        <script>
-            document.getElementById("contact-button").addEventListener("click", function () {
-                window.open("mailto:acailhier@gmail.com", "_blank");
-            });
-        </script>
-
-        <!-- Javascript logic to ensure that when user click on 'Download'' button, user is being download my resume'. -->
-        <script>
-            document.getElementById("download-button").addEventListener("click", function () {
-                // URL to resume file
-                var resumeURL = "../resume/Cailhier-Alexandre-Resume.pdf";
-                // Create a hidden anchor element
-                var anchor = document.createElement("a");
-                anchor.style.display = "none";
-                anchor.href = resumeURL;
-                anchor.target = "_blank";
-                anchor.download = "CailhierAlexandre-Resume.pdf";
-                // Add the anchor to the document
-                document.body.appendChild(anchor);
-                // Trigger a click on the anchor
-                anchor.click();
-                // Clean up after the download
-                document.body.removeChild(anchor);
-            });
-        </script>
+    <!-- Javascript logic to ensure that when user click on 'Download'' button, user is being download my resume'. -->
+    <script>
+        document.getElementById("download-button").addEventListener("click", function () {
+            // URL to resume file
+            var resumeURL = "../resume/Cailhier-Alexandre-Resume.pdf";
+            // Create a hidden anchor element
+            var anchor = document.createElement("a");
+            anchor.style.display = "none";
+            anchor.href = resumeURL;
+            anchor.target = "_blank";
+            anchor.download = "CailhierAlexandre-Resume.pdf";
+            // Add the anchor to the document
+            document.body.appendChild(anchor);
+            // Trigger a click on the anchor
+            anchor.click();
+            // Clean up after the download
+            document.body.removeChild(anchor);
+        });
+    </script>
 
 </body>
 

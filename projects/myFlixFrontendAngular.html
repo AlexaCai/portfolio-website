@@ -10,111 +10,167 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.production.css">
     <title>myFlix (Angular - Frontend)</title>
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon-logo.png" type="image/x-icon">
 </head>
 
-<body class="background-color">
-    <header class="page-header" id="topsection">
-        <nav class="navbar navbar-expand-md navbar-light nav justify-content-end">
-            <div class="logo-container">
-                <img src="../img/logo3.png" alt="ac-logo" class="logo-image">
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Back to home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer-section">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NHJ60K027X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-NHJ60K027X');
+</script>
+
+<body class="background-color">
+    <div class="project-landing-view">
+        <header id="topsection">
+            <nav class="navbar navbar-expand-md navbar-light justify-content-end">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../img/large-logo.png" alt="ac-logo" class="logo-image">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Back to home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-title-section">
+                        <h1 class="project-title">myFlix web app (frontend - <strong>Angular</strong>)</h1>
+                        <br>
+                        <p>For details about the backend side, <a href="myFlixBackend.html" target="_blank"
+                                style="color: black; text-decoration: underline;">see this related
+                                project</a></p>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-catch-sentence-section">
+                        <h5 class="project-catch-sentence">A responsive single page web application for all movie fans
+                        </h5>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <main>
         <div class="row">
-            <div class="col text-center">
+            <div class="col">
             </div>
-            <div class="col-8 text-center myFlix-title">
-                <h1 class="project-title">myFlix web app (frontend - <strong>Angular</strong>)</h1>
-                <p>For details about the backend side, <a href="myFlixBackend.html" target="_blank" style="color: black; text-decoration: underline;">see this related
-                        project</a></p>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Project brief</h1>
             </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-center">
-            </div>
-            <div class="col-8 text-center myFlix-catch-sentence">
-                <h5>A single page responsive web application for all movie fans</h5>
-            </div>
-            <div class="col text-center">
+            <div class="col">
             </div>
         </div>
         <div class="row project-brief">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Overview</h5>
-                <p style="text-align: justify">myFlix was created to serve as a reference in the domain of visual
-                    entertainment. Users can create an
-                    account and then log into myFlix to have access to information about different movies. They can
-                    search for movies based on different genres or directors, and create a list of favorite movies.</p>
+                <h5 class="project-brief-subtitles">Overview</h5>
+                <p class="project-brief-text">myFlix was created to serve as a reference in the domain of visual
+                    entertainment. Users can create an account and then log into myFlix to have access to information
+                    about different movies. They can search for movies, filter results based on different criteria and
+                    create a list of their favorite movies.
+                </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Purpose</h5>
-                <p style="text-align: justify">Learn and consolidate my skills with Angular during my full-stack
-                    web development training.
-                    Develop and showcase an appealing and complete web app (client side and server
-                    side) built using TypeScript and Angular Material. This page concerns the frontend
-                    part - <strong>Angular version</strong> (<a href="myFlixFrontendReact.html" target="_blank">see
-                        React version here</a>).</p>
+                <h5 class="project-brief-subtitles">Purpose</h5>
+                <p class="project-brief-text">Learn and consolidate my skills with frontend technologies, API
+                    interaction and layout design by developing a comprehensive & visually appealing web application
+                    using JavaScript and the MEAN tech stack. This page concerns the frontend part made with Angular.
+                </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Objective</h5>
-                <p style="text-align: justify">Develop an easy-to-use and responsive web app for users to access
-                    whenever they want to read and save
-                    information about different movies, as well as allowing me to put into practice my skills regarding
-                    the interaction between backend and frontend for a fully functional web app.</p>
+                <h5 class="project-brief-subtitles">Objective</h5>
+                <p class="project-brief-text">Develop an easy-to-use and responsive web app for users to access whenever
+                    they want to read and save information about different movies, as well as implementing different
+                    forms so that users can communicate with the API and perform different CRUD operations.
+                </p>
             </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 order-sm-6">
-                <h5 style="text-align: center">Tech summary</h5>
-                <p style="text-align: justify">myFlix is a single-page responsive web app (SPA), designed with
-                    state-based routing and several
-                    interface views. The design is responsive to be optimal on any device types and the UI has a
-                    polished visual for the best user experience possible. The app is powered on the backend by an API
+            <div class="col-lg-8 col-md-12 col-sm-12 order-md-6">
+                <h5 class="project-brief-subtitles">Tech summary</h5>
+                <p class="project-brief-text">myFlix is a responsive single-page web app (SPA), designed with
+                    state-based routing and several interface views. The design is responsive to be optimal on any
+                    device types and the UI has a
+                    polished visual for the best user experience possible. The web app is supported on the backend by an
+                    API
                     built by myself using Node.js and Express framework (<a href="myFlixBackend.html"
-                        target="_blank">see more details on my related backend API
-                        project here</a>).</p>
+                        target="_blank">see more details on the related backend API
+                        project here</a>).
+                </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-sm-6 text-center">
-                <h5 style="text-align: center">Tools used</h5>
-                <ul style="list-style: none; padding-left: 0; text-align: center">
-                    <li>Angular</li>
-                    <li>Angular Material</li>
-                    <li>TypeScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
+                <h5 class="project-brief-subtitles">Tools used</h5>
+                <ul class="project-brief-text" style="list-style: none; padding-left: 0; text-align: center">
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Angular
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        TypeScript
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Angular Material
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        HTML
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        CSS
+                    </li>
                 </ul>
             </div>
         </div>
-        <h5 class="text-center">See myFlix in action</h5>
-        <p class="text-center">Switch from computer view to mobile view inside the video box <br> <strong><span style="background-color: rgb(243, 190, 190)">Note: occasional screen interferences in mobile view is due to the video recording, not the app itself.</span></strong></p>
-        <br>
-        <div class="row project-videos">
-            <div class="col text-center">
+        <div class="row">
+            <div class="col-2 text-center">
             </div>
             <div class="col-8 text-center">
+                <h5 class="project-video">See myFlix in action</h5>
+                <p style="font-family: 'Inter', sans-serif;">*Switch from computer view to mobile view inside the video
+                    box</p>
+            </div>
+            <div class="col-2 text-center">
+            </div>
+        </div>
+        <br>
+        <div class="row project-videos">
+            <div class="col">
+            </div>
+            <div class="col-8">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -144,98 +200,111 @@
                     </button>
                 </div>
             </div>
-            <div class="col text-center">
+            <div class="col">
             </div>
         </div>
-        <br>
-        <br>
-        <div class="row project-myrole">
-            <div class="col text-center">
-                <h3>My role</h3>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">My role</h1>
+            </div>
+            <div class="col">
             </div>
         </div>
-        <br>
-        <div class="row project-myrole">
-            <div class="col text-center">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
-            <div class="col-md-8 col-sm-10 col-10 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10 text-center">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="text-center" colspan="4">Summary of my work</th>
+                            <th scope="col" class="text-center" colspan="4">
+                                <h5 class="table-title">Summary of my work</h5>
+                            </th>
                         </tr>
                     </thead>
-                    <tbody class="work-summary">
+                    <tbody class="work-summary table-text">
                         <tr>
                             <th scope="row">1</th>
-                            <td>Created all the structure / pages constituting the web app</td>
+                            <td>Created the web app's structure and pages.</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Coded the content of each page and each specific feature following the technical
-                                requirements</td>
+                            <td>Coded the content of each page and each specific feature following the project technical
+                                requirements.
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td>Implemented different forms so that users can communicate with the API and get, update or send data</td>
+                            <td>Implemented different forms so that users can communicate with the API, create
+                                accounts, and update / delete their
+                                data.</td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
-                            <td>Modified some API backend parameters to ensure logical and sound user interactions on
-                                the web app</td>
+                            <td>Modified some API backend parameters to ensure logical user interactions on the web app
+                                (e.g.: ensure that users cannot create an account with a username or an email address
+                                that already exists in the database).
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">5</th>
-                            <td>Implemented routing so that users can navigate between the different views
-                                and obtain unique URL</td>
+                            <td>Implemented state-based routing so that users can navigate between the different views
+                                and obtain unique URL.
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">6</th>
-                            <td>Managed all interactions on Github (commits, pull requests, merging branches, etc.)</td>
+                            <td>Managed all interactions on Github (commits, pull requests, merging branches, etc).</td>
                         </tr>
                         <tr>
                             <th scope="row">7</th>
-                            <td>Performed several tests / debugging to ensure the proper functioning of the web app</td>
+                            <td>Performed several tests and debugging procedures to ensure the web app works correctly.
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">8</th>
-                            <td>Designed the web app with visuals and colors in a modern and pleasant style</td>
+                            <td>Designed the web app with a contemporary and appealing visuals, incorporating modern
+                                design elements and a pleasing color palette.
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">9</th>
-                            <td>Implemented responsiveness so that the web app is easily usable on any type of devices
+                            <td>Implemented responsiveness so that the web app can be used on any type of devices.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">10</th>
-                            <td>Updated the codes at the end of the process to optimize them and facilitate
-                                appropriation by anyone
-                                else if needed</td>
+                            <td>Updated and refactored the codes at the end of the process to optimize their efficiency
+                                and facilitate potential future adjustments / updates.
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">11</th>
-                            <td>Deployed the web app on an hosting platform (gh-pages)</td>
+                            <td>Deployed the web app on an hosting platform (gh-pages).</td>
                         </tr>
                         <tr>
                             <th scope="row">12</th>
-                            <td>Generated web app documentation using TypeDoc</td>
+                            <td>Generated the web app documentation using TypeDoc.</td>
                         </tr>
                         <tr>
                             <th scope="row">13</th>
-                            <td>Wrote the project description and technicalities in the README document prepared for
-                                anyone interested</td>
+                            <td>Wrote the project description and technical details in the README document to provide
+                                information about the structure and features of the web app.
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">14</th>
-                            <td>Built the complete myFlix frontend project case study to highlight the project's key
-                                information,
-                                development process and final results in video animations to showcase the work in a more
-                                accessible way for both developers and non-developers (current page)</td>
+                            <td>Built a comprehensive case study for the web app to highlight the project's key
+                                information, development process and final results in a user-friendly manner for both
+                                developers and non-developers (current page).
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
         </div>
         <div class="row" style="margin-top: 50px">
@@ -246,100 +315,56 @@
             <div class="col text-center">
             </div>
         </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col text-center">
+
+        <div class="row">
+            <div class="col">
             </div>
-            <div class="col-sm-8 col-12 development-information text-center">
-                <h3>myFlix frontend development process</h3>
-                <br>
-                <p style="text-align: justify">As for any projects, having a clear workflow is important to build a
-                    product in a logical and methodological way, whether on a team or in a solo project. The following
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Development process</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
+                <p class="development-process-text">As for any projects, having a clear workflow is important to build a
+                    product in a logical and organized way, whether on a team or in a solo project. The following
                     presentation summarizes how the frontend part of myFlix Angular has been built, as well as why I
-                    took these steps, the challenges I faced and the choices I made along the way. For more details on
-                    how the backend has been built, <a href="myFlixBackend.html">see this project.</a></p>
+                    took
+                    these steps, the challenges I faced and the choices I made along the way. For more details on how
+                    the backend has been built, <a href="myFlixBackend.html" target="_blank">see this project.</a>
+                </p>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
         <div class="row" style="margin-top: 20px">
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
-            <div class="col-8 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
                 <embed src="./presentations/myFlix_Frontend_Angular_Development_Process.pdf" type="application/pdf"
                     width="100%" height="500px" />
-            </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col text-center">
-            </div>
-            <div class="col text-center" style="border-bottom: 2px solid black">
-            </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col text-center">
-            </div>
-            <div class="col-sm-8 col-12 retrospective-information text-center">
-                <h3>Retrospective</h3>
                 <br>
-                <p style="text-align: justify">The original objective of this project (<a href="myFlixBackend.html"
-                        target="_blank">along with this backend API
-                        related project</a>) was to develop a complete web application (client-side and server-side)
-                    built using Angular and Angular Material, which align with the final result. </p>
-                <p style="text-align: justify">Being in my first steps with Angular, the most challenging thing for me
-                    was to understand the working logic of data interpolation and data-binding. It also took me a
-                    certain time to get familiar with Angular Material, since I had more experience with React Bootstrap
-                    up until this project. However, these two libraries still present some similarities, which helped to
-                    get used to Angular Material quickly.
-                </p>
+                <br>
             </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row" style="padding: 30px">
-            <div class="col text-center">
-            </div>
-            <div class="col-sm-8 col-12 retrospective-information text-center"
-                style="padding: 30px; border: solid black 2px">
-                <p style="margin-bottom: 0px; text-align: justify"><strong>Throughout this project, I particularly
-                        enjoyed learning about Angular in general and developing skills in this very popular frontend
-                        framework. It was interesting to see how Angular can achieve similar things as React,
-                        but in different ways (and vice versa). Using Angular Material was also pleasant since it
-                        provides a wide range of UI elements to facilitate professional and consistent UIs.</strong></p>
-            </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row" style="margin-top: 20px">
-            <div class="col text-center">
-            </div>
-            <div class="col-sm-8 col-12 retrospective-information text-center">
-                <p style="text-align: justify">Coding this project with a clear workflow gave me the opportunity to
-                    acquire a good understanding of how Angular works both in theory and in practice.
-                </p>
-                <p style="text-align: justify">In the end, my hope with this web app is that any user using it have a
-                    simple, pleasant and easy-to-use experience to help them in their quest for their next weekend movie
-                    marathon.
-                </p>
-            </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
     </main>
 
-    <footer class="page-footer" style="text-align: center">
+    <footer class="project-landing-view">
         <div class="row footer-header">
             <div class="col">
             </div>
-            <div class="col section-header-central-column" style="padding-top: 40px">
-                <h5 id="footer-section" style="margin-bottom: 30px">Find me /<br>Contact me on</h5>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Contact</h1>
             </div>
             <div class="col">
             </div>
         </div>
+
         <div class="social-icons-container">
             <a href="https://github.com/AlexaCai" target="_blank"> <img src="../img/github-logo-black.png" alt=""
                     width="40" height="40"></a>
@@ -352,18 +377,22 @@
             <button type="button" class="btn btn-dark" id="download-button">Download resume</button>
         </div>
         <div class="home-buttons">
-            <button type="button" class="btn btn-dark" id="contact-button">Contact me</button>
+            <button type="button" class="btn btn-dark" id="contact-button">Contact</button>
         </div>
         <br>
-        <div>
+        <div class="footer-section-contact-info">
             <p>Email: <a href="mailto:acailhier@gmail.com">acailhier@gmail.com</a></p>
             <p>Montreal, Quebec, Canada</p>
         </div>
+        <br>
         <div class="row back-to-top">
             <div class="col">
             </div>
             <div class="col d-flex justify-content-center">
                 <a href="#topsection" class="back-to-top-footer">Back to top</a>
+                <br>
+                <br>
+                <br>
             </div>
             <div class="col">
             </div>

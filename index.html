@@ -10,25 +10,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
     <title>Home</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon-logo.png" type="image/x-icon">
 </head>
 
-<body class="image-background">
-    <header class="page-header" id="topsection">
-        <nav class="navbar navbar-expand-md navbar-light nav justify-content-end">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NHJ60K027X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NHJ60K027X');
+</script>
+
+<body class="website-background">
+    <header id="topsection" class="header-bottom-margin">
+        <nav class="navbar navbar-expand-md navbar-light justify-content-end">
             <div class="logo-container">
-                <img src="img/logo3.png" alt="ac-logo" class="logo-image">
+                <a href="index.html">
+                    <img src="img/large-logo.png" alt="ac-logo" class="logo-image">
+                </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -48,43 +61,40 @@
         </nav>
         <div class="container text-center">
             <div class="row">
-                <div
-                    class="col-md-6 order-md-1 home-right-image d-flex justify-content-center align-items-center order-sm-2 order-2">
-                    <img src="img/profile-picture-portfolio.jpg" alt="profile-image" class="img-fluid profile-image">
+                <div class="col-xl-6 col-lg-6 intro-section-left-text flex-md-column order-sm-1 order-1">
+                    <h2 class="landing-catch-sentences">It's <span
+                            style="font-weight: bold; background-color: rgba(147, 196, 125, 0.5)">time.</span></h2>
+                    <h2 class="landing-catch-sentences">Let's <span
+                            style="font-weight: bold; background-color: rgba(147, 196, 125, 0.5)">build.</span></h2>
+                    <h2 class="landing-catch-sentences">Let's <span
+                            style="font-weight: bold; background-color: rgba(147, 196, 125, 0.5)">create.</span></h2>
+                    <br>
+                    <h5 class="landing-sub-catch-sentence">Create your ideal website or application, <br> tailored
+                        precisely to your requirements</h5>
+                    <h6 id="web-dev-services-small-screen">Full-stack web development services</h6>
                 </div>
-                <div class="col-md-6 order-md-2 home-left-text flex-md-column order-sm-1 order-1">
-                    <h2>It's time.</h2>
-                    <h2>Let's build.</h2>
-                    <h2>Let's create.</h2>
-                    <br>
-                    <br>
-                    <br>
-                    <h5 id="web-dev-services">Full-stack web development services</h5>
-                    <br>
-                    <br>
-                    <br>
-                    <p style="font-weight: 600;">Currently accepting:</p>
-                    <ul class="home-list-items">
-                        <li><strong>-Full-time position</strong></li>
-                        <li><strong>-Contract position</strong></li>
-                        <li><strong>-Remote working</strong></li>
-                        <li><strong>-Relocation</strong> in many major <br> cities
-                            internationally</li>
-                    </ul>
+                <div class="col-xl-6 col-lg-6 order-md-1 intro-section-right-image order-sm-2 order-2">
+                    <img src="img/profile-picture-portfolio.jpg" alt="profile-image" class="img-fluid profile-image">
                 </div>
             </div>
         </div>
         <div class="home-presentation-text">
-            <p style="font-weight: 700;">My name is Alexandre, and I am a passionate <span
+            <h6 id="web-dev-services-large-screen" class="mx-auto">Full-stack web development services</h6>
+            <p class="short-presentation-text">Hi, my name is Alexandre, and I am a passionate <span
                     style="text-decoration: underline">full-stack web developer</span> located in
-                Montreal, Quebec, Canada. I have 3 years of experience working with data and technologies, and about 1
-                year working on web development projects more specifically.</p>
+                Montreal, Quebec, Canada. I
+                have 3 years of experience working with data and technologies, and about 1
+                year working on web development projects more specifically. View my projects down the page and/or
+                contact me for any questions or project proposals. I am bilingual (FR/EN) and I can communicate in
+                Spanish.</p>
         </div>
+        <br>
+        <br>
         <div class="social-icons-container text">
             <a href="https://github.com/AlexaCai" target="_blank"> <img src="img/github-logo-black.png" alt=""
                     width="40" height="40"></a>
             <a href="https://www.linkedin.com/in/alecai/?locale=en_US" target="_blank"> <img
-                    src="img/linkedin-logo-black2.jpg" alt="" width="40" height="40"></a>
+                    src="img/linkedin-logo-black.png" alt="" width="40" height="40"></a>
             <a href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2" target="_blank"> <img
                     src="img/upwork-black-logo.png" alt="" width="40" height="40"></a>
         </div>
@@ -92,63 +102,79 @@
             <button type="button" class="btn btn-dark" id="download-button">Download resume</button>
         </div>
         <div class="home-buttons">
-            <button type="button" class="btn btn-dark" id="contact-button">Contact me</button>
+            <a href="#projects-section" class="intro-section-projects-button">
+                <button type="button" class="btn btn-dark" id="see-projects-button">See my projects</button>
+            </a>
+        </div>
+        <div class="home-buttons">
+            <button type="button" class="btn btn-dark" id="contact-button">Contact</button>
         </div>
         <br>
-        <div style="text-align: center">
-
-        <p>Email: <a href="mailto:acailhier@gmail.com"><strong>acailhier@gmail.com</strong></a></p>
-        <p>Montreal, Quebec, Canada</p>
+        <div class="text-center intro-section-contact-info">
+            <p>Email: <a href="mailto:acailhier@gmail.com"><strong>acailhier@gmail.com</strong></a></p>
+            <p>Montreal, Quebec, Canada</p>
         </div>
     </header>
-    <main class="profile">
+    <main>
         <div>
-            <div class="row about-header">
+            <div class="row">
                 <div class="col">
                 </div>
-                <div class="col-5 about-header-central-column">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 about-section-title-margin-top">
                     <h1 id="about-section">About me</h1>
                 </div>
                 <div class="col">
                 </div>
             </div>
-            <div class="row about-me-section">
+            <div class="row about-me-accordion">
                 <div class="col-1">
                 </div>
                 <div class="col-10">
-                    <div class="about-me-links">
+                    <div class="about-me-accordion-links">
                         <div class="accordion">
                             <div class="card">
                                 <div class="card-header accordion-button-background">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="text-dark">
-                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                        <button class="btn btn-link about-me-accordion-links" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <span>
+                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                    class="accordions-arrow">
                                                 Training and professional background
-                                                </span>
+                                            </span>
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingTwo">
                                     <div class="card-body text-left accordion-costum-background">
-                                        <p>I hold a bachelor's degree in anthropology with honors, a master's
-                                            degree in land
-                                            management / urbain planning, a certificate in full-stack web development
-                                            and several
-                                            graduate courses in project management.</p>
-                                        <p>Over my career, I mostly work as a professional on projects closely
-                                            combining
-                                            urban
-                                            planning and data-related decisions.</p>
-                                        <p>More concretely, I have worked on data-driven decision making projects for
-                                            municipal
-                                            investments as a
-                                            professional
-                                            researcher, and I supported different organizations on their
-                                            technological project
-                                            deployments
-                                            coming from a governmental <a
+                                        <p>At the academic level, I hold:</p>
+                                        <li>
+                                            A certificate in Frontend web development
+                                        </li>
+                                        <li>
+                                            A certificate in Full-Stack web development
+                                        </li>
+                                        <li>
+                                            A certificate in Python web development
+                                        </li>
+                                        <li>
+                                            A master's degree in land management / urbain planning
+                                        </li>
+                                        <li>
+                                            Several graduate courses in project management
+                                        </li>
+                                        <li>
+                                            A bachelor's degree in anthropology with honors
+                                        </li>
+                                        <br>
+                                        <p>Throughout my professional journey, I have primarily focused on projects that
+                                            involve a close integration of urban planning and data-driven decision
+                                            making.</p>
+                                        <p>Specifically, I have worked as a professional researcher on data-driven
+                                            projects aimed at guiding municipal investments. Additionally, I have
+                                            supported various organizations in implementing different technological
+                                            projects stemming from a governmental <a
                                                 href="https://www.infrastructure.gc.ca/cities-villes/index-eng.html"
                                                 target="_blank">Smart
                                                 Cities Challenge</a>
@@ -157,12 +183,10 @@
                                         <p>I then decided in
                                             early 2023 to take a leap into web programming to consolidate my skills on a
                                             more technical
-                                            level. My goal was to develop the necessary knowledge to be able to
-                                            build useful
-                                            websites, web apps and mobile apps that could meet the many challenges and
-                                            organizational
-                                            needs I
-                                            observed in the field over the years.</p>
+                                            level. My objective was to acquire the necessary knowledge to develop
+                                            practical websites, web applications, and mobile apps that could effectively
+                                            address the challenges I had
+                                            encountered throughout my years of experience in the field.</p>
                                     </div>
                                 </div>
                             </div>
@@ -172,33 +196,29 @@
                             <div class="card">
                                 <div class="card-header accordion-button-background">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                            <span class="text-dark">
-                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                        <button class="btn btn-link about-me-accordion-links" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            <span>
+                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                    class="accordions-arrow">
                                                 Transition to web development
-                                                </span>
+                                            </span>
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
                                     <div class="card-body text-left accordion-costum-background">
-                                        <p>Working as a professional researcher and a senior analyst in
-                                            data and technology policies over the last years allowed
-                                            me to acquire
-                                            great knowledge and skills in
-                                            the field of data and technology, both at a high level and at a more
-                                            technical level, which help in my transition to web development.</p>
-                                        <p>I started to enjoy web development as soon as I learned how to write my first
-                                            codes, and
-                                            that's still the
-                                            case
-                                            today, especially considering that I can count on a base of very useful
-                                            complementary
-                                            training /
-                                            professional
-                                            experiences
-                                            that will continue to help me in my future projects.</p>
+                                        <p>Throughout my years as a professional researcher and senior
+                                            analyst in data and technology policies, I have gained extensive knowledge
+                                            and skills in the domain of data and technology. This expertise spans both
+                                            at a
+                                            high-level (e.g.: data governance) and at a more technical level (e.g.: GIS
+                                            data analysis and processing), which
+                                            helped my transition into web development.</p>
+                                        <p>From the moment I grasped the fundamentals of coding, my passion for web
+                                            development started and has remained to this day. This enthusiasm
+                                            has only grown as I worked on different coding projects up until now.</p>
                                     </div>
                                 </div>
                             </div>
@@ -208,23 +228,24 @@
                             <div class="card">
                                 <div class="card-header accordion-button-background">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="true"
+                                        <button class="btn btn-link about-me-accordion-links" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
                                             aria-controls="collapseThree">
-                                            <span class="text-dark">
-                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                            <span>
+                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                    class="accordions-arrow">
                                                 Transferable skills from past work experiences
-                                                </span>
+                                            </span>
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
                                     <div class="card-body text-left accordion-costum-background">
-                                        <p>My past experiences working on projects combining data and technologies have
+                                        <p>My past experiences have
                                             allowed
                                             me to develop several skills and knowledge that could be useful in different
                                             web development
-                                            projects, depending on the objectives, the context and stakeholders
+                                            projects, depending on the objectives, the context and the stakeholders
                                             involved. Below are some concrete examples.
                                         </p>
                                         <div class="accordion">
@@ -232,13 +253,15 @@
                                                 <div class="card-header sub-accordions accordion-button-background"
                                                     id="headingThree-one">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseThree-one"
-                                                            aria-expanded="true" aria-controls="collapseThree-one">
-                                                            <span class="text-dark sub-accordions">
-                                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseThree-one" aria-expanded="true"
+                                                            aria-controls="collapseThree-one">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
                                                                 Geodata and data processing
-                                                                </span>
+                                                            </span>
                                                         </button>
                                                     </h2>
                                                 </div>
@@ -269,7 +292,7 @@
                                                             <li>Writing results and recommendations reports based on
                                                                 data analysis</li>
                                                             <li>Creating formulas/logics in Excel to automate
-                                                                calculations and analysis
+                                                                calculation and analysis
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -281,13 +304,15 @@
                                                 <div class="card-header sub-accordions accordion-button-background"
                                                     id="headingThree-two">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseThree-two"
-                                                            aria-expanded="true" aria-controls="collapseThree-two">
-                                                            <span class="text-dark sub-accordions">
-                                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseThree-two" aria-expanded="true"
+                                                            aria-controls="collapseThree-two">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
                                                                 Data governance
-                                                                </span>
+                                                            </span>
                                                         </button>
                                                     </h2>
                                                 </div>
@@ -295,10 +320,9 @@
                                                     aria-labelledby="headingThree-two">
                                                     <div class="card-body text-left accordion-costum-background">
                                                         <ul class="accordion-indented-list">
-                                                            <li>Contributed to the creation and the deployment of a
+                                                            <li>Contributing to the creation and the deployment of a
                                                                 consulting program
-                                                                on data governance for +10 organizations from various
-                                                                sectors</li>
+                                                                on data governance for +10 organizations</li>
                                                             <li>Consulting experience on data governance &
                                                                 lifecycle with
                                                                 organizations aiming at deploying
@@ -306,7 +330,7 @@
                                                                 mobile apps) from
                                                                 various backgrounds (public, para-public, NGOs, etc.)
                                                             </li>
-                                                            <li>Led a R&D Agile project towards
+                                                            <li>Leading an R&D Agile project towards
                                                                 sensitive data
                                                                 sharing mechanisms, regrouping multidisciplinary
                                                                 professionals from 8
@@ -338,7 +362,7 @@
                                                                     href="https://montreal.ca/en/articles/digital-data-charter-service-community-26084"
                                                                     target="_blank">Montreal's Digital Data Charter</a>
                                                             </li>
-                                                            <li>Good knowledge of key organizations in the field of
+                                                            <li>Knowledge of key organizations in the field of
                                                                 information,
                                                                 research
                                                                 and
@@ -360,13 +384,15 @@
                                                 <div class="card-header sub-accordions accordion-button-background"
                                                     id="headingThree-three">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseThree-three"
-                                                            aria-expanded="true" aria-controls="collapseThree-three">
-                                                            <span class="text-dark sub-accordions">
-                                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseThree-three" aria-expanded="true"
+                                                            aria-controls="collapseThree-three">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
                                                                 Project management
-                                                                </span>
+                                                            </span>
                                                         </button>
                                                     </h2>
                                                 </div>
@@ -399,14 +425,16 @@
                                                 <div class="card-header sub-accordions accordion-button-background"
                                                     id="headingThree-four">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseThree-four"
-                                                            aria-expanded="true" aria-controls="collapseThree-four">
-                                                            <span class="text-dark sub-accordions">
-                                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseThree-four" aria-expanded="true"
+                                                            aria-controls="collapseThree-four">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
                                                                 Stakeholders relations
-                                                                </span>                                                        
-                                                            </button>
+                                                            </span>
+                                                        </button>
                                                     </h2>
                                                 </div>
                                                 <div id="collapseThree-four" class="collapse"
@@ -418,7 +446,6 @@
                                                                 non-experts</li>
                                                             <li>Experience in multidisciplinary group facilitation to
                                                                 identify needs,
-                                                                structure
                                                                 objectives
                                                                 and establish clear vision</li>
                                                             <li>Organized several (+10) online/in person interactive
@@ -438,24 +465,23 @@
                             <div class="card">
                                 <div class="card-header accordion-button-background">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseFour" aria-expanded="true"
+                                        <button class="btn btn-link about-me-accordion-links" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
                                             aria-controls="collapseFour">
-                                            <span class="text-dark">
-                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                            <span>
+                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                    class="accordions-arrow">
                                                 Web development skills and known
-                                                technologies                                                
+                                                technologies
                                             </span>
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
                                     <div class="card-body text-left accordion-costum-background">
-                                        <p>Over training and projects development, I came to work with a wide variety of
-                                            languages and tools, both for frontend and backend. I also learned
-                                            different techniques and how to use different softwares.
+                                        <p>
                                             Below is the breakdown of my skills per categories (some languages or tools
-                                            can be used both for frontend or backend even if I listed them in a specific
+                                            can be used both for frontend or backend even if listed in a specific
                                             category for simplicity purpose).
                                         </p>
                                         <div class="accordion" id="accordionFrontend">
@@ -463,13 +489,15 @@
                                                 <div class="card-header sub-accordions accordion-button-background"
                                                     id="headingFour-one">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseFour-one"
-                                                            aria-expanded="true" aria-controls="collapseFour-one">
-                                                            <span class="text-dark sub-accordions">
-                                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseFour-one" aria-expanded="true"
+                                                            aria-controls="collapseFour-one">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
                                                                 Frontend
-                                                                </span>
+                                                            </span>
                                                         </button>
                                                     </h2>
                                                 </div>
@@ -485,11 +513,11 @@
                                                             <li>React Native</li>
                                                             <li>React Bootstrap</li>
                                                             <li>Recharts</li>
-                                                            <li>Angular</li>
-                                                            <li>TypeScript</li>
-                                                            <li>Angular Material</li>
                                                         </ul>
                                                         <p style="font-weight: bold;">Basic</p>
+                                                        <li>Angular</li>
+                                                        <li>TypeScript</li>
+                                                        <li>Angular Material</li>
                                                         <li>Ajax</li>
                                                     </div>
                                                 </div>
@@ -500,13 +528,15 @@
                                                 <div class="card-header sub-accordions accordion-button-background"
                                                     id="headingFour-two">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseFour-two"
-                                                            aria-expanded="true" aria-controls="collapseFour-two">
-                                                            <span class="text-dark sub-accordions">
-                                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseFour-two" aria-expanded="true"
+                                                            aria-controls="collapseFour-two">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
                                                                 Backend
-                                                                </span>
+                                                            </span>
                                                         </button>
                                                     </h2>
                                                 </div>
@@ -517,14 +547,13 @@
                                                             <li>Node.js</li>
                                                             <li>Npm</li>
                                                             <li>Express</li>
-                                                            <li>Protection libraries/modules (Passport, Bcrypt, CORS,
-                                                                Express-validator)
-                                                            </li>
                                                             <li>MongoDB</li>
                                                             <li>MongoDB Atlas</li>
                                                             <li>Python</li>
+                                                            <li>Django</li>
                                                             <br>
                                                             <p style="font-weight: bold;">Basic</p>
+                                                            <li>MySQL</li>
                                                             <li>PostgreSQL</li>
                                                         </ul>
                                                     </div>
@@ -536,13 +565,15 @@
                                                 <div class="card-header sub-accordions accordion-button-background"
                                                     id="headingFour-three">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseFour-three"
-                                                            aria-expanded="true" aria-controls="collapseFour-three">
-                                                            <span class="text-dark sub-accordions">
-                                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseFour-three" aria-expanded="true"
+                                                            aria-controls="collapseFour-three">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
                                                                 Softwares, platforms and tools
-                                                                </span>
+                                                            </span>
                                                         </button>
                                                     </h2>
                                                 </div>
@@ -553,11 +584,11 @@
                                                         <ul class="accordion-indented-list">
                                                             <li>Heroku</li>
                                                             <li>Netlify</li>
-                                                            <li>Jest (for code testing purposes)</li>
-                                                            <li>Puppeter (for code testing purposes)</li>
-                                                            <li>Cucumber (for code testing purposes)</li>
-                                                            <li>JSDoc (for documentation / code comment purposes)</li>
-                                                            <li>TypeDoc (for documentation / code comment purposes)</li>
+                                                            <li>Jest (for code testing)</li>
+                                                            <li>Puppeter (for code testing)</li>
+                                                            <li>Cucumber (for code testing)</li>
+                                                            <li>JSDoc (for documentation / code comment)</li>
+                                                            <li>TypeDoc (for documentation / code comment)</li>
                                                             <li>Git</li>
                                                             <li>Github</li>
                                                             <li>Replit</li>
@@ -567,8 +598,10 @@
                                                             <li>ArcGIS</li>
                                                             <li>Asana</li>
                                                             <li>Jira</li>
-                                                            <li>Miro</li>
                                                             <li>Confluence</li>
+                                                            <li>Wordpress</li>
+                                                            <li>Canva</li>
+                                                            <li>Miro</li>
                                                             <li>Slack</li>
                                                             <li>Excel</li>
                                                             <br>
@@ -584,12 +617,14 @@
                                                 <div class="card-header sub-accordions accordion-button-background"
                                                     id="headingFour-four">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseFour-four"
-                                                            aria-expanded="true" aria-controls="collapseFour-four">
-                                                            <span class="text-dark sub-accordions">
-                                                            <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
-                                                            Techniques & methodologies
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseFour-four" aria-expanded="true"
+                                                            aria-controls="collapseFour-four">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
+                                                                Techniques & methodologies
                                                             </span>
                                                         </button>
                                                     </h2>
@@ -620,58 +655,46 @@
                             <div class="card">
                                 <div class="card-header accordion-button-background">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseFive" aria-expanded="true"
+                                        <button class="btn btn-link about-me-accordion-links" type="button"
+                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
                                             aria-controls="collapseFive">
-                                            <span class="text-dark">
-                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
-                                                Particular interests in web development                                            
+                                            <span>
+                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                    class="accordions-arrow">
+                                                Particular interests in web development
                                             </span>
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
                                     <div class="card-body text-left accordion-costum-background">
-                                        <p>I realized very early in my journey to become a web developer that almost all
-                                            of the
-                                            time,
-                                            the
-                                            only
-                                            limits on what you can possibly create for a digital product are (1) your
-                                            own creativity
+                                        <p>I have a particular interest in creating:
+                                            <li>Frontend
+                                                products</li>
+                                            <li>Responsive
+                                                design</li>
+                                            <li>Original and appealing visuals</li>
+                                            <br>
+                                            I particularly enjoy working with React, React Native and
+                                            React
+                                            Bootstrap. Python and
+                                            Django are
+                                            also two others technologies I appreciate.
+                                            That being
+                                            said,
+                                            all
+                                            technologies and tools truly remain of
+                                            interest, since they can all be useful in their ways in different contexts
                                             and
-                                            (2)
-                                            your skills to operationate your ideas. Both of these two aspects need
-                                            continuous
-                                            stimulation
-                                            and
-                                            training, and that's why I am continuously aiming at improving my coding
-                                            skills on a
-                                            regular basis. I
-                                            am
-                                            also aiming at enhancing my knowledge on complementary topics such as UX
-                                            design, UI
+                                            project
+                                            settings.
+                                        </p>
+                                        <p>I
+                                            also try to improve my knowledge on complementary topics such as UI
                                             design,
                                             digital marketing and data analytics both by strong personal interest and
                                             professional
                                             value.
-                                        </p>
-                                        <p>More technically speaking, I have a particular interest in building frontend
-                                            products,
-                                            responsive
-                                            design and appealing visuals. I particularly enjoy working with React and
-                                            React
-                                            Bootstrap, and manipulating databases in MongoDB or PostgreSQL. Python and
-                                            Django are
-                                            also two others technologies I particularly appreciate working with.
-                                            That being
-                                            said,
-                                            all
-                                            technologies and tools -whether already known or not by me- truly remain of
-                                            interest to
-                                            me, since they can all be useful in their ways in different contexts and
-                                            project
-                                            settings.
                                         </p>
                                     </div>
                                 </div>
@@ -682,30 +705,32 @@
                             <div class="card">
                                 <div class="card-header accordion-button-background">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                            <span class="text-dark">
-                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
-                                                Current goals                                           
+                                        <button class="btn btn-link about-me-accordion-links" type="button"
+                                            data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
+                                            aria-controls="collapseSix">
+                                            <span>
+                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                    class="accordions-arrow">
+                                                Current goals
                                             </span>
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
                                     <div class="card-body text-left accordion-costum-background">
-                                        <p>I have currently three main goals, as listed below.
-                                        </p>
                                         <div class="accordion" id="accordionGoal1">
                                             <div class="card">
                                                 <div class="card-header accordion-button-background"
                                                     id="headingSix-one">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseSix-one"
-                                                            aria-expanded="true" aria-controls="collapseSix-one">
-                                                            <span class="text-dark sub-accordions">
-                                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
-                                                                1 - Land a web developer job                                         
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseSix-one" aria-expanded="true"
+                                                            aria-controls="collapseSix-one">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
+                                                                1 - Work full-time as a web developer
                                                             </span>
                                                         </button>
                                                     </h2>
@@ -713,7 +738,8 @@
                                                 <div id="collapseSix-one" class="collapse"
                                                     aria-labelledby="headingSix-one" data-parent="#accordionGoal1">
                                                     <div class="card-body text-left accordion-costum-background">
-                                                        <p>For this, I am willing to relocate to a wide range of major
+                                                        <p>For the right opportunity, I am willing to relocate to a wide
+                                                            range of major
                                                             cities internationally. I am also willing to work remotely,
                                                             as I’ve been doing this for years now, and this working
                                                             environment really fits me. I am also open to contracts.
@@ -729,26 +755,27 @@
                                                 <div class="card-header accordion-button-background"
                                                     id="headingSix-two">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseSix-two"
-                                                            aria-expanded="true" aria-controls="collapseSix-two">
-                                                                <span class="text-dark sub-accordions">
-                                                                    <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
-                                                                    2 - Continue to improve my coding
-                                                                skills                                        
-                                                                </span>
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseSix-two" aria-expanded="true"
+                                                            aria-controls="collapseSix-two">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
+                                                                2 - Continue to improve my coding
+                                                                skills
+                                                            </span>
                                                         </button>
                                                     </h2>
                                                 </div>
                                                 <div id="collapseSix-two" class="collapse"
                                                     aria-labelledby="headingSix-two" data-parent="#accordionGoal2">
                                                     <div class="card-body text-left accordion-costum-background">
-                                                        <p>I want to consolidate my knowledge of the technologies I
-                                                            already know (Javascript, React, MongoDB, etc.). At the same
-                                                            time, I also want to learn about other technologies with
+                                                        <p>Consolidate my knowledge of the technologies I
+                                                            already know, while also learning about other technologies
+                                                            with
                                                             which I am less familiar, and develop different products
-                                                            with those to fully understand how they work, whether for
-                                                            creating websites, web apps or mobile apps.
+                                                            with those to fully understand how they work.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -759,30 +786,29 @@
                                                 <div class="card-header accordion-button-background"
                                                     id="headingSix-three">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" type="button"
-                                                            data-toggle="collapse" data-target="#collapseSix-three"
-                                                            aria-expanded="true" aria-controls="collapseSix-three">
-                                                                <span class="text-dark sub-accordions">
-                                                                    <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
-                                                                    3 - Accept proposals for projects to be developped on freelance                             
-                                                                </span>
+                                                        <button class="btn btn-link about-me-accordion-links"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseSix-three" aria-expanded="true"
+                                                            aria-controls="collapseSix-three">
+                                                            <span class="sub-accordions">
+                                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                                    class="accordions-arrow">
+                                                                3 - Accept freelance projects
+                                                            </span>
                                                         </button>
                                                     </h2>
                                                 </div>
                                                 <div id="collapseSix-three" class="collapse"
                                                     aria-labelledby="headingSix-three" data-parent="#accordionGoal3">
                                                     <div class="card-body text-left accordion-costum-background">
-                                                        <p> Considering my skills and the projects I could code, and the
-                                                            fact
-                                                            that
-                                                            I am already established on <a href="https://www.upwork.com"
-                                                                target="_blank">Upwork</a> (freelance platform - <a
-                                                                href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2"
-                                                                target="_blank">see my profile here</a>), I am also
-                                                            offering
+                                                        <p>Offer
                                                             web
-                                                            development services as a freelancer. I am open to any
-                                                            proposal. A
+                                                            development services as a freelancer on <a
+                                                                href="https://www.upwork.com" target="_blank">Upwork</a>
+                                                            (freelance platform - <a
+                                                                href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2"
+                                                                target="_blank">see my profile here</a>). I am open
+                                                            proposals. A
                                                             discussion
                                                             about
                                                             the project to be carried on would allow me to determine if
@@ -813,27 +839,23 @@
                             <div class="card">
                                 <div class="card-header accordion-button-background">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseSeven" aria-expanded="true"
+                                        <button class="btn btn-link about-me-accordion-links" type="button"
+                                            data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true"
                                             aria-controls="collapseSeven">
-                                            <span class="text-dark">
-                                                <img src="./img/accordion-arrow.png" alt="down-arrow" class= "accordions-arrow">
-                                                Me on a more personal touch                          
-                                            </span> 
+                                            <span>
+                                                <img src="./img/accordion-arrow.png" alt="down-arrow"
+                                                    class="accordions-arrow">
+                                                Me, on a more personal touch
+                                            </span>
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
                                     <div class="card-body text-left accordion-costum-background">
                                         <p>When I’m not on my computer, I’m probably outside exploring the city, eating
-                                            delicious street food cooked on the spot.
-                                            The
-                                            chicken rice with vegetables and a bit (read a lot) of spicy sauce are for
-                                            me
-                                            irresistible.
+                                            street food cooked on the spot.
                                             I
-                                            also
-                                            deeply enjoy visiting archeological sites, since my Indiana Jones /
+                                            really enjoy visiting archeological sites, since my Indiana Jones /
                                             anthropologist inner
                                             child calls me
                                             every
@@ -853,10 +875,7 @@
                                             for 2 years.
                                         </p>
                                         <p>Finally, when I want to move, ice hockey, basketball and volleyball are my
-                                            things, and I
-                                            never
-                                            say no
-                                            to a cinema night.
+                                            things.
                                         </p>
                                     </div>
                                 </div>
@@ -871,7 +890,7 @@
             <div class="row back-to-top1">
                 <div class="col">
                 </div>
-                <div class="col-6 d-flex justify-content-center back-to-top-projects">
+                <div class="col-6 d-flex justify-content-center back-to-top-margin">
                     <a href="#topsection" class="back-to-top-link">Back to top</a>
                 </div>
                 <div class="col">
@@ -881,7 +900,7 @@
             <div class="row projects-header">
                 <div class="col">
                 </div>
-                <div class="col-md-5 col-sm-10 section-header-central-column-projects text-center">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 text-center">
                     <h1 id="projects-section">Projects</h1>
                 </div>
                 <div class="col">
@@ -889,210 +908,322 @@
             </div>
 
             <div class="row projects-information">
-                <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
+                    <div class="card h-100" style="width: 22rem;">
+                        <a href="projects/recipeAppDjango.html" target="_blank"> <img
+                                src="img/project-cards-logo/django-logo-project-card-2.png" class="card-img-top"
+                                alt="project-image"></a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="projects/recipeAppDjango.html"
+                                        target="_blank"><strong>Recipe
+                                            app Django version
+                                        </strong></a></h5>
+                                <p class="card-text">A Django web app to create, search and modify recipes for
+                                    all food lovers
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> Django, Python, SQLite, JavaScript, HTML, Bootstrap, CSS,
+                                    Pandas (Python librairy) </li>
+                            </ul>
+                            <p
+                                style="font-size: 10px; padding-left: 10px; padding-right: 10px; margin-bottom: unset; margin-top: 10px;">
+                                *On live version, images for recipes aren't displayed because of paid subscription
+                                required from hosting plateform. <a
+                                    href="projects/recipeAppDjango.html#app-in-action">Click here to see the real web
+                                    app with all images.</a></p>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/recipe-web-app" target="_blank"
+                                    class="card-link"><strong>See on
+                                        Github</strong></a>
+                                <a href="https://a-tablespoon-of-discovery-52a5bb04d981.herokuapp.com/" target="_blank"
+                                    class="card-link"><strong>See
+                                        live</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
+                    <div class="card h-100" style="width: 22rem;">
+                        <a href="projects/recipeAppCLI.html" target="_blank"> <img
+                                src="img/project-cards-logo/python-logo-project-card-2.png" class="card-img-top"
+                                alt="project-image"></a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="projects/recipeAppCLI.html"
+                                        target="_blank"><strong>Recipe
+                                            app
+                                            CLI version
+                                        </strong></a></h5>
+                                <p class="card-text">A Python app to create, search and modify recipes with
+                                    ingredients, cooking time, and difficulty, and which allows to perform searches
+                                    based
+                                    on ingredients
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> Python, Python REPL,
+                                    IPython, MySQL, SQLAlchemy</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/recipe-app-cli/tree/main/Achievement%201/1.7"
+                                    target="_blank" class="card-link"><strong>See on
+                                        Github</strong></a>
+                                <a href="projects/recipeAppCLI.html#app-in-action" target="_blank"
+                                    class="card-link"><strong>See
+                                        live</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/chatApp.html" target="_blank"> <img
-                                src="img/project-cards-logo/react-native-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/react-native-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="projects/chatApp.html" target="_blank">Chat mobile app
-                                </a></h5>
-                            <p class="card-text">A React Native mobile Chat app allowing users to talk and share medias
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> React Native, JavaScript,
-                                Google Firestore
-                                database, Firebase Storage, Firebase Authentication, Expo, Expo Go, Android Studio</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://github.com/AlexaCai/chat-app" target="_blank" class="card-link">See on
-                                Github</a>
-                            <a href="projects/chatApp.html#app-in-action" target="_blank" class="card-link">See
-                                on live</a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="projects/chatApp.html" target="_blank"><strong>Chat
+                                            mobile app
+                                        </strong></a></h5>
+                                <p class="card-text">A React Native mobile Chat app allowing users to talk, take
+                                    photos,
+                                    share pictures, locations and vocals on personalized screens
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> React Native, JavaScript,
+                                    Google Firebase Suite, Expo, Expo Go, Android Studio</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/chat-app" target="_blank"
+                                    class="card-link"><strong>See on
+                                        Github</strong></a>
+                                <a href="projects/chatApp.html#app-in-action" target="_blank"
+                                    class="card-link"><strong>See
+                                        live</strong></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/meetApp.html" target="_blank"> <img
-                                src="img/project-cards-logo/pwa-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/pwa-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="projects/meetApp.html" target="_blank">Meet web app
-                                </a></h5>
-                            <p class="card-text">A serverless and progressive web application to locate coding events
-                                all
-                                around the world</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> React, JavaScript, CSS, AWS
-                                Lambda, Google
-                                OAuth, Jest, Cucumber, Puppeteer, Atatus, Recharts
-                            </li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://github.com/AlexaCai/meet-app" target="_blank" class="card-link">See on
-                                Github</a>
-                            <a href="https://alexacai.github.io/meet-app/" target="_blank" class="card-link">See
-                                on live</a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="projects/meetApp.html" target="_blank"><strong>Meet
+                                            web
+                                            app
+                                        </strong></a></h5>
+                                <p class="card-text">A serverless and progressive web application to locate coding
+                                    events
+                                    all
+                                    around the world</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> React, JavaScript, CSS, AWS
+                                    Lambda, Google
+                                    OAuth, Jest, Cucumber, Puppeteer, Atatus
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/meet-app" target="_blank" class="card-link">See
+                                    on
+                                    Github</a>
+                                <a href="https://alexacai.github.io/meet-app/" target="_blank" class="card-link">See
+                                    live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/myFlixFrontendAngular.html" target="_blank"> <img
-                                src="img/project-cards-logo/angular-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/angular-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="projects/myFlixFrontendAngular.html" target="_blank">myFlix
-                                    web app
-                                    (front. - Angular)</a></h5>
-                            <p class="card-text">A responsive single-page movie web app with routing and several
-                                interface
-                                views for a polished user experience (based on my previously built server-side code)</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> Angular, Angular Material,
-                                TypeScript,
-                                HTML, SCSS, TypeDoc
-                            </li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://github.com/AlexaCai/myFlix-Angular-client" target="_blank"
-                                class="card-link">See on
-                                Github</a>
-                            <a href="https://alexacai.github.io/myFlix-Angular-client/welcome" target="_blank"
-                                class="card-link">See
-                                on live</a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="projects/myFlixFrontendAngular.html"
+                                        target="_blank"><strong>myFlix
+                                            web app
+                                            (Angular)</strong></a></h5>
+                                <p class="card-text">A responsive single-page movie web app with routing and several
+                                    interface
+                                    views for a polished user experience</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> Angular, Angular Material,
+                                    TypeScript,
+                                    HTML, SCSS, <br> TypeDoc
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/myFlix-Angular-client" target="_blank"
+                                    class="card-link">See on
+                                    Github</a>
+                                <a href="https://alexacai.github.io/myFlix-Angular-client/welcome" target="_blank"
+                                    class="card-link">See
+                                    live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/myFlixFrontendReact.html" target="_blank"> <img
-                                src="img/project-cards-logo/react-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/react-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="projects/myFlixFrontendReact.html" target="_blank">myFlix
-                                    web app
-                                    (front. - React)</a></h5>
-                            <p class="card-text">A responsive single-page movie web app with routing and several
-                                interface
-                                views for a polished user experience (based on my previously built server-side code)</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> React,
-                                React Bootstrap, Javascript, HTML, CSS
-                            </li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://github.com/AlexaCai/myFlix-client" target="_blank" class="card-link">See on
-                                Github</a>
-                            <a href="https://myflix-movies-advisor.netlify.app/login" target="_blank"
-                                class="card-link">See
-                                on live</a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="projects/myFlixFrontendReact.html"
+                                        target="_blank"><strong>myFlix
+                                            web app
+                                            (React)</strong></a></h5>
+                                <p class="card-text">A responsive single-page movie web app with routing and several
+                                    interface
+                                    views for a polished user experience</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> React,
+                                    React Bootstrap, Javascript, HTML, <br> CSS
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/myFlix-client" target="_blank"
+                                    class="card-link">See on
+                                    Github</a>
+                                <a href="https://myflix-movies-advisor.netlify.app/login" target="_blank"
+                                    class="card-link">See
+                                    live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/myFlixBackend.html" target="_blank"> <img
-                                src="img/project-cards-logo/node-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/node-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"> <a href="projects/myFlixBackend.html">myFlix web app (backend)</a>
-                            </h5>
-                            <p class="card-text">A well-designed REST API built for a movie web app that interacts with
-                                a
-                                non-relational database</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> Node.js, Express,
-                                PostgreSQL, MongoDB,
-                                Postman,
-                                Heroku</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://github.com/AlexaCai/movie-api" target="_blank" class="card-link">See on
-                                Github</a>
-                            <a href="https://my-weekend-movie-app-53a46e3377d7.herokuapp.com/" target="_blank"
-                                class="card-link">See
-                                on live</a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"> <a href="projects/myFlixBackend.html"><strong>myFlix web app
+                                            (backend)</strong></a>
+                                </h5>
+                                <p class="card-text">A well-designed REST API built for a movie web app that
+                                    interacts
+                                    with
+                                    a
+                                    non-relational database</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> Node.js, Express,
+                                    PostgreSQL, MongoDB,
+                                    Postman,
+                                    Heroku</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/movie-api" target="_blank" class="card-link">See on
+                                    Github</a>
+                                <a href="https://my-weekend-movie-app-53a46e3377d7.herokuapp.com/" target="_blank"
+                                    class="card-link">See
+                                    live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/pokedex.html" target="_blank"> <img
-                                src="img/project-cards-logo/javascript-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/javascript-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"> <a href="projects/pokedex.html">Pokedex web app</a></h5>
-                            <p class="card-text">A Pokedex fetching data from an external API to enable the viewing of
-                                Pokemon data points in detail</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> JavaScript, jQuery,
-                                Bootstrap, HTML, CSS</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://github.com/AlexaCai/simple-js-app" target="_blank" class="card-link">See on
-                                Github</a>
-                            <a href="https://alexacai.github.io/simple-js-app/" target="_blank" class="card-link">See on
-                                live</a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"> <a href="projects/pokedex.html"><strong>Pokedex web
+                                            app</strong></a></h5>
+                                <p class="card-text">A Pokedex fetching data from an external API to enable the
+                                    viewing
+                                    of
+                                    Pokemon data points in detail</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> JavaScript, jQuery,
+                                    Bootstrap, HTML, CSS</li>
+                            </ul>
+                            <br>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/simple-js-app" target="_blank"
+                                    class="card-link">See on
+                                    Github</a>
+                                <a href="https://alexacai.github.io/simple-js-app/" target="_blank"
+                                    class="card-link">See
+                                    live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/toDoListApp.html" target="_blank"> <img
-                                src="img/project-cards-logo/jQuery-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/jQuery-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"> <a href="projects/toDoListApp.html">To-Do-List web app</a></h5>
-                            <p class="card-text">A To-Do-List web app that allows users to note and manage reminders</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> jQuery, HTML, CSS</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://github.com/AlexaCai/to-do-list-app" target="_blank" class="card-link">See
-                                on
-                                Github</a>
-                            <a href="https://alexacai.github.io/to-do-list-app/index.html" target="_blank"
-                                class="card-link">See on live</a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"> <a href="projects/toDoListApp.html"><strong>To-Do-List web
+                                            app</strong></a></h5>
+                                <p class="card-text">A To-Do-List web app that allows users to note and manage reminders
+                                    quickly and easily
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> jQuery, HTML, <br> CSS</li>
+                            </ul>
+                            <br>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/to-do-list-app" target="_blank"
+                                    class="card-link">See
+                                    on
+                                    Github</a>
+                                <a href="https://alexacai.github.io/to-do-list-app/index.html" target="_blank"
+                                    class="card-link">See live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="col-lg-4 col-sm-6 col-xs-12 projects-column d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-sm-6 col-xs-12 project-cards-margin-bottom d-flex justify-content-center">
                     <div class="card h-100" style="width: 22rem;">
                         <a href="projects/professionalWebsite.html" target="_blank"> <img
-                                src="img/project-cards-logo/html-logo-project-card.png" class="card-img-top"
+                                src="img/project-cards-logo/html-logo-project-card-2.png" class="card-img-top"
                                 alt="project-image"></a>
-                        <div class="card-body">
-                            <h5 class="card-title"> <a href="projects/professionalWebsite.html"
-                                    target="_blank">Professional website creation</a></h5>
-                            <p class="card-text">A clear, simple and modern website to present professional services
-                                (current website)</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Main technologies:</strong> HTML, CSS, JavaScript,
-                                Bootstrap</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://github.com/AlexaCai/portfolio-website" target="_blank"
-                                class="card-link">See
-                                on
-                                Github</a>
+                        <div class="project-cards-body-text">
+                            <div class="card-body">
+                                <h5 class="card-title"> <a href="projects/professionalWebsite.html"
+                                        target="_blank"><strong>Professional website creation</strong></a></h5>
+                                <p class="card-text">A clear and modern website to present professional services
+                                    (current website)</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span style="color: black; text-decoration: underline;">Main
+                                        technologies:</span> HTML, CSS, JavaScript,
+                                    Bootstrap</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://github.com/AlexaCai/portfolio-website" target="_blank"
+                                    class="card-link">See
+                                    on
+                                    Github</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1101,7 +1232,7 @@
             <div class="row back-to-top2">
                 <div class="col">
                 </div>
-                <div class="col-6 d-flex justify-content-center back-to-top-testimonials">
+                <div class="col-6 d-flex justify-content-center back-to-top-margin">
                     <a href="#topsection" class="back-to-top-link">Back to top</a>
                 </div>
                 <div class="col">
@@ -1111,46 +1242,138 @@
             <div class="row testimonials-header">
                 <div class="col">
                 </div>
-                <div class="col-md-5 col-sm-10 section-header-central-column-testimmonials text-center">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-9 text-center">
                     <h1 id="testimonials-section">Testimonials</h1>
                 </div>
                 <div class="col">
                 </div>
             </div>
-            <div class="row testimonials-information" style="text-align: justify">
-                <div class="col-md-12 col-sm-12 individual-testimonials-text">
-                    <p><i>As a project manager at Territoires innovants en économie sociale et solidaire (TIESS), I had
-                            the chance to work with Alexandre for over a year, as a partner in a pilot project for the
-                            ideation and creation of a social utility data trust, a social innovation at the confluence
-                            of law and data governance.
 
+            <div class="row" style="text-align: justify">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 testimonials-information">
+                    <p><i>As a project manager at Territoires innovants en économie sociale et solidaire (TIESS), I
+                            had
+                            the chance to work with Alexandre for over a year, as a partner in a pilot project for
+                            the
+                            ideation and creation of a social utility data trust - a social innovation at the
+                            confluence
+                            of law and data governance.
                             Working with Alexandre enabled us to carry out this project with rigor, reflexivity and
-                            genuine collaboration. Curious, committed and organized, Alexandre makes collaborative work
+                            genuine collaboration. Curious, committed and organized, Alexandre makes collaborative
+                            work
                             effective and enjoyable. His knowledge and tact enable him to question directions and
                             positions within a project in a constructive and respectful way.
 
                             I highly recommend working with Alexandre on various projects. This collaboration will
-                            surely be a pleasant, and will ensure that you get a close attention to the details and the
+                            surely be a pleasant, and will ensure that you get a close attention to the details and
+                            the
                             project planning.</i></p>
                     <br>
-                    <p>-Jessica Leblanc <br> Lawyer & project manager at TIESS
+                    <p class="testimonial-text-author"><b>-Jessica Leblanc, Ph.D. candidate<br> Lawyer & project
+                            manager
+                            at TIESS</b>
                     </p>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
+                    </div>
                 </div>
-                <div class="col-md-12 col-sm-12 individual-testimonials-text">
-                    <p><i>Having worked with Alexandre for over a year on Montréal en commun, the City of Montreal's
-                            smart city project, I can attest his diligence and the quality of his work. Alexandre has
-                            been able to take the lead in completing deliverables on social utility trusts applied to
-                            data. It would be a pleasure to collaborate with him again in the future.</i></p>
-                    <br>
-                    <p>-Marie Plamondon <br> Program Coordinator at Challenge Works
-                    </p>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
                 </div>
             </div>
+            <div class="row testimonial-row-centering" style="text-align: justify">
+                <div class="col-xl-1 col-lg-1"></div>
+
+                <div
+                    class="col-xl-5 col-lg-5 col-md-10 col-sm-10 col-10 testimonial-left-card-padding d-flex align-items-stretch mx-auto center-content">
+                    <div class="testimonials-information">
+                        <p><i>I had the pleasure of working with Alexandre during his time at Open North. I know
+                                Alex to
+                                be a dedicated and passionate individual who works well within a team environment as
+                                well as having the ability to complete tasks and make decisions individually. Alex
+                                is
+                                values-driven and keeps the needs of the clients or beneficiaries at the center of
+                                his
+                                work. I would recommend hiring or collaborating with Alex without reservation.</i>
+                        </p>
+                        <br>
+                        <p class="testimonial-text-author"><b>-Merlin Chatwin, Ph. D.<br>Executive director at Open
+                                North</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-xl-5 col-lg-5 col-md-10 col-sm-10 col-10 testimonial-right-card-padding d-flex align-items-stretch mx-auto">
+                    <div class="testimonials-information">
+                        <p><i>Having worked with Alexandre for over a year on Montréal en commun, the City of
+                                Montreal's
+                                smart city project, I can attest his diligence and the quality of his work.
+                                Alexandre
+                                has been able to take the lead in completing deliverables on social utility trusts
+                                applied to data. It would be a pleasure to collaborate with him again in the
+                                future.</i>
+                        </p>
+                        <br>
+                        <p class="testimonial-text-author"><b>-Marie Plamondon <br> Program Coordinator at Challenge
+                                Works</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1"></div>
+            </div>
+
+            <div class="row testimonial-row-centering" style="text-align: justify">
+                <div class="col-xl-1 col-lg-1"></div>
+
+                <div
+                    class="col-xl-5 col-lg-5 col-md-10 col-sm-10 col-10 testimonial-left-card-padding d-flex align-items-stretch mx-auto">
+                    <div class="testimonials-information">
+                        <p><i>It was a real pleasure working with Alexandre on a project aiming at creating a
+                                municipal
+                                decision support tool guided by data and a GIS, in collaboration with public sector
+                                actors & professionals. He is competent, professional, creative, dependable,
+                                curious,
+                                hard working and a good listener. He delivers on time and is a great team
+                                player.</i>
+                        </p>
+                        <br>
+                        <p class="testimonial-text-author"><b>-Irène Abi-Zeid, Ph. D.<br>Full Profressor at
+                                Université
+                                Laval (UL)</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-xl-5 col-lg-5 col-md-10 col-sm-10 col-10 testimonial-right-card-padding d-flex align-items-stretch mx-auto">
+                    <div class="testimonials-information">
+                        <p><i>Working with Alexandre is always a pleasure. We've had several opportunities to work
+                                together, and his professionalism shines through every time. Alexandre is human,
+                                empathetic and sociable, and a pleasure to work with. His work is always done with
+                                care
+                                and detail, on time and to a high standard. He goes beyond expectations to meet
+                                needs
+                                and find solutions to complex problems. I would work with him again without
+                                hesitation.
+                            </i></p>
+                        <br>
+                        <p class="testimonial-text-author"><b>-Isabelle Rancourt<br>Community Development Consultant
+                                at
+                                Walling Consulting</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1"></div>
+            </div>
+
 
             <div class="row back-to-top3">
                 <div class="col">
                 </div>
-                <div class="col-6 d-flex justify-content-center back-to-top-contact">
+                <div class="col-6 d-flex justify-content-center back-to-top-margin">
                     <a href="#topsection" class="back-to-top-link">Back to top</a>
                 </div>
                 <div class="col">
@@ -1160,7 +1383,7 @@
             <div class="row contact-header">
                 <div class="col">
                 </div>
-                <div class="col-md-5 col-sm-10 section-header-central-column-contact text-center">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 text-center">
                     <h1 id="contact-section">Contact</h1>
                 </div>
                 <div class="col">
@@ -1169,37 +1392,41 @@
 
 
             <div class="row contact-information">
-                <div class="col">
+                <div class="col-1">
                 </div>
-                <div class="col-9">
+                <div class="col-10">
                     <p> <strong>If you want to hear more about my expertise or my projects,
                             you can
-                            message me through LinkedIn,
+                            message me through LinkedIn or
                             by
-                            email or via my portfolio website. I am always looking forward to connect with anyone
+                            email. I am always looking forward to connect with anyone
                             sharing my
-                            passion for data, technology and the web, whether for a formal discussion or a more informal
-                            one. </strong></p>
+                            passion for data, technology and the web, or with those having project
+                            proposals.</strong>
+                    </p>
                     <br>
                     <div class="social-icons-container">
                         <a href="https://github.com/AlexaCai" target="_blank"> <img src="img/github-logo-black.png"
                                 alt="" width="40" height="40"></a>
                         <a href="https://www.linkedin.com/in/alecai/?locale=en_US" target="_blank"> <img
-                                src="img/linkedin-logo-black2.jpg" alt="" width="40" height="40"></a>
+                                src="img/linkedin-logo-black.png" alt="" width="40" height="40"></a>
                         <a href="https://www.upwork.com/freelancers/~015ea8ce67a5ab0df2" target="_blank"> <img
                                 src="img/upwork-black-logo.png" alt="" width="40" height="40"></a>
                     </div>
                     <div class="home-buttons">
-                        <button type="button" class="btn btn-dark" id="download-button-footer">Download resume</button>
+                        <button type="button" class="btn btn-dark" id="download-button-footer">Download
+                            resume</button>
                     </div>
                     <div class="home-buttons">
-                        <button type="button" class="btn btn-dark" id="contact-button-footer">Contact me</button>
+                        <button type="button" class="btn btn-dark" id="contact-button-footer">Contact</button>
                     </div>
                     <br>
-                    <p>Email: <a href="mailto:acailhier@gmail.com"><strong>acailhier@gmail.com</strong></a></p>
-                    <p>Montreal, Quebec, Canada</p>
+                    <div class="footer-section-contact-info">
+                        <p>Email: <a href="mailto:acailhier@gmail.com"><strong>acailhier@gmail.com</strong></a></p>
+                        <p>Montreal, Quebec, Canada</p>
+                    </div>
                 </div>
-                <div class="col">
+                <div class="col-1">
                 </div>
             </div>
             <br>
@@ -1245,6 +1472,7 @@
         // Select the navigation links
         var aboutLink = document.querySelector('.nav-link[href="#about-section"]');
         var projectsLink = document.querySelector('.nav-link[href="#projects-section"]');
+        var projectsLinkInIntro = document.querySelector('.intro-section-projects-button[href="#projects-section"]');
         var testimonialsLink = document.querySelector('.nav-link[href="#testimonials-section"]');
         var contactLink = document.querySelector('.nav-link[href="#contact-section"]');
         var backToTopLink1 = document.querySelector('.back-to-top1 a'); // Select the "Back to top" link
@@ -1258,6 +1486,9 @@
             scrollToSection(event, '#about-section');
         });
         projectsLink.addEventListener('click', function (event) {
+            scrollToSection(event, '#projects-section');
+        });
+        projectsLinkInIntro.addEventListener('click', function (event) {
             scrollToSection(event, '#projects-section');
         });
         testimonialsLink.addEventListener('click', function (event) {

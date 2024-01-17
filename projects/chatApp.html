@@ -10,114 +10,168 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.production.css">
     <title>Chat app</title>
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon-logo.png" type="image/x-icon">
 </head>
 
-<body class="background-color">
-    <header class="page-header" id="topsection">
-        <nav class="navbar navbar-expand-md navbar-light nav justify-content-end">
-            <div class="logo-container">
-                <img src="../img/logo3.png" alt="ac-logo" class="logo-image">
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Back to home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer-section">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NHJ60K027X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-NHJ60K027X');
+</script>
+
+<body class="background-color">
+    <div class="project-landing-view">
+        <header id="topsection">
+            <nav class="navbar navbar-expand-md navbar-light justify-content-end">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../img/large-logo.png" alt="ac-logo" class="logo-image">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Back to home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#projects-section">Back to projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-title-section">
+                        <h1 class="project-title">Chat mobile app</h1>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <div class="col-8 text-center project-page-catch-sentence-section">
+                        <h5 class="project-catch-sentence">A React Native mobile Chat app allowing users to talk and
+                            share medias</h5>
+                    </div>
+                    <div class="col text-center">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <main>
         <div class="row">
-            <div class="col text-center">
+            <div class="col">
             </div>
-            <div class="col-8 text-center myFlix-title">
-                <h1 class="project-title">Chat mobile app</h1>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Project brief</h1>
             </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-center">
-            </div>
-            <div class="col-8 text-center myFlix-catch-sentence">
-                <h5>A React Native mobile Chat app allowing users to talk and share medias</h5>
-            </div>
-            <div class="col text-center">
+            <div class="col">
             </div>
         </div>
         <div class="row project-brief">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Overview</h5>
-                <p style="text-align: justify">Chat app was created to allow people to talk and exchange on a mobile
+                <h5 class="project-brief-subtitles">Overview</h5>
+                <p class="project-brief-text">Chat app was created to allow people to talk and exchange on a mobile
                     app. Users can send messages like other very common chat apps (WhatsApp, Messenger, etc.). They can
                     also send images, location and audios. Users can also customize their application by selecting the
                     color background they want to use for the chat UI.
                 </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Purpose</h5>
-                <p style="text-align: justify"> Learn and consolidate my skills with the creation of a React Native app
-                    during my full-stack web development training to develop a user-friendly, appealing and easy-to-use
-                    chatting mobile app, as well as working with Firestore (a NoSQL cloud-based database service
+                <h5 class="project-brief-subtitles">Purpose</h5>
+                <p class="project-brief-text"> Learn and consolidate my skills with React Native and React Native
+                    libraries to develop a user-friendly, appealing and easy-to-use
+                    chat mobile app, as well as working with Google Firestore (a NoSQL cloud-based database service
                     offered by Google as part of its Firebase platform) to handle the chat app data.</p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 style="text-align: center">Objective</h5>
-                <p style="text-align: justify"> Build a chat app for mobile devices using React Native and Google
+                <h5 class="project-brief-subtitles">Objective</h5>
+                <p class="project-brief-text"> Build a chat app for mobile devices using React Native and Google
                     Firebase features to implement a database, storage space and anonymous authentication process.
-                    Coding the app to ensure users can send images, location and audios on top of messages, access their
-                    messages when offline and visually customize their experience.</p>
+                    Coding the app to ensure users can send images, location and audios along with messages, access
+                    their
+                    messages when offline and visually customize their UI.</p>
             </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 order-sm-6">
-                <h5 style="text-align: center">Tech summary</h5>
-                <p style="text-align: justify">Chat app is built with React Native. The app Expo Go and Android
-                    Studio have been used for his development. The chat interface have
+            <div class="col-lg-8 col-md-12 col-sm-12 order-md-6">
+                <h5 class="project-brief-subtitles">Tech summary</h5>
+                <p class="project-brief-text">Chat app is built with React Native. Expo Go and Android
+                    Studio have been used for the development. The chat interfaces have
                     been created using the Gifted Chat library. All chat messages are stored in a Google Firestore
-                    Database and locally on users’ devices. Images and audios sent on Chat app are also stored in a
-                    Google Cloud Storage created on Firebase, and the app authenticates users anonymously via
-                    Firebase Authentication. The app also allows users to consult their messages offline by using
+                    database and locally on users’ devices. Images and audios sent on Chat app are also stored in a
+                    Google Cloud storage created on Firebase, and the app authenticates users anonymously via
+                    Firebase Authentication. It also allows users to consult their messages offline thanks to
                     client-side storage (AsyncStorage pack. from React Native).
                 </p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-sm-6 text-center">
-                <h5 style="text-align: center">Tools used</h5>
-                <ul style="list-style: none; padding-left: 0; text-align: center">
-                    <li>React Native</li>
-                    <li>JavaScript</li>
-                    <li>Expo & Expo go</li>
-                    <li>Android Studio</li>
-                    <li>Google Firestore Database</li>
-                    <li>Google Firebase Cloud Storage</li>
-                    <li>Google Firebase Authentication</li>
+                <h5 class="project-brief-subtitles">Tools used</h5>
+                <ul class="project-brief-text" style="list-style: none; padding-left: 0; text-align: center">
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        React Native
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        JavaScript
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Expo & Expo go
+                    </li>
+                    <li>
+                        <img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Android Studio
+                    </li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Google Firestore Database</li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Google Firebase Cloud Storage</li>
+                    <li><img src="../img/project-page-right-arrow.png" alt="right-arrow" class="tools-used-arrow">
+                        Google Firebase Authentication</li>
                 </ul>
             </div>
         </div>
-        <h5 class="text-center" id="app-in-action">See Chat app in action</h5>
-        <p class="text-center"><strong><span style="background-color: rgb(243, 190, 190)">Note: occasional screen
-                    slowness and delays are due to
-                    the video recording, not the app
-                    itself.</span></strong></p>
-        <br>
-        <div class="row project-videos">
-            <div class="col text-center">
+        <div class="row">
+            <div class="col-2 text-center">
             </div>
             <div class="col-8 text-center">
+                <h5 class="project-video" id="app-in-action">See Chat app in action</h5>
+                <p class="text-center video-warning-note">Note: occasional screen
+                    slowness and delays are due to
+                    the video recording, not the app
+                    itself.</p>
+            </div>
+            <div class="col-2 text-center">
+            </div>
+        </div>
+        <br>
+        <div class="row project-videos">
+            <div class="col">
+            </div>
+            <div class="col-8">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -131,122 +185,124 @@
                     </div>
                 </div>
             </div>
-            <div class="col text-center">
+            <div class="col">
             </div>
         </div>
-        <br>
-        <br>
-        <div class="row project-myrole">
-            <div class="col text-center">
-                <h3>My role</h3>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">My role</h1>
+            </div>
+            <div class="col">
             </div>
         </div>
-        <br>
-        <div class="row project-myrole">
-            <div class="col text-center">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
-            <div class="col-md-8 col-sm-10 col-10 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10 text-center">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="text-center" colspan="4">Summary of my work</th>
+                            <th scope="col" class="text-center" colspan="4">
+                                <h5 class="table-title">Summary of my work</h5>
+                            </th>
                         </tr>
                     </thead>
-                    <tbody class="work-summary">
+                    <tbody class="work-summary table-text">
                         <tr>
                             <th scope="row">1</th>
-                            <td>Set up the development environment
+                            <td>Set up the development environment.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Created all the structure / files constituting Chat app using <i>npx create-expo-app
-                                    chat-app --template</i> at first, then built on this further</td>
+                            <td>Created the app's structure and pages using <i>npx create-expo-app
+                                    chat-app --template</i> at first, then built on this further.</td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td>Implemented navigation logic between screens / UIs
+                            <td>Implemented navigation logic between screens / UIs.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
-                            <td>Created the app layouts / stylings / different UIs interaction points (input fields, buttons,
-                                alerts, etc.) so that users can interact easily with the app
+                            <td>Created the app layouts, stylings, and different UIs interaction points (input fields,
+                                buttons,
+                                alerts, etc).
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">5</th>
-                            <td>Set up a Firestore database (NoSQL) to save / store the messages on Google Cloud
+                            <td>Set up a Firestore database (NoSQL) to save / store the messages on Google Cloud.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">6</th>
-                            <td>Implemented codes so that each message sent on Chat app is being saved automatically in the
-                                Firestore database, and rendered in real-time in users chat UI
+                            <td>Implemented the codes so that each message sent on Chat app is being saved automatically
+                                in
+                                the
+                                Firestore database, and rendered in real-time in users chat UIs.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">7</th>
-                            <td>Implemented the authentication process for Chat app using Google Firebase Authentication
-                                feature
+                            <td>Implemented the authentication process for Chat app using Google Firebase
+                                Authentication.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">8</th>
-                            <td>Implemented client-side storage in Chat app to allow users to read their messages even
-                                when offline
+                            <td>Implemented client-side storage in Chat app to allow users to read their messages
+                                when offline.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">9</th>
                             <td>Added additional features in the app to allow users to (1) send images from their phone
                                 image library, (2) take pictures with their phone camera and send them, (3) share their
-                                location via Google maps and (4) send audio vocals
+                                location via Google maps and (4) send audio vocals.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">10</th>
                             <td>Set up a Google Cloud Storage space on Firebase to store images and audios sent on Chat
-                                app
+                                app.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">11</th>
-                            <td>Adjusted some app elements to make them more accessible for users with screen readers
+                            <td>Adjusted some app elements / codes to make them more accessible for users with screen
+                                readers.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">12</th>
-                            <td>Ensured final code revision, refactoring and last testing
+                            <td>Ensured final code revision, refactoring and last testing.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">13</th>
-                            <td>Managed all interactions on Github (commits, pull requests, merging branches, etc.)
+                            <td>Managed all interactions on Github (commits, pull requests, merging branches, etc).
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">14</th>
-                            <td>Deployed the website on a hosting platform (Github Pages)
+                            <td>Wrote the project description and technical details in the README document to provide
+                                information about the structure and features of the app.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">15</th>
-                            <td>Wrote the project description and technicalities in the README document prepared for
-                                anyone interested
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">16</th>
-                            <td>Built the complete Chat app project case study to highlight the project's key
-                                information, development process and final results to showcase the work in a more
-                                accessible way for both developers and non-developers (current page)
+                            <td>Built a comprehensive case study for the app to highlight the project's key
+                                information, development process and final results in a user-friendly manner for both
+                                developers and non-developers (current page).
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1 text-center">
             </div>
         </div>
         <div class="row" style="margin-top: 50px">
@@ -257,108 +313,54 @@
             <div class="col text-center">
             </div>
         </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col text-center">
+
+        <div class="row">
+            <div class="col">
             </div>
-            <div class="col-sm-8 col-12 development-information text-center">
-                <h3>Chat app development process</h3>
-                <br>
-                <p style="text-align: justify">As for any projects, having a clear workflow is important to build a
-                    product in a logical and methodological way, whether in a team or in a solo project. The following
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Development process</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
+                <p class="development-process-text">As for any projects, having a clear workflow is important to build a
+                    product in a logical and organized way, whether in a team or in a solo project. The following
                     summarize how Chat app has been built, as well as the challenges faced and the solutions
                     found along the way.
                 </p>
             </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
         <div class="row" style="margin-top: 20px">
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
-            <div class="col-8 text-center">
+            <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10">
                 <embed src="./presentations/ChatApp_Development_Process.pdf" type="application/pdf" width="100%"
                     height="500px" />
-            </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col text-center">
-            </div>
-            <div class="col text-center" style="border-bottom: 2px solid black">
-            </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col text-center">
-            </div>
-            <div class="col-sm-8 col-12 retrospective-information text-center">
-                <h3>Retrospective</h3>
                 <br>
-                <p style="text-align: justify">The original objective of this project was to create a mobile app
-                    allowing people to exchange messages, send images and audios and share location like other very
-                    common chat apps (WhatsApp, Messenger, etc.), which align with the final result.
-                </p>
-                <p style="text-align: justify">Being in my first steps with React Native and mobile app development, I
-                    had to do some in-depth research and learn more about Expo Go, Android
-                    Studio and Firebase. However, these tools/platforms have very often rich and complete official
-                    documentation, which was very helpful.
-                </p>
-                <p style="text-align: justify">
-                    I also already had a good base working with React (which presents similarities with React Native),
-                    which helped me, despite the new tools, technologies and topics emerging from this project,
-                    to navigate into the development process with a good and solid understanding of some of its key
-                    features.
-                </p>
-            </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row" style="padding: 30px">
-            <div class="col text-center">
-            </div>
-            <div class="col-sm-8 col-12 retrospective-information text-center"
-                style="padding: 30px; border: solid black 2px">
-                <p style="margin-bottom: 0px; text-align: justify"><strong>One of the things I liked the most in this
-                        project was to learn more about the very useful features of Firebase, and being able to create a
-                        modern mobile app behaving very similarly to other very popular chat apps. I really enjoyed learning
-                        more about React Native, because it is a technology that, when mastered well, opens up a lot of
-                        possibilities for mobile projects.
-                    </strong></p>
                 <br>
-                <p style="margin-bottom: 0px; text-align: justify"><strong>Coding this project with a clear workflow
-                        also helped me to acquire a good understanding of the many new things encountered along the way
-                        regarding React Native, both in theory and in practice.
-                    </strong></p>
             </div>
-            <div class="col text-center">
-            </div>
-        </div>
-        <div class="row" style="margin-top: 20px">
-            <div class="col text-center">
-            </div>
-            <div class="col-sm-8 col-12 retrospective-information text-center">
-                <p style="text-align: justify">In the end, my hope with this Chat app is to give a simple, pleasant and
-                    easy-to-use experience to any users who wish to connect, organize activities or share beautiful
-                    moments.
-                </p>
-            </div>
-            <div class="col text-center">
+            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-1">
             </div>
         </div>
     </main>
 
-    <footer class="page-footer" style="text-align: center">
+    <footer class="project-landing-view">
         <div class="row footer-header">
             <div class="col">
             </div>
-            <div class="col section-header-central-column" style="padding-top: 40px">
-                <h5 id="footer-section" style="margin-bottom: 30px">Find me /<br>Contact me on</h5>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8 sections-title-background">
+                <h1 class="title-section-text text-center">Contact</h1>
             </div>
             <div class="col">
             </div>
         </div>
+
         <div class="social-icons-container">
             <a href="https://github.com/AlexaCai" target="_blank"> <img src="../img/github-logo-black.png" alt=""
                     width="40" height="40"></a>
@@ -371,18 +373,22 @@
             <button type="button" class="btn btn-dark" id="download-button">Download resume</button>
         </div>
         <div class="home-buttons">
-            <button type="button" class="btn btn-dark" id="contact-button">Contact me</button>
+            <button type="button" class="btn btn-dark" id="contact-button">Contact</button>
         </div>
         <br>
-        <div>
+        <div class="footer-section-contact-info">
             <p>Email: <a href="mailto:acailhier@gmail.com">acailhier@gmail.com</a></p>
             <p>Montreal, Quebec, Canada</p>
         </div>
+        <br>
         <div class="row back-to-top">
             <div class="col">
             </div>
             <div class="col d-flex justify-content-center">
                 <a href="#topsection" class="back-to-top-footer">Back to top</a>
+                <br>
+                <br>
+                <br>
             </div>
             <div class="col">
             </div>

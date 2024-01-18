@@ -259,7 +259,7 @@
 }
 
 .home-presentation-text {
-    margin-top: 10vw;
+    margin-top: 80px;
     margin-left: 12vw;
     margin-right: 12vw;
     margin-bottom: 30px;
@@ -460,7 +460,6 @@
     font-family: 'Inter', sans-serif;
     font-size: 17px;
     color: rgba(0, 0, 0, 0.85);
-    font-weight: 600;
 }
 
 .back-to-top2 {

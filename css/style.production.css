@@ -165,60 +165,34 @@
     font-weight: bold;
 }
 
+
 .intro-section-right-image {
+    border-radius: 10px;
+}
+
+.intro-section-right-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
     border-radius: 10px;
 }
 
 @media (min-width: 1200px) {
     .intro-section-right-image {
         margin-top: 20px;
-        background-color: rgba(0, 0, 0, 0.85);
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .intro-section-right-image {
         margin-top: 40px;
-        background-color: rgba(0, 0, 0, 0.85);
     }
 }
 
 @media (max-width: 991px) {
     .intro-section-right-image {
-        background-color: rgba(0, 0, 0, 0.85);
         margin-left: 20px;
         margin-right: 20px;
-    }
-}
-
-
-@media (max-width: 767px) {
-    .home-right-image {
-        border-right: none;
-        padding-left: 0px;
-        padding-right: 0px;
-        background-color: black
-    }
-}
-
-.profile-image {
-    height: auto;
-    border-radius: 10px;
-    max-width: 65%;
-    padding-top: 6px
-}
-
-@media (max-width: 991px) {
-    .profile-image {
-        max-width: 75%;
-        padding: 20px;
-        border-radius: 30px;
-    }
-}
-
-@media (max-width: 525px) {
-    .profile-image {
-        max-width: 100%;
     }
 }
 
@@ -263,7 +237,7 @@
 }
 
 .home-presentation-text {
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: 12vw;
     margin-right: 12vw;
     margin-bottom: 30px;
@@ -272,7 +246,7 @@
 
 @media (max-width: 767px) {
     .home-presentation-text {
-        margin-top: 8vw;
+        margin-top: 60px;
         margin-left: 6vw;
         margin-right: 6vw;
         margin-bottom: 3vw;
